@@ -192,13 +192,33 @@ ros/macros.h
 ros/assert.h
 ../msg_gen/cpp/include/robotino_local_move/ros/assert.h
 
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveClient.cpp
-RobotinoLocalMoveClient.h
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveClient.h
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h
+string
+-
+vector
+-
+map
+-
+ostream
+-
+ros/serialization.h
+../msg_gen/cpp/include/robotino_local_move/ros/serialization.h
+ros/builtin_message_traits.h
+../msg_gen/cpp/include/robotino_local_move/ros/builtin_message_traits.h
+ros/message_operations.h
+../msg_gen/cpp/include/robotino_local_move/ros/message_operations.h
+ros/time.h
+../msg_gen/cpp/include/robotino_local_move/ros/time.h
+ros/macros.h
+../msg_gen/cpp/include/robotino_local_move/ros/macros.h
+ros/assert.h
+../msg_gen/cpp/include/robotino_local_move/ros/assert.h
 
 /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_local_move_client_node.cpp
 RobotinoLocalMoveClient.h
 /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveClient.h
+robotino_local_move/PathPosition.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_local_move/PathPosition.h
 
 /opt/ros/fuerte/include/XmlRpcDecl.h
 ros/macros.h

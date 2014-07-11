@@ -37,7 +37,7 @@ bool RobotinoLocalMoveClient::checkServer()
 	return false;
 }
 
-void RobotinoLocalMoveClient::spin()
+void RobotinoLocalMoveClient::spin(std::function<void(int)> callback)
 {
 	ros::Rate loop_rate ( 5 );
 	ros::Time start_time = ros::Time::now();
@@ -47,6 +47,7 @@ void RobotinoLocalMoveClient::spin()
 		if( client_.waitForResult( ros::Duration( 1.0 ) ) )
 		{
 			ROS_INFO("Local move succeeded");
+			callback(1);
 			break;
 		}
 		else
@@ -56,8 +57,8 @@ void RobotinoLocalMoveClient::spin()
 
 		if( ( ros::Time::now() - start_time ).toSec() > max_time_ )
 		{
-			ROS_INFO( "Timeout: Aborting Local move" );
-			client_.cancelAllGoals();
+			cancelGoal();
+			callback(0);
 			break;
 		}
 
@@ -75,4 +76,10 @@ void RobotinoLocalMoveClient::sendGoal( const robotino_local_move::LocalMoveGoal
 {
 	client_.sendGoal( goal );
 	ROS_INFO("Goal sent");
+}
+
+void RobotinoLocalMoveClient::cancelGoal()
+{
+	ROS_INFO("Timeout: Aborting Local move");
+	client_.cancelAllGoals();
 }

@@ -174,6 +174,19 @@ ROSBUILD_gensrv_lisp/fast:
 .PHONY : ROSBUILD_gensrv_lisp/fast
 
 #=============================================================================
+# Target rules for targets named ROSBUILD_gensrv_py
+
+# Build rule for target.
+ROSBUILD_gensrv_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ROSBUILD_gensrv_py
+.PHONY : ROSBUILD_gensrv_py
+
+# fast build rule for target.
+ROSBUILD_gensrv_py/fast:
+	$(MAKE) -f CMakeFiles/ROSBUILD_gensrv_py.dir/build.make CMakeFiles/ROSBUILD_gensrv_py.dir/build
+.PHONY : ROSBUILD_gensrv_py/fast
+
+#=============================================================================
 # Target rules for targets named clean-test-results
 
 # Build rule for target.
@@ -185,19 +198,6 @@ clean-test-results: cmake_check_build_system
 clean-test-results/fast:
 	$(MAKE) -f CMakeFiles/clean-test-results.dir/build.make CMakeFiles/clean-test-results.dir/build
 .PHONY : clean-test-results/fast
-
-#=============================================================================
-# Target rules for targets named robotino_local_move_client_node
-
-# Build rule for target.
-robotino_local_move_client_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 robotino_local_move_client_node
-.PHONY : robotino_local_move_client_node
-
-# fast build rule for target.
-robotino_local_move_client_node/fast:
-	$(MAKE) -f CMakeFiles/robotino_local_move_client_node.dir/build.make CMakeFiles/robotino_local_move_client_node.dir/build
-.PHONY : robotino_local_move_client_node/fast
 
 #=============================================================================
 # Target rules for targets named robotino_local_move_server_node
@@ -291,6 +291,19 @@ rospack_gensrv/fast:
 .PHONY : rospack_gensrv/fast
 
 #=============================================================================
+# Target rules for targets named rospack_gensrv_all
+
+# Build rule for target.
+rospack_gensrv_all: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rospack_gensrv_all
+.PHONY : rospack_gensrv_all
+
+# fast build rule for target.
+rospack_gensrv_all/fast:
+	$(MAKE) -f CMakeFiles/rospack_gensrv_all.dir/build.make CMakeFiles/rospack_gensrv_all.dir/build
+.PHONY : rospack_gensrv_all/fast
+
+#=============================================================================
 # Target rules for targets named test
 
 # Build rule for target.
@@ -357,17 +370,17 @@ tests/fast:
 
 # target to build an object file
 src/RobotinoLocalMoveClient.o:
-	$(MAKE) -f CMakeFiles/robotino_local_move_client_node.dir/build.make CMakeFiles/robotino_local_move_client_node.dir/src/RobotinoLocalMoveClient.o
+	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o
 .PHONY : src/RobotinoLocalMoveClient.o
 
 # target to preprocess a source file
 src/RobotinoLocalMoveClient.i:
-	$(MAKE) -f CMakeFiles/robotino_local_move_client_node.dir/build.make CMakeFiles/robotino_local_move_client_node.dir/src/RobotinoLocalMoveClient.i
+	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.i
 .PHONY : src/RobotinoLocalMoveClient.i
 
 # target to generate assembly for a file
 src/RobotinoLocalMoveClient.s:
-	$(MAKE) -f CMakeFiles/robotino_local_move_client_node.dir/build.make CMakeFiles/robotino_local_move_client_node.dir/src/RobotinoLocalMoveClient.s
+	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.s
 .PHONY : src/RobotinoLocalMoveClient.s
 
 # target to build an object file
@@ -384,21 +397,6 @@ src/RobotinoLocalMoveServer.i:
 src/RobotinoLocalMoveServer.s:
 	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.s
 .PHONY : src/RobotinoLocalMoveServer.s
-
-# target to build an object file
-src/robotino_local_move_client_node.o:
-	$(MAKE) -f CMakeFiles/robotino_local_move_client_node.dir/build.make CMakeFiles/robotino_local_move_client_node.dir/src/robotino_local_move_client_node.o
-.PHONY : src/robotino_local_move_client_node.o
-
-# target to preprocess a source file
-src/robotino_local_move_client_node.i:
-	$(MAKE) -f CMakeFiles/robotino_local_move_client_node.dir/build.make CMakeFiles/robotino_local_move_client_node.dir/src/robotino_local_move_client_node.i
-.PHONY : src/robotino_local_move_client_node.i
-
-# target to generate assembly for a file
-src/robotino_local_move_client_node.s:
-	$(MAKE) -f CMakeFiles/robotino_local_move_client_node.dir/build.make CMakeFiles/robotino_local_move_client_node.dir/src/robotino_local_move_client_node.s
-.PHONY : src/robotino_local_move_client_node.s
 
 # target to build an object file
 src/robotino_local_move_server_node.o:
@@ -427,10 +425,10 @@ help:
 	@echo "... ROSBUILD_genmsg_py"
 	@echo "... ROSBUILD_gensrv_cpp"
 	@echo "... ROSBUILD_gensrv_lisp"
+	@echo "... ROSBUILD_gensrv_py"
 	@echo "... clean-test-results"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... robotino_local_move_client_node"
 	@echo "... robotino_local_move_server_node"
 	@echo "... rosbuild_precompile"
 	@echo "... rosbuild_premsgsrvgen"
@@ -438,6 +436,7 @@ help:
 	@echo "... rospack_genmsg_all"
 	@echo "... rospack_genmsg_libexe"
 	@echo "... rospack_gensrv"
+	@echo "... rospack_gensrv_all"
 	@echo "... test"
 	@echo "... test-future"
 	@echo "... test-results"
@@ -449,9 +448,6 @@ help:
 	@echo "... src/RobotinoLocalMoveServer.o"
 	@echo "... src/RobotinoLocalMoveServer.i"
 	@echo "... src/RobotinoLocalMoveServer.s"
-	@echo "... src/robotino_local_move_client_node.o"
-	@echo "... src/robotino_local_move_client_node.i"
-	@echo "... src/robotino_local_move_client_node.s"
 	@echo "... src/robotino_local_move_server_node.o"
 	@echo "... src/robotino_local_move_server_node.i"
 	@echo "... src/robotino_local_move_server_node.s"

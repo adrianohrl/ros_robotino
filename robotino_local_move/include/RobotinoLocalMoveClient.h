@@ -10,8 +10,8 @@
 
 #include <ros/ros.h>
 #include <actionlib/client/simple_action_client.h>
-
 #include "robotino_local_move/LocalMoveAction.h"
+#include <functional>
 
 typedef actionlib::SimpleActionClient<robotino_local_move::LocalMoveAction> Client;
 
@@ -23,18 +23,16 @@ public:
 
 private:
 	ros::NodeHandle nh_;
-
 	Client client_;
-
 	robotino_local_move::LocalMoveGoal goal_;
-
 	float max_time_;
 
 public:
 	bool checkServer();
 	void spin();
-	void setMaxTime( const float& time );
-	void sendGoal( const robotino_local_move::LocalMoveGoal& goal );
+	void setMaxTime(const float& time);
+	void sendGoal(const robotino_local_move::LocalMoveGoal& goal);
+	void cancelGoal();
 
 };
 

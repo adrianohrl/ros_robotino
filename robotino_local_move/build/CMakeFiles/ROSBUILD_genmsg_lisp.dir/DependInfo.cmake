@@ -19,6 +19,8 @@ SET(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg_gen/lisp/_package_LocalMoveFeedback.lisp" "/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg_gen/lisp/LocalMoveFeedback.lisp"
   "/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg_gen/lisp/_package_LocalMoveGoal.lisp" "/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg_gen/lisp/LocalMoveGoal.lisp"
   "/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg_gen/lisp/_package_LocalMoveResult.lisp" "/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg_gen/lisp/LocalMoveResult.lisp"
+  "/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg_gen/lisp/_package_PathPosition.lisp" "/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg_gen/lisp/PathPosition.lisp"
+  "/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg_gen/lisp/_package_PathStatus.lisp" "/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg_gen/lisp/PathStatus.lisp"
   )
 
 

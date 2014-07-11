@@ -63,10 +63,46 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LocalMoveFeedback.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/LocalMoveActionFeedback.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LocalMoveActionFeedback.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/LocalMoveActionFeedback.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LocalMoveActionFeedback.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/LocalMoveActionResult.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LocalMoveActionResult.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/LocalMoveAction.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LocalMoveAction.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/LocalMoveGoal.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LocalMoveGoal.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/LocalMoveResult.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LocalMoveResult.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/LocalMoveFeedback.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LocalMoveFeedback.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/PathPosition.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_PathPosition.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/LocalMoveActionGoal.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LocalMoveActionGoal.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/PathStatus.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_PathStatus.lisp
 
 ../msg_gen/lisp/LocalMoveAction.lisp: ../msg/LocalMoveAction.msg
 ../msg_gen/lisp/LocalMoveAction.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
 ../msg_gen/lisp/LocalMoveAction.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/LocalMoveAction.lisp: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalID.msg
+../msg_gen/lisp/LocalMoveAction.lisp: ../msg/LocalMoveResult.msg
+../msg_gen/lisp/LocalMoveAction.lisp: ../msg/LocalMoveActionResult.msg
+../msg_gen/lisp/LocalMoveAction.lisp: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../msg_gen/lisp/LocalMoveAction.lisp: ../msg/LocalMoveActionFeedback.msg
+../msg_gen/lisp/LocalMoveAction.lisp: ../msg/LocalMoveActionGoal.msg
+../msg_gen/lisp/LocalMoveAction.lisp: ../msg/LocalMoveGoal.msg
+../msg_gen/lisp/LocalMoveAction.lisp: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalStatus.msg
+../msg_gen/lisp/LocalMoveAction.lisp: ../msg/LocalMoveFeedback.msg
 ../msg_gen/lisp/LocalMoveAction.lisp: ../manifest.xml
 ../msg_gen/lisp/LocalMoveAction.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/lisp/LocalMoveAction.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
@@ -173,6 +209,9 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LocalMoveActionFeedbac
 ../msg_gen/lisp/LocalMoveActionGoal.lisp: ../msg/LocalMoveActionGoal.msg
 ../msg_gen/lisp/LocalMoveActionGoal.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
 ../msg_gen/lisp/LocalMoveActionGoal.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/LocalMoveActionGoal.lisp: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalID.msg
+../msg_gen/lisp/LocalMoveActionGoal.lisp: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../msg_gen/lisp/LocalMoveActionGoal.lisp: ../msg/LocalMoveGoal.msg
 ../msg_gen/lisp/LocalMoveActionGoal.lisp: ../manifest.xml
 ../msg_gen/lisp/LocalMoveActionGoal.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/lisp/LocalMoveActionGoal.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
@@ -279,6 +318,10 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LocalMoveActionFeedbac
 ../msg_gen/lisp/LocalMoveActionResult.lisp: ../msg/LocalMoveActionResult.msg
 ../msg_gen/lisp/LocalMoveActionResult.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
 ../msg_gen/lisp/LocalMoveActionResult.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/LocalMoveActionResult.lisp: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalID.msg
+../msg_gen/lisp/LocalMoveActionResult.lisp: ../msg/LocalMoveResult.msg
+../msg_gen/lisp/LocalMoveActionResult.lisp: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalStatus.msg
+../msg_gen/lisp/LocalMoveActionResult.lisp: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
 ../msg_gen/lisp/LocalMoveActionResult.lisp: ../manifest.xml
 ../msg_gen/lisp/LocalMoveActionResult.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/lisp/LocalMoveActionResult.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
@@ -385,6 +428,10 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LocalMoveActionFeedbac
 ../msg_gen/lisp/LocalMoveActionFeedback.lisp: ../msg/LocalMoveActionFeedback.msg
 ../msg_gen/lisp/LocalMoveActionFeedback.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
 ../msg_gen/lisp/LocalMoveActionFeedback.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/LocalMoveActionFeedback.lisp: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalID.msg
+../msg_gen/lisp/LocalMoveActionFeedback.lisp: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../msg_gen/lisp/LocalMoveActionFeedback.lisp: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalStatus.msg
+../msg_gen/lisp/LocalMoveActionFeedback.lisp: ../msg/LocalMoveFeedback.msg
 ../msg_gen/lisp/LocalMoveActionFeedback.lisp: ../manifest.xml
 ../msg_gen/lisp/LocalMoveActionFeedback.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/lisp/LocalMoveActionFeedback.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
@@ -435,9 +482,115 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LocalMoveActionFeedbac
 
 ../msg_gen/lisp/_package_LocalMoveActionFeedback.lisp: ../msg_gen/lisp/LocalMoveActionFeedback.lisp
 
+../msg_gen/lisp/PathPosition.lisp: ../msg/PathPosition.msg
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/PathPosition.lisp: ../manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/nav_msgs/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/ros/core/rosbuild/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/roslib/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/pluginlib/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/image_common/image_transport/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/pcl/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/rosbag/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/bond_core/bond/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/bond_core/smclib/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/bond_core/bondcpp/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/nodelet_core/nodelet/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/rosservice/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/share/actionlib/manifest.xml
+../msg_gen/lisp/PathPosition.lisp: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
+../msg_gen/lisp/PathPosition.lisp: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../msg_gen/lisp/PathPosition.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/PathPosition.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_PathPosition.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/PathPosition.msg
+
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/PathPosition.lisp
+
+../msg_gen/lisp/_package_PathPosition.lisp: ../msg_gen/lisp/PathPosition.lisp
+
+../msg_gen/lisp/PathStatus.lisp: ../msg/PathStatus.msg
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/PathStatus.lisp: ../manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/nav_msgs/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/ros/core/rosbuild/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/roslib/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/pluginlib/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/image_common/image_transport/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/pcl/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/rosbag/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/bond_core/bond/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/bond_core/smclib/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/bond_core/bondcpp/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/nodelet_core/nodelet/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/rosservice/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/share/actionlib/manifest.xml
+../msg_gen/lisp/PathStatus.lisp: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
+../msg_gen/lisp/PathStatus.lisp: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../msg_gen/lisp/PathStatus.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/PathStatus.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_PathStatus.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/PathStatus.msg
+
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/PathStatus.lisp
+
+../msg_gen/lisp/_package_PathStatus.lisp: ../msg_gen/lisp/PathStatus.lisp
+
 ../msg/LocalMoveAction.msg: ../action/LocalMove.action
 ../msg/LocalMoveAction.msg: /opt/ros/fuerte/share/actionlib_msgs/scripts/genaction.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg/LocalMoveAction.msg, ../msg/LocalMoveGoal.msg, ../msg/LocalMoveActionGoal.msg, ../msg/LocalMoveResult.msg, ../msg/LocalMoveActionResult.msg, ../msg/LocalMoveFeedback.msg, ../msg/LocalMoveActionFeedback.msg"
 	/opt/ros/fuerte/share/actionlib_msgs/scripts/genaction.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/action/LocalMove.action -o /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg
 
@@ -475,6 +628,12 @@ ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LocalMoveFeedback.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/LocalMoveActionFeedback.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LocalMoveActionFeedback.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/PathPosition.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_PathPosition.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/PathStatus.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_PathStatus.lisp
 ROSBUILD_genmsg_lisp: ../msg/LocalMoveAction.msg
 ROSBUILD_genmsg_lisp: ../msg/LocalMoveGoal.msg
 ROSBUILD_genmsg_lisp: ../msg/LocalMoveActionGoal.msg
