@@ -278,6 +278,10 @@ ros/assert.h
 ros/service_traits.h
 ../srv_gen/cpp/include/robotino_local_move/ros/service_traits.h
 
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveClient.cpp
+RobotinoLocalMoveClient.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveClient.h
+
 /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_local_move_server_node.cpp
 RobotinoLocalMoveServer.h
 /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveServer.h
@@ -285,10 +289,10 @@ RobotinoLocalMoveClient.h
 /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveClient.h
 robotino_local_move/PathPosition.h
 /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_local_move/PathPosition.h
-robotino_local_move/PathStatus.h
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_local_move/PathStatus.h
 robotino_local_move/Stop.h
 /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_local_move/Stop.h
+robotino_local_move/PathStatus.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_local_move/PathStatus.h
 
 /opt/ros/fuerte/include/XmlRpcDecl.h
 ros/macros.h

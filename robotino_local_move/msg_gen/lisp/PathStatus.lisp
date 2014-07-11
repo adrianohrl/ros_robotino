@@ -49,10 +49,10 @@
   "284aa12dd9e9e760802ac9f38036ea5e")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<PathStatus>)))
   "Returns full string definition for message of type '<PathStatus>"
-  (cl:format cl:nil "uint8 status~%# 0 -> Aborted~%# 1 -> Completed~%~%~%"))
+  (cl:format cl:nil "uint8 status~%# 0 -> Aborted~%# 1 -> Completed~%# 2 -> Timeout~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'PathStatus)))
   "Returns full string definition for message of type 'PathStatus"
-  (cl:format cl:nil "uint8 status~%# 0 -> Aborted~%# 1 -> Completed~%~%~%"))
+  (cl:format cl:nil "uint8 status~%# 0 -> Aborted~%# 1 -> Completed~%# 2 -> Timeout~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <PathStatus>))
   (cl:+ 0
      1

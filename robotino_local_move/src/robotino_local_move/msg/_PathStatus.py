@@ -12,6 +12,7 @@ class PathStatus(genpy.Message):
   _full_text = """uint8 status
 # 0 -> Aborted
 # 1 -> Completed
+# 2 -> Timeout
 
 """
   __slots__ = ['status']

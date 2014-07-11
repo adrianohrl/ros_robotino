@@ -88,6 +88,7 @@ struct Definition< ::robotino_local_move::PathStatus_<ContainerAllocator> > {
     return "uint8 status\n\
 # 0 -> Aborted\n\
 # 1 -> Completed\n\
+# 2 -> Timeout\n\
 \n\
 ";
   }

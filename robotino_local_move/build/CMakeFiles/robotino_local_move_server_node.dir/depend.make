@@ -9,7 +9,6 @@ CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ..
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h
-CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ../msg_gen/cpp/include/robotino_local_move/PathStatus.h
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ../src/RobotinoLocalMoveClient.cpp
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/include/XmlRpcDecl.h
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/include/XmlRpcValue.h

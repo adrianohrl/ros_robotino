@@ -8,24 +8,24 @@
 #include "RobotinoLocalMoveServer.h"
 #include "RobotinoLocalMoveClient.h"
 #include "robotino_local_move/PathPosition.h"
-#include "robotino_local_move/PathStatus.h"
 #include "robotino_local_move/Stop.h"
+#include "robotino_local_move/PathStatus.h"
 
 #define PI 3.14159
 #define MAX_TIME 60
+
+ros::Publisher status_pub;
 
 bool stopCallback(robotino_local_move::Stop::Request &req,
          robotino_local_move::Stop::Response &res)
 {
 	RobotinoLocalMoveClient rlmc;
 	rlmc.cancelGoal();
-	robotino_local_move::PathStatus status_msg;
-	status_msg.status = 0;
-	status_pub.publish(status_msg);
+	res.result = true;
 	return true;
 }
 
-void statusCallback(int status)
+void sendStatus(int status)
 {
 	robotino_local_move::PathStatus status_msg;
 	status_msg.status = status;
@@ -47,7 +47,8 @@ void pathCallback(const robotino_local_move::PathPosition::ConstPtr& msg)
 	if (rlmc.checkServer())
 	{
 		rlmc.sendGoal(goal);
-		rlmc.spin(statusCallback);
+		int status = rlmc.spin();
+		sendStatus(status);
 	}
 }
 
@@ -56,8 +57,9 @@ int main(int argc, char** argv)
 	ros::init(argc, argv, "robotino_local_move_server_node");
 	ros::NodeHandle n;
 	ros::Subscriber path_sub = n.subscribe("path", 1000, pathCallback);
-	ros::Publisher status_pub = n.advertise<robotino_local_move::PathStatus>("path/status", 1000);
 	ros::ServiceServer stop_srv = n.advertiseService("stop", stopCallback);
+	status_pub = n.advertise<robotino_local_move::PathStatus>("path/status", 1000);
+	RobotinoLocalMoveClient rlmc;
 	RobotinoLocalMoveServer rlms;
 	rlms.spin();
 

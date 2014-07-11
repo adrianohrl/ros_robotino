@@ -10,7 +10,6 @@ CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o
  ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h
  ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h
  ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h
- ../msg_gen/cpp/include/robotino_local_move/PathStatus.h
  /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveClient.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
