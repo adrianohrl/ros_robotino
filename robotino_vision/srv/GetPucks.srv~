@@ -1,0 +1,4 @@
+---
+# Two variable arrays that store the polar coordinates of each puck.
+float32 puck_distance		# r
+float32 puck_direction		# theta

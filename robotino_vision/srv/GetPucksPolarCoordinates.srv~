@@ -1,0 +1,3 @@
+---
+bool succeed			# true if image has been well processed, otherwise it is false
+robotino_vision/Puck[] pucks	# A vector of pucks

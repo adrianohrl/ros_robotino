@@ -1,0 +1,92 @@
+#include "ros/ros.h"
+#include "robotino_vision/GetPucksPolarCoordinates.h"
+#include "robotino_vision/Puck.h"
+#include <opencv/cvwimage.h>
+#include <opencv/highgui.h>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+
+bool getPucksPolarCoordinates(robotino_vision::GetPucksPolarCoordinates::Request  &req,
+         robotino_vision::GetPucksPolarCoordinates::Response &res);
+
+bool processImage(IplImage* imageRGB, std::vector<float> &distances, 
+	std::vector<float> &directions,	std::vector<string> &colors);
+
+IplImage* acquireFrame();
+
+IplImage* convertRGBtoHSL(IplImage* imageRGB);
+
+IplImage getImageSFromHSL(IplImage* imageHSL);
+
+int main(int argc, char **argv)
+{
+  	ros::init(argc, argv, "get_pucks_polar_coordinates_server");
+  	ros::NodeHandle nh_;
+
+  	ros::ServiceServer service = nh_.advertiseService("get_pucks_polar_coordinates", 
+		getPucksPolarCoordinates);
+  	ROS_INFO("Ready to get pucks polar coordinates.");
+  	ros::spin();
+
+  	return 0;
+}
+
+bool getPucksPolarCoordinates(robotino_vision::GetPucksPolarCoordinates::Request  &req,
+         robotino_vision::GetPucksPolarCoordinates::Response &res)
+{
+	bool succeed = false;
+  	std::vector<float> distances; 
+  	std::vector<float> directions;
+	std::vector<string> colors; 
+	IplImage* imageRGB = acquireImage();
+	status = processImage(imageRGB, distances, directions, colors);
+	std::vector<robotino_vision::Puck> pucks;
+  	for (unsigned i = 0; i < distances.size(); i++)
+	{
+		robotino_vision::Puck puck;
+		puck.distance = distances.at(i);
+		puck.direction = directions.at(i);
+		puck.color = colors.at(i);
+		pucks.push_back(puck);
+	}
+	res.succeed = succeed;
+  	res.pucks = pucks;
+  	ROS_INFO("request: (nothing) ");
+  	ROS_INFO("sending back response: ");
+	if (succeed)
+		ROS_INFO("   (Image has been well processed!!!)");
+	else
+		ROS_INFO("   (Image has not been processed!!!)");
+  	for (unsigned i = 0; i < distances.size(); i++)
+  		ROS_INFO("   (distance[%f], direction[%f], color[%s])", distances.at(i), 				directions.at(i), colors.at(i).c_str());
+  	return true;
+}
+
+IplImage* acquireImage()
+{
+	CvCapture* capture = cvCaptureFromCAM(CV_CAP_ANY);
+	IplImage* imageRGB = cvQueryFrame(capture);
+	return imageRGB;
+}
+
+bool processImage(IplImage* imageRGB, std::vector<float> &distances, 
+	std::vector<float> &directions,	std::vector<string> &colors)
+{
+	bool succeed = false;
+	IplImage* imageHSL = convertRGBtoHSL(imageRGB);
+	IplImage imageS = getImageSFromHSL(imageHSL);
+	return succeed;
+}
+
+IplImage* convertRGBtoHSL(IplImage* imageRGB)
+{
+	IplImage* imageHSL;
+	return imageHSL;
+}
+
+IplImage getImageSFromHSL(IplImage* imageHSL)
+{
+	IplImage imageS;
+	return imageS;
+}
+

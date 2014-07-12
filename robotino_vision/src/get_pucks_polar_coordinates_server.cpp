@@ -1,0 +1,185 @@
+#include "ros/ros.h"
+#include "robotino_vision/GetPucksPolarCoordinates.h"
+#include "robotino_vision/Puck.h"
+#include <opencv/cvwimage.h>
+#include <opencv/highgui.h>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+
+bool getPucksPolarCoordinates(robotino_vision::GetPucksPolarCoordinates::Request  &req,
+         robotino_vision::GetPucksPolarCoordinates::Response &res);
+
+bool processImage(IplImage* imageRGB, std::vector<float> &distances, 
+	std::vector<float> &directions,	std::vector<string> &colors);
+
+IplImage* acquireFrame();
+
+IplImage* convertRGBtoHSL(IplImage* imageRGB);
+
+IplImage getSFromHSL(IplImage* imageHSL);
+
+void increaseContrastUsingSquareValue(IplImage &imageMC);
+
+IplImage convertMCtoBW(IplImage imageMC, float threshold);
+
+void aplyConvexHullFilter(IplImage &imageBW);
+
+void applySmallParticleFilter(IplImage &imageBW, float min, float max, int m, int n);
+
+void getCentroids(IplImage imageBW, std::vector<int> &is, std::vector<int> &js);
+
+float getDistance(int i, int m);
+
+float getDirection(int p, int n);
+
+int main(int argc, char **argv)
+{
+  	ros::init(argc, argv, "get_pucks_polar_coordinates_server");
+  	ros::NodeHandle nh_;
+
+  	ros::ServiceServer service = nh_.advertiseService("get_pucks_polar_coordinates", 
+		getPucksPolarCoordinates);
+  	ROS_INFO("Ready to get pucks polar coordinates.");
+  	ros::spin();
+
+  	return 0;
+}
+
+bool getPucksPolarCoordinates(robotino_vision::GetPucksPolarCoordinates::Request  &req,
+         robotino_vision::GetPucksPolarCoordinates::Response &res)
+{
+	bool succeed = false;
+  	std::vector<float> distances, directions;
+	std::vector<string> colors; 
+	IplImage* imageRGB = acquireImage();
+	succeed = processImage(imageRGB, distances, directions, colors);
+	std::vector<robotino_vision::Puck> pucks;
+  	for (unsigned i = 0; i < distances.size(); i++)
+	{
+		robotino_vision::Puck puck;
+		puck.distance = distances.at(i);
+		puck.direction = directions.at(i);
+		puck.color = colors.at(i);
+		pucks.push_back(puck);
+	}
+	res.succeed = succeed;
+  	res.pucks = pucks;
+  	ROS_INFO("request: (nothing) ");
+  	ROS_INFO("sending back response: ");
+	if (succeed)
+		ROS_INFO("   (Image has been well processed!!!)");
+	else
+		ROS_INFO("   (Image has not been processed!!!)");
+  	for (unsigned i = 0; i < distances.size(); i++)
+  		ROS_INFO("   (distance[%f], direction[%f], color[%s])", distances.at(i), 				directions.at(i), colors.at(i).c_str());
+  	return succeed;
+}
+
+IplImage* acquireImage()
+{
+	CvCapture* capture = cvCaptureFromCAM(CV_CAP_ANY);
+	IplImage* imageRGB = cvQueryFrame(capture);
+	return imageRGB;
+}
+
+bool processImage(IplImage* imageRGB, std::vector<float> &distances, // image in RGB model
+	std::vector<float> &directions,	std::vector<string> &colors)
+{
+	bool succeed = false;
+	IplImage* imageHSL = convertRGBtoHSL(imageRGB); //image in HSL model
+	IplImage imageMC = getSFromHSL(imageHSL); // monochromatic (MC) image 
+	increaseContrastUsingSquareValue(imageMC);
+	IplImage imageBW = convertMCToBW(imageSquare, 30 / 255); // binary image
+	aplyConvexHullFilter(imageBW);
+	applySmallParticleFilter(imageBW, 600, 2500, 640, 480);
+	std::vector<int> is, js;
+	getCentroids(imageBW, is, js);
+	int m = 600;
+	distance.clear();
+	for (unsigned i = 0; i < is.size(); i++)
+	{
+		float distance = getDistance(i, m);
+		distances.push_back(distance);
+	}
+	int n = 800;
+	direction.clear();
+	for (unsigned j = 0; j < js.size(); j++)
+	{
+		float direction = getDirection(j, n);
+		directions.push_back(direction);
+	}
+	if (distance.size() == direction.size())
+		succeed = true;
+	return succeed;
+}
+
+IplImage* convertRGBtoHSL(IplImage* imageRGB)
+{
+	IplImage* imageHSL;
+	return imageHSL;
+}
+
+IplImage getMonochromaticImageSFromHSL(IplImage* imageHSL)
+{
+	IplImage imageS;
+	return imageS;
+}
+
+void increaseContrastUsingSquareValue(IplImage &imageMC)
+{
+	//manipulate imageMC!!!
+	//normalize(imageS); //pode passar por referencia
+	//squareValue(imageS); // pode passar por referencia
+	//imageS = desnormaliza(imageS); 
+}
+
+IplImage convertMCtoBW(IplImage imageMC, float threshold)
+{
+	IplImage imageBW;
+	return imageBW;
+}
+
+void aplyConvexHullFilter(IplImage &imageBW) // elimina os buracos dos objetos
+{
+	//manipulate imageBW
+}
+
+void applySmallParticleFilter(IplImage &imageBW, float min, float max, int m, int n)
+{
+	//manipulate imageBW
+}
+
+void getCentroids(IplImage imageBW, std::vector<int> &is, std::vector<int> &js)
+{
+	//manipulate is and js
+}
+
+float getDistance(int i, int m)
+{
+	// take a look at paper sheet 
+	/* givens:
+	const float d1 = ;// in meters
+	const float d2 = ;// in meters
+	const float h = ;// in meters
+	*/
+	const float alpha = arctan(d1 / h); // include <math.h>  ??????????
+	const float beta = arctan(d2 / h); // include <math.h>  ??????????
+	float r = 0.0, theta = 0.0;
+	theta = beta + (alpha - beta) * i / m; // i instead of p
+	r = h * tan(theta); // include <math.h>  ??????????
+	return r;
+}
+
+float getDirection(int p, int n)
+{/*
+	// take a look at paper sheet 
+	// givens:
+	const float k = ;// in meters
+	const float t = ;// in meters
+	const float h = ;// in meters
+
+	const float alpha = arctan(d1 / h); // include <math.h>  ??????????
+*/	
+	float r = 0.0, theta = 0.0;
+	return theta;
+}
