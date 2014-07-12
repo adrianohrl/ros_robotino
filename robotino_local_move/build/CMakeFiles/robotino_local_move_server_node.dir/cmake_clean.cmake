@@ -1,9 +1,13 @@
 FILE(REMOVE_RECURSE
   "../src/robotino_local_move/msg"
+  "../src/robotino_local_move/srv"
   "../msg_gen"
+  "../srv_gen"
   "../msg_gen"
+  "../srv_gen"
   "CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o"
   "CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o"
+  "CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o"
   "../bin/robotino_local_move_server_node.pdb"
   "../bin/robotino_local_move_server_node"
 )

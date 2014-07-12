@@ -23,7 +23,7 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 #uncomment if you have defined messages
 rosbuild_genmsg()
 #uncomment if you have defined services
-#rosbuild_gensrv()
+rosbuild_gensrv()
 
 #common commands for building c++ executables and libraries
 #rosbuild_add_library(${PROJECT_NAME} src/example.cpp)
@@ -36,11 +36,7 @@ rosbuild_genmsg()
 rosbuild_add_executable( 
   robotino_local_move_server_node 
   src/robotino_local_move_server_node.cpp
-  src/RobotinoLocalMoveServer.cpp)
-  
-rosbuild_add_executable( 
-  robotino_local_move_client_node 
-  src/robotino_local_move_client_node.cpp
+  src/RobotinoLocalMoveServer.cpp
   src/RobotinoLocalMoveClient.cpp)
   
 #rosbuild_add_executable( robotino_local_move_client_node src/robotino_local_move_client_node.cpp)
