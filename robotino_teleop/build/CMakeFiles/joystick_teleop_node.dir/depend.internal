@@ -3,7 +3,7 @@
 
 CMakeFiles/joystick_teleop_node.dir/src/JoystickTeleop.o
  ../include/JoystickTeleop.h
- /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_teleop/src/JoystickTeleop.cpp
+ /home/robotino/fuerte_workspace/sandbox/robotino/robotino_teleop/src/JoystickTeleop.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Twist.h
@@ -64,7 +64,7 @@ CMakeFiles/joystick_teleop_node.dir/src/JoystickTeleop.o
  /opt/ros/fuerte/include/std_msgs/Header.h
 CMakeFiles/joystick_teleop_node.dir/src/joystick_teleop_node.o
  ../include/JoystickTeleop.h
- /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_teleop/src/joystick_teleop_node.cpp
+ /home/robotino/fuerte_workspace/sandbox/robotino/robotino_teleop/src/joystick_teleop_node.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Twist.h

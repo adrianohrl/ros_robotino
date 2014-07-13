@@ -16,19 +16,19 @@ termios.h
 boost/thread/mutex.hpp
 ../include/boost/thread/mutex.hpp
 
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_teleop/src/KeyboardTeleop.cpp
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_teleop/src/KeyboardTeleop.cpp
 KeyboardTeleop.h
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_teleop/src/KeyboardTeleop.h
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_teleop/src/KeyboardTeleop.h
 
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_teleop/src/keyboard_teleop_node.cpp
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_teleop/src/keyboard_teleop_node.cpp
 KeyboardTeleop.h
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_teleop/src/KeyboardTeleop.h
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_teleop/src/KeyboardTeleop.h
 termios.h
 -
 signal.h
 -
 boost/thread/thread.hpp
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_teleop/src/boost/thread/thread.hpp
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_teleop/src/boost/thread/thread.hpp
 ros/ros.h
 -
 

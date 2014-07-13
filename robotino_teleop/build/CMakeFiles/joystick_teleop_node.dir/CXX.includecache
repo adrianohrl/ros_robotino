@@ -14,13 +14,13 @@ geometry_msgs/Twist.h
 sensor_msgs/Joy.h
 -
 
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_teleop/src/JoystickTeleop.cpp
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_teleop/src/JoystickTeleop.cpp
 JoystickTeleop.h
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_teleop/src/JoystickTeleop.h
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_teleop/src/JoystickTeleop.h
 
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_teleop/src/joystick_teleop_node.cpp
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_teleop/src/joystick_teleop_node.cpp
 JoystickTeleop.h
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_teleop/src/JoystickTeleop.h
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_teleop/src/JoystickTeleop.h
 ros/ros.h
 -
 

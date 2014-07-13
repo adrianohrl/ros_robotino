@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_planner
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_planner
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_planner/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_planner/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/RobotinoLocalPlanner.dir/depend.make
@@ -90,17 +93,17 @@ CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.o: /opt/ros/fuerte/
 CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
 CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
 CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.o: /opt/ros/fuerte/stacks/navigation/costmap_2d/msg_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_planner/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_planner/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.o -c /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_planner/src/RobotinoLocalPlanner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_planner/src/RobotinoLocalPlanner.cpp
 
 CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_planner/src/RobotinoLocalPlanner.cpp > CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_planner/src/RobotinoLocalPlanner.cpp > CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.i
 
 CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_planner/src/RobotinoLocalPlanner.cpp -o CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_planner/src/RobotinoLocalPlanner.cpp -o CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.s
 
 CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.o.requires:
 .PHONY : CMakeFiles/RobotinoLocalPlanner.dir/src/RobotinoLocalPlanner.o.requires
@@ -136,6 +139,6 @@ CMakeFiles/RobotinoLocalPlanner.dir/clean:
 .PHONY : CMakeFiles/RobotinoLocalPlanner.dir/clean
 
 CMakeFiles/RobotinoLocalPlanner.dir/depend:
-	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_planner/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_planner /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_planner /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_planner/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_planner/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_planner/build/CMakeFiles/RobotinoLocalPlanner.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_planner/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_planner /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_planner /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_planner/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_planner/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_planner/build/CMakeFiles/RobotinoLocalPlanner.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/RobotinoLocalPlanner.dir/depend
 

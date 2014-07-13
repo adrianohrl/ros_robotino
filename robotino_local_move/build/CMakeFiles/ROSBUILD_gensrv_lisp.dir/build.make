@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build
 
 # Utility rule file for ROSBUILD_gensrv_lisp.
 
@@ -53,7 +56,7 @@ CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_Stop.lisp
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../srv_gen/lisp/Stop.lisp: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
+../srv_gen/lisp/Stop.lisp: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/share/nav_msgs/manifest.xml
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/stacks/bullet/manifest.xml
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
@@ -80,20 +83,20 @@ CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_Stop.lisp
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
-../srv_gen/lisp/Stop.lisp: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
+../srv_gen/lisp/Stop.lisp: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/manifest.xml
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/share/actionlib/manifest.xml
-../srv_gen/lisp/Stop.lisp: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
-../srv_gen/lisp/Stop.lisp: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
+../srv_gen/lisp/Stop.lisp: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
+../srv_gen/lisp/Stop.lisp: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
 ../srv_gen/lisp/Stop.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/lisp/Stop.lisp, ../srv_gen/lisp/_package.lisp, ../srv_gen/lisp/_package_Stop.lisp"
-	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/srv/Stop.srv
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/srv/Stop.srv
 
 ../srv_gen/lisp/_package.lisp: ../srv_gen/lisp/Stop.lisp
 
@@ -115,6 +118,6 @@ CMakeFiles/ROSBUILD_gensrv_lisp.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_gensrv_lisp.dir/clean
 
 CMakeFiles/ROSBUILD_gensrv_lisp.dir/depend:
-	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_gensrv_lisp.dir/depend
 

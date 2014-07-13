@@ -1,6 +1,5 @@
 from ._LocalMoveFeedback import *
 from ._LocalMoveActionResult import *
-from ._PathPostion import *
 from ._LocalMoveActionGoal import *
 from ._LocalMoveAction import *
 from ._PathPosition import *

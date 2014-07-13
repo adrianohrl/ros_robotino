@@ -3,7 +3,7 @@
 
 CMakeFiles/keyboard_teleop_node.dir/src/KeyboardTeleop.o
  ../include/KeyboardTeleop.h
- /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_teleop/src/KeyboardTeleop.cpp
+ /home/robotino/fuerte_workspace/sandbox/robotino/robotino_teleop/src/KeyboardTeleop.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Twist.h
@@ -62,7 +62,7 @@ CMakeFiles/keyboard_teleop_node.dir/src/KeyboardTeleop.o
  /opt/ros/fuerte/include/rosconsole/macros_generated.h
 CMakeFiles/keyboard_teleop_node.dir/src/keyboard_teleop_node.o
  ../include/KeyboardTeleop.h
- /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_teleop/src/keyboard_teleop_node.cpp
+ /home/robotino/fuerte_workspace/sandbox/robotino/robotino_teleop/src/keyboard_teleop_node.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Twist.h

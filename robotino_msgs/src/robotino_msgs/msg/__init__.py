@@ -4,9 +4,9 @@ from ._PowerReadings import *
 from ._SetBHAPressures import *
 from ._SetGrapplerAxes import *
 from ._GrapplerReadings import *
-from ._MotorReadings import *
 from ._GripperState import *
 from ._AnalogReadings import *
+from ._SetGrapplerAxis import *
 from ._NorthStarReadings import *
 from ._DigitalReadings import *
-from ._SetGrapplerAxis import *
+from ._MotorReadings import *

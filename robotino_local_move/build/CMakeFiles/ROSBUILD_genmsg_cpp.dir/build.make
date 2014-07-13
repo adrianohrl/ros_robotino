@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build
 
 # Utility rule file for ROSBUILD_genmsg_cpp.
 
@@ -49,33 +52,17 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/Local
 CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h
 CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h
 CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h
-CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h
-CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h
-CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h
-CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h
-CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h
-CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h
-CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathPosition.h
-CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h
 CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathStatus.h
+CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathPosition.h
 
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: ../msg/LocalMoveAction.msg
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalID.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: ../msg/LocalMoveResult.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: ../msg/LocalMoveActionResult.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: ../msg/LocalMoveActionFeedback.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: ../msg/LocalMoveActionGoal.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: ../msg/LocalMoveGoal.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalStatus.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: ../msg/LocalMoveFeedback.msg
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: ../manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/share/nav_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
@@ -102,20 +89,20 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathS
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/share/actionlib/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
-../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
+../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
+../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveAction.msg
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/msg/LocalMoveAction.msg
 
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: ../msg/LocalMoveGoal.msg
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
@@ -124,7 +111,7 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathS
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/share/nav_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
@@ -151,32 +138,29 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathS
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/share/actionlib/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
-../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
+../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
+../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveGoal.msg
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/msg/LocalMoveGoal.msg
 
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: ../msg/LocalMoveActionGoal.msg
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalID.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: ../msg/LocalMoveGoal.msg
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: ../manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/share/nav_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
@@ -203,20 +187,20 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathS
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/share/actionlib/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
+../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
+../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveActionGoal.msg
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/msg/LocalMoveActionGoal.msg
 
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: ../msg/LocalMoveResult.msg
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
@@ -225,7 +209,7 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathS
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/share/nav_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
@@ -252,33 +236,29 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathS
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/share/actionlib/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
-../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
+../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
+../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveResult.msg
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/msg/LocalMoveResult.msg
 
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: ../msg/LocalMoveActionResult.msg
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalID.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: ../msg/LocalMoveResult.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalStatus.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: ../manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/share/nav_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
@@ -305,20 +285,20 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathS
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/share/actionlib/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
+../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
+../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveActionResult.msg
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/msg/LocalMoveActionResult.msg
 
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: ../msg/LocalMoveFeedback.msg
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
@@ -327,7 +307,7 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathS
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/share/nav_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
@@ -354,33 +334,29 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathS
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/share/actionlib/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
-../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
+../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
+../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveFeedback.msg
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/msg/LocalMoveFeedback.msg
 
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: ../msg/LocalMoveActionFeedback.msg
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalID.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalStatus.msg
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: ../msg/LocalMoveFeedback.msg
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: ../manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/share/nav_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
@@ -407,69 +383,20 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathS
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/share/actionlib/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
-../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
+../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
+../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveActionFeedback.msg
-
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: ../msg/PathPosition.msg
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: ../manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/nav_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/rospy/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/rostest/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/roswtf/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/message_filters/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/ros/core/rosbuild/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/roslib/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/pluginlib/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/image_common/image_transport/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/pcl/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/rosbag/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/bond_core/bond/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/bond_core/smclib/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/bond_core/bondcpp/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/rosservice/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/actionlib/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_local_move/PathPosition.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/PathPosition.msg
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/msg/LocalMoveActionFeedback.msg
 
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: ../msg/PathStatus.msg
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
@@ -478,7 +405,7 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathS
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/share/nav_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
@@ -505,26 +432,75 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathS
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/share/actionlib/manifest.xml
-../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
-../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
+../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
+../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
 ../msg_gen/cpp/include/robotino_local_move/PathStatus.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_local_move/PathStatus.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/PathStatus.msg
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/msg/PathStatus.msg
+
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: ../msg/PathPosition.msg
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: ../manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/nav_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/ros/core/rosbuild/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/roslib/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/pluginlib/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/image_common/image_transport/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/pcl/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/rosbag/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/bond_core/bond/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/bond_core/smclib/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/bond_core/bondcpp/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/rosservice/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/share/actionlib/manifest.xml
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../msg_gen/cpp/include/robotino_local_move/PathPosition.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_local_move/PathPosition.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/msg/PathPosition.msg
 
 ../msg/LocalMoveAction.msg: ../action/LocalMove.action
 ../msg/LocalMoveAction.msg: /opt/ros/fuerte/share/actionlib_msgs/scripts/genaction.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg/LocalMoveAction.msg, ../msg/LocalMoveGoal.msg, ../msg/LocalMoveActionGoal.msg, ../msg/LocalMoveResult.msg, ../msg/LocalMoveActionResult.msg, ../msg/LocalMoveFeedback.msg, ../msg/LocalMoveActionFeedback.msg"
-	/opt/ros/fuerte/share/actionlib_msgs/scripts/genaction.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/action/LocalMove.action -o /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg
+	/opt/ros/fuerte/share/actionlib_msgs/scripts/genaction.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/action/LocalMove.action -o /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/msg
 
 ../msg/LocalMoveGoal.msg: ../msg/LocalMoveAction.msg
 
@@ -546,8 +522,8 @@ ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.
 ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h
 ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h
 ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h
-ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathPosition.h
 ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathStatus.h
+ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_local_move/PathPosition.h
 ROSBUILD_genmsg_cpp: ../msg/LocalMoveAction.msg
 ROSBUILD_genmsg_cpp: ../msg/LocalMoveGoal.msg
 ROSBUILD_genmsg_cpp: ../msg/LocalMoveActionGoal.msg
@@ -567,6 +543,6 @@ CMakeFiles/ROSBUILD_genmsg_cpp.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_genmsg_cpp.dir/clean
 
 CMakeFiles/ROSBUILD_genmsg_cpp.dir/depend:
-	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles/ROSBUILD_genmsg_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles/ROSBUILD_genmsg_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_genmsg_cpp.dir/depend
 

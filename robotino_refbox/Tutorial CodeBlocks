@@ -1,0 +1,6 @@
+roscd PackageName
+mkdir build_codeblocks
+cd build_codeblocks
+cmake -G "CodeBlocks - Unix Makefiles" ..
+
+Equivalente ao make clean, porem para o ROS Stack = rosmake --target=clean
