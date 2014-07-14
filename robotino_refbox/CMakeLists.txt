@@ -36,5 +36,5 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 #rosbuild_add_boost_directories()
 rosbuild_add_executable(refbox_talker src/refbox_talker.cpp)
-TARGET_LINK_LIBRARIES(refbox_talker llsfrbcore llsfrbutils llsfrbconfig llsf_protobuf_comm llsf_msgs libprotobuf.so.7)
+TARGET_LINK_LIBRARIES(refbox_talker llsfrbcore llsfrbutils llsfrbconfig llsf_protobuf_comm llsf_msgs protobuf)
 rosbuild_link_boost(refbox_talker filesystem system)

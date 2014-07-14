@@ -32,6 +32,12 @@ LaserRangeFinderROS.h
 ros/ros.h
 -
 
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp
+ComROS.h
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.h
+sstream
+-
+
 /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/LaserRangeFinderROS.cpp
 LaserRangeFinderROS.h
 /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/LaserRangeFinderROS.h

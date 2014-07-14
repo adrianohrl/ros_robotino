@@ -32,6 +32,13 @@ void DistanceSensorArrayROS::distancesChangedEvent(const float* distances, unsig
 	distances_msg_.header.frame_id = "base_link";
 	distances_msg_.points.resize(size);
 
+	float* distances_n;
+
+	for(unsigned int i = 0; i < size; ++i)
+	{
+		distances_n[i] = distances[i] + 0.2;
+	}
+
 	for(unsigned int i = 0; i < size; ++i)
 	{
 		// 0.698 radians = 40 Degrees
@@ -49,10 +56,7 @@ void DistanceSensorArrayROS::distancesChangedEvent(const float* distances, unsig
 	//{
 		// 0.698 radians = 40 Degrees
 		// 0.2 is the radius of the robot
-	//	distances[i]+=0.2;
-		//distances_msg_.points[i].x = ( distances[i] + 0.2 ) * cos(0.698 * i);
-		//distances_msg_.points[i].y = ( distances[i] + 0.2 ) * sin(0.698 * i);
-		//distances_msg_.points[i].z = 0.05; // 5cm above ground
+		//distances[i]+=0.2;
 	//}
 
 
@@ -75,12 +79,12 @@ void DistanceSensorArrayROS::distancesChangedEvent(const float* distances, unsig
 	//ROS_INFO(" num intensities: %d num ranges: %d", numIntensities, numRanges );
 	//if( ranges != NULL )
 	//{
-		memcpy( laser_scan_msg_.ranges.data(), distances, size * sizeof(float) );
+		memcpy( laser_scan_msg_.ranges.data(), distances_n, size * sizeof(float) );
 	//}
 
 	//if( intensities != NULL )
 	//{
-		memcpy( laser_scan_msg_.intensities.data(), distances, size * sizeof(float) );
+		memcpy( laser_scan_msg_.intensities.data(), distances_n, size * sizeof(float) );
 	//}
 
 	// Publish the message
