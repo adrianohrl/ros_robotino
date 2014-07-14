@@ -32,7 +32,7 @@ void DistanceSensorArrayROS::distancesChangedEvent(const float* distances, unsig
 	distances_msg_.header.frame_id = "base_link";
 	distances_msg_.points.resize(size);
 
-	float* distances_n;
+	float distances_n[size];
 
 	for(unsigned int i = 0; i < size; ++i)
 	{
