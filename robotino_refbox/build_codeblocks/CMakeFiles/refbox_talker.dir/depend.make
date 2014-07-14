@@ -15,7 +15,6 @@ CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/msgs/PuckInfo.pb.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/msgs/RobotInfo.pb.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/msgs/Team.pb.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/msgs/Time.pb.h
-CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/msgs/VersionInfo.pb.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/protobuf_comm/frame_header.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/protobuf_comm/message_register.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/protobuf_comm/peer.h

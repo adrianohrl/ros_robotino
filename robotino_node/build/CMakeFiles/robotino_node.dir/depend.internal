@@ -509,6 +509,7 @@ CMakeFiles/robotino_node.dir/src/DistanceSensorArrayROS.o
  /opt/ros/fuerte/include/ros/wall_timer_options.h
  /opt/ros/fuerte/include/rosconsole/macros_generated.h
  /opt/ros/fuerte/include/sensor_msgs/ChannelFloat32.h
+ /opt/ros/fuerte/include/sensor_msgs/LaserScan.h
  /opt/ros/fuerte/include/sensor_msgs/PointCloud.h
  /opt/ros/fuerte/include/std_msgs/Header.h
  /usr/local/robotino/api2/include/rec/robotino/api2/ComId.h
@@ -1585,6 +1586,7 @@ CMakeFiles/robotino_node.dir/src/RobotinoNode.o
  /opt/ros/fuerte/include/sensor_msgs/ChannelFloat32.h
  /opt/ros/fuerte/include/sensor_msgs/Image.h
  /opt/ros/fuerte/include/sensor_msgs/JointState.h
+ /opt/ros/fuerte/include/sensor_msgs/LaserScan.h
  /opt/ros/fuerte/include/sensor_msgs/PointCloud.h
  /opt/ros/fuerte/include/sensor_msgs/PointCloud2.h
  /opt/ros/fuerte/include/sensor_msgs/PointField.h
@@ -1919,6 +1921,7 @@ CMakeFiles/robotino_node.dir/src/robotino_node.o
  /opt/ros/fuerte/include/sensor_msgs/ChannelFloat32.h
  /opt/ros/fuerte/include/sensor_msgs/Image.h
  /opt/ros/fuerte/include/sensor_msgs/JointState.h
+ /opt/ros/fuerte/include/sensor_msgs/LaserScan.h
  /opt/ros/fuerte/include/sensor_msgs/PointCloud.h
  /opt/ros/fuerte/include/sensor_msgs/PointCloud2.h
  /opt/ros/fuerte/include/sensor_msgs/PointField.h

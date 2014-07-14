@@ -21,9 +21,9 @@ void LaserRangeFinderROS::setNumber( int number )
 	std::stringstream topic;
 
 	if( number == 0)
-		topic << "scan";
+		topic << "scan1";
 	else
-		topic << "scan" << number;
+		topic << "scan1" << number;
 
 	laser_scan_pub_ = nh_.advertise<sensor_msgs::LaserScan>(topic.str(), 1, false);
 

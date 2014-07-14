@@ -12,6 +12,7 @@
 
 #include <ros/ros.h>
 #include <sensor_msgs/PointCloud.h>
+#include <sensor_msgs/LaserScan.h>
 
 class DistanceSensorArrayROS: public rec::robotino::api2::DistanceSensorArray
 {
@@ -24,9 +25,12 @@ public:
 private:
 	ros::NodeHandle nh_;
 
+	ros::Publisher laser_scan_pub_;
 	ros::Publisher distances_pub_;
 
+
 	sensor_msgs::PointCloud distances_msg_;
+	sensor_msgs::LaserScan laser_scan_msg_;
 
 	ros::Time stamp_;
 

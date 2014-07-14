@@ -16,7 +16,6 @@ CMakeFiles/refbox_talker.dir/src/refbox_talker.o
  ../include/msgs/RobotInfo.pb.h
  ../include/msgs/Team.pb.h
  ../include/msgs/Time.pb.h
- ../include/msgs/VersionInfo.pb.h
  ../include/protobuf_comm/frame_header.h
  ../include/protobuf_comm/message_register.h
  ../include/protobuf_comm/peer.h

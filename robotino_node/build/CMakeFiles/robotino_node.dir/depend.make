@@ -508,6 +508,7 @@ CMakeFiles/robotino_node.dir/src/DistanceSensorArrayROS.o: /opt/ros/fuerte/inclu
 CMakeFiles/robotino_node.dir/src/DistanceSensorArrayROS.o: /opt/ros/fuerte/include/ros/wall_timer_options.h
 CMakeFiles/robotino_node.dir/src/DistanceSensorArrayROS.o: /opt/ros/fuerte/include/rosconsole/macros_generated.h
 CMakeFiles/robotino_node.dir/src/DistanceSensorArrayROS.o: /opt/ros/fuerte/include/sensor_msgs/ChannelFloat32.h
+CMakeFiles/robotino_node.dir/src/DistanceSensorArrayROS.o: /opt/ros/fuerte/include/sensor_msgs/LaserScan.h
 CMakeFiles/robotino_node.dir/src/DistanceSensorArrayROS.o: /opt/ros/fuerte/include/sensor_msgs/PointCloud.h
 CMakeFiles/robotino_node.dir/src/DistanceSensorArrayROS.o: /opt/ros/fuerte/include/std_msgs/Header.h
 CMakeFiles/robotino_node.dir/src/DistanceSensorArrayROS.o: /usr/local/robotino/api2/include/rec/robotino/api2/ComId.h
@@ -1584,6 +1585,7 @@ CMakeFiles/robotino_node.dir/src/RobotinoNode.o: /opt/ros/fuerte/include/sensor_
 CMakeFiles/robotino_node.dir/src/RobotinoNode.o: /opt/ros/fuerte/include/sensor_msgs/ChannelFloat32.h
 CMakeFiles/robotino_node.dir/src/RobotinoNode.o: /opt/ros/fuerte/include/sensor_msgs/Image.h
 CMakeFiles/robotino_node.dir/src/RobotinoNode.o: /opt/ros/fuerte/include/sensor_msgs/JointState.h
+CMakeFiles/robotino_node.dir/src/RobotinoNode.o: /opt/ros/fuerte/include/sensor_msgs/LaserScan.h
 CMakeFiles/robotino_node.dir/src/RobotinoNode.o: /opt/ros/fuerte/include/sensor_msgs/PointCloud.h
 CMakeFiles/robotino_node.dir/src/RobotinoNode.o: /opt/ros/fuerte/include/sensor_msgs/PointCloud2.h
 CMakeFiles/robotino_node.dir/src/RobotinoNode.o: /opt/ros/fuerte/include/sensor_msgs/PointField.h
@@ -1918,6 +1920,7 @@ CMakeFiles/robotino_node.dir/src/robotino_node.o: /opt/ros/fuerte/include/sensor
 CMakeFiles/robotino_node.dir/src/robotino_node.o: /opt/ros/fuerte/include/sensor_msgs/ChannelFloat32.h
 CMakeFiles/robotino_node.dir/src/robotino_node.o: /opt/ros/fuerte/include/sensor_msgs/Image.h
 CMakeFiles/robotino_node.dir/src/robotino_node.o: /opt/ros/fuerte/include/sensor_msgs/JointState.h
+CMakeFiles/robotino_node.dir/src/robotino_node.o: /opt/ros/fuerte/include/sensor_msgs/LaserScan.h
 CMakeFiles/robotino_node.dir/src/robotino_node.o: /opt/ros/fuerte/include/sensor_msgs/PointCloud.h
 CMakeFiles/robotino_node.dir/src/robotino_node.o: /opt/ros/fuerte/include/sensor_msgs/PointCloud2.h
 CMakeFiles/robotino_node.dir/src/robotino_node.o: /opt/ros/fuerte/include/sensor_msgs/PointField.h

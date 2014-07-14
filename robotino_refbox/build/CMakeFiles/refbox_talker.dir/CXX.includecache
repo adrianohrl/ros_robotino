@@ -240,20 +240,6 @@ google/protobuf/extension_set.h
 google/protobuf/generated_message_reflection.h
 -
 
-../include/msgs/VersionInfo.pb.h
-string
--
-google/protobuf/stubs/common.h
--
-google/protobuf/generated_message_util.h
--
-google/protobuf/repeated_field.h
--
-google/protobuf/extension_set.h
--
-google/protobuf/generated_message_reflection.h
--
-
 ../include/protobuf_comm/frame_header.h
 cstdint
 -
@@ -342,8 +328,6 @@ msgs/BeaconSignal.pb.h
 msgs/OrderInfo.pb.h
 -
 msgs/GameState.pb.h
--
-msgs/VersionInfo.pb.h
 -
 msgs/ExplorationInfo.pb.h
 -

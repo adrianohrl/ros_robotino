@@ -10,6 +10,7 @@
 #include <msgs/BeaconSignal.pb.h>
 #include <msgs/OrderInfo.pb.h>
 #include <msgs/GameState.pb.h>
+#include <msgs/VersionInfo.pb.h>
 #include <msgs/ExplorationInfo.pb.h>
 #include <msgs/MachineInfo.pb.h>
 #include <msgs/MachineReport.pb.h>
@@ -24,7 +25,6 @@ using namespace protobuf_comm;
 using namespace llsf_msgs;
 using namespace fawkes;
 
-std::string selectMessage = "All";
 static bool quit = false;
 static boost::asio::deadline_timer *timer_ = NULL;
 std::string name_;
@@ -65,8 +65,6 @@ void handle_send_error(std::string msg)
 void handle_message(boost::asio::ip::udp::endpoint &sender, uint16_t component_id, uint16_t msg_type,
 		    std::shared_ptr<google::protobuf::Message> msg)
 {
-    if(selectMessage == "BeaconSignal" || selectMessage == "All")
-    {
 	// BeaconSignal - Lê as informações enviadas no BeaconSignal dos outros Robôs ou Refbox
 	std::shared_ptr<BeaconSignal> b;
 	if ((b = std::dynamic_pointer_cast<BeaconSignal>(msg)))
@@ -79,10 +77,7 @@ void handle_message(boost::asio::ip::udp::endpoint &sender, uint16_t component_i
 		b->number(), b->team_name().c_str(), b->peer_name().c_str(), b->seq(),
 		b->has_team_color() ? Team_Name(b->team_color()).c_str() : "NONE");
 	}
-    }
 
-    if(selectMessage == "GameState" || selectMessage == "All")
-    {
 	// GameState - Lê as informações enviadas no GameState
 	std::shared_ptr<GameState> gs;
 	if ((gs = std::dynamic_pointer_cast<GameState>(msg)))
@@ -137,12 +132,8 @@ void handle_message(boost::asio::ip::udp::endpoint &sender, uint16_t component_i
 			peer_team_->setup_crypto("", "");
 		}
 	}
-    }
 
-    if(selectMessage == "OrderInfo" || selectMessage == "All")
-    {
 	// OrderInfo - Lê as informações enviadas no OrderInfo
-	// Recebe o pedido de peça, com qual peça é necessária e o periodo de tempo no qual o pedido é valido
 	std::shared_ptr<OrderInfo> oi;
 	if ((oi = std::dynamic_pointer_cast<OrderInfo>(msg)))
 	{
@@ -162,13 +153,15 @@ void handle_message(boost::asio::ip::udp::endpoint &sender, uint16_t component_i
 			llsf_msgs::Order::DeliveryGate_Name(o.delivery_gate()).c_str());
 		}
 	}
-    }
 
-    if(selectMessage == "ExplorationInfo" || selectMessage == "All")
-    {
+	// VersionInfo - Lê as informações enviadas no VersionInfo
+	std::shared_ptr<VersionInfo> vi;
+	if ((vi = std::dynamic_pointer_cast<VersionInfo>(msg)))
+	{
+		printf("VersionInfo received: %s\n", vi->version_string().c_str());
+	}
+
 	// ExplorationInfo - Lê as informações enviadas no ExplorationInfo
-	// No início da fase de exploração, o Refbox envia qual combinação de luzes acesas
-	// irá representar cada tipo de máquina, além da posição e orientação de cada máquina.
 	std::shared_ptr<ExplorationInfo> ei;
 	if ((ei = std::dynamic_pointer_cast<ExplorationInfo>(msg)))
 	{
@@ -193,12 +186,8 @@ void handle_message(boost::asio::ip::udp::endpoint &sender, uint16_t component_i
 			em.pose().x(), em.pose().y(), em.pose().ori());
 		}
 	}
-    }
 
-    if(selectMessage == "MachineInfo" || selectMessage == "All")
-    {
 	// MachineInfo - Lê as informações enviadas no MachineInfo
-	// Enviado no inicio da Production Phase, mostra o tipo de cada máquina do time e sua posição
 	std::shared_ptr<MachineInfo> mi;
 	if ((mi = std::dynamic_pointer_cast<MachineInfo>(msg)))
 	{
@@ -213,10 +202,7 @@ void handle_message(boost::asio::ip::udp::endpoint &sender, uint16_t component_i
 			p.x(), p.y(), p.ori());
 		}
 	}
-    }
 
-    if(selectMessage == "MachineReport" || selectMessage == "All")
-    {
 	// BeaconSignal - Quando o robô recebe o BeaconSignal do Refbox, ele envia o MachineReport
 	std::shared_ptr<BeaconSignal> bs;
 	if ((bs = std::dynamic_pointer_cast<BeaconSignal>(msg)))
@@ -232,10 +218,7 @@ void handle_message(boost::asio::ip::udp::endpoint &sender, uint16_t component_i
 			peer_public_->send(report);
 		}
 	}
-    }
 
-    if(selectMessage == "MachineReportInfo" || selectMessage == "All")
-    {
 	// MachineReportInfo - Está dentro do MachineReport e mostra as máquinas já reportadas para o Refbox
 	std::shared_ptr<MachineReportInfo> mri;
 	if ((mri = std::dynamic_pointer_cast<MachineReportInfo>(msg)))
@@ -255,10 +238,7 @@ void handle_message(boost::asio::ip::udp::endpoint &sender, uint16_t component_i
 			printf("  no machines reported, yet\n");
 		}
 	}
-    }
 
-    if(selectMessage == "RobotInfo" || selectMessage == "All")
-    {
 	// RobotInfo - Lê as informações enviadas no RobotInfo
 	std::shared_ptr<RobotInfo> ri;
 	if ((ri = std::dynamic_pointer_cast<RobotInfo>(msg)))
@@ -282,26 +262,25 @@ void handle_message(boost::asio::ip::udp::endpoint &sender, uint16_t component_i
 			last_seen_ago, r.maintenance_cycles(), r.maintenance_time_remaining());
 		}
 	}
-    }
 }
 
-void send_beacon()
+void handle_timer(const boost::system::error_code& error)
 {
-		timespec start;
-		clock_gettime(CLOCK_REALTIME, &start);
-		int32_t sec = start.tv_sec;
-		int32_t nsec = start.tv_nsec;
-
+	if (! error)
+	{
+		boost::posix_time::ptime now(boost::posix_time::microsec_clock::universal_time());
 		std::shared_ptr<BeaconSignal> signal(new BeaconSignal());
-
 		Time *time = signal->mutable_time();
-        time->set_sec(sec);
-        time->set_nsec(nsec);
+		boost::posix_time::time_duration const since_epoch = now - boost::posix_time::from_time_t(0);
+
+		time->set_sec(static_cast<google::protobuf::int64>(since_epoch.total_seconds()));
+		time->set_nsec(static_cast<google::protobuf::int64>(since_epoch.fractional_seconds() *
+								    (1000000000/since_epoch.ticks_per_second())));
 
 		Pose2D *pose = signal->mutable_pose();
-		pose->set_x(1.0);   // Enviar a posição X do robô
-		pose->set_y(2.0);   // Enviar a posição Y do robô
-		pose->set_ori(3.0); // Enviar a orientação do robô
+		pose->set_x(1.0);
+		pose->set_y(2.0);
+		pose->set_ori(3.0);
 
 		Time *pose_time = pose->mutable_timestamp();
 		pose_time->set_sec(4);
@@ -313,6 +292,10 @@ void send_beacon()
 		signal->set_team_color(team_color_);
 		signal->set_seq(++seq_);
 		peer_team_->send(signal);
+
+		timer_->expires_at(timer_->expires_at() + boost::posix_time::milliseconds(2000));
+		timer_->async_wait(handle_timer);
+	}
 }
 
 /**
@@ -322,7 +305,8 @@ int main(int argc, char **argv)
 {
     machine_name_ = "M13";
 	machine_type_ = "T5";
-	name_ = "R1";
+
+	name_ = "Robo1";
 	team_name_ = "Expertinos";
 	team_color_ = CYAN;
 	config_ = new llsfrb::YamlConfiguration("/home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/cfg");
@@ -344,6 +328,7 @@ int main(int argc, char **argv)
 	message_register.add_message_type<BeaconSignal>();
 	message_register.add_message_type<OrderInfo>();
 	message_register.add_message_type<GameState>();
+	message_register.add_message_type<VersionInfo>();
 	message_register.add_message_type<ExplorationInfo>();
 	message_register.add_message_type<MachineInfo>();
 	message_register.add_message_type<MachineReport>();
@@ -395,9 +380,9 @@ int main(int argc, char **argv)
 		signals.async_wait(signal_handler);
 	#endif
 
-//	timer_ = new boost::asio::deadline_timer(io_service);
-//	timer_->expires_from_now(boost::posix_time::milliseconds(2000));
-//	timer_->async_wait(handle_timer);
+	timer_ = new boost::asio::deadline_timer(io_service);
+	timer_->expires_from_now(boost::posix_time::milliseconds(2000));
+	timer_->async_wait(handle_timer);
 
 	/**
 	* The ros::init() function needs to see argc and argv so that it can perform
@@ -437,7 +422,7 @@ int main(int argc, char **argv)
 	*/
 	ros::Publisher chatter_pub = n.advertise<std_msgs::String>("position", 100);
 
-	ros::Rate loop_rate(1); // Em Hz
+	ros::Rate loop_rate(10);
 
 	/**
 	* A count of how many messages we have sent. This is used to create
@@ -446,11 +431,11 @@ int main(int argc, char **argv)
 	int count = 0;
 	while (ros::ok())
 	{
-	    /*if(!quit)
+	    if(!quit)
 	    {
 	        io_service.run();
             io_service.reset();
-	    }*/
+	    }
 		/**
 		* This is a message object. You stuff it with data, and then publish it.
 		*/
@@ -460,7 +445,7 @@ int main(int argc, char **argv)
 		ss << "hello world " << count;
 		msg.data = ss.str();
 
-		//ROS_INFO("%s", msg.data.c_str());
+		ROS_INFO("%s", msg.data.c_str());
 
 		/**
 		* The publish() function is how you send messages. The parameter
@@ -469,8 +454,6 @@ int main(int argc, char **argv)
 		* in the constructor above.
 		*/
 		chatter_pub.publish(msg);
-
-		send_beacon();
 
 		ros::spinOnce();
 
