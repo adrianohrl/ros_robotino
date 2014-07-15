@@ -31,14 +31,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision
+CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build
+CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build
 
 # Utility rule file for rosbuild_premsgsrvgen.
 
@@ -60,6 +57,6 @@ CMakeFiles/rosbuild_premsgsrvgen.dir/clean:
 .PHONY : CMakeFiles/rosbuild_premsgsrvgen.dir/clean
 
 CMakeFiles/rosbuild_premsgsrvgen.dir/depend:
-	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles/rosbuild_premsgsrvgen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles/rosbuild_premsgsrvgen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rosbuild_premsgsrvgen.dir/depend
 

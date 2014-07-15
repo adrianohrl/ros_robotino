@@ -35,14 +35,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision
+CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build
+CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,9 +66,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -190,6 +187,19 @@ clean-test-results/fast:
 .PHONY : clean-test-results/fast
 
 #=============================================================================
+# Target rules for targets named robotino_camera_node
+
+# Build rule for target.
+robotino_camera_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robotino_camera_node
+.PHONY : robotino_camera_node
+
+# fast build rule for target.
+robotino_camera_node/fast:
+	$(MAKE) -f CMakeFiles/robotino_camera_node.dir/build.make CMakeFiles/robotino_camera_node.dir/build
+.PHONY : robotino_camera_node/fast
+
+#=============================================================================
 # Target rules for targets named rosbuild_precompile
 
 # Build rule for target.
@@ -229,19 +239,6 @@ rospack_genmsg/fast:
 .PHONY : rospack_genmsg/fast
 
 #=============================================================================
-# Target rules for targets named rospack_genmsg_all
-
-# Build rule for target.
-rospack_genmsg_all: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rospack_genmsg_all
-.PHONY : rospack_genmsg_all
-
-# fast build rule for target.
-rospack_genmsg_all/fast:
-	$(MAKE) -f CMakeFiles/rospack_genmsg_all.dir/build.make CMakeFiles/rospack_genmsg_all.dir/build
-.PHONY : rospack_genmsg_all/fast
-
-#=============================================================================
 # Target rules for targets named rospack_genmsg_libexe
 
 # Build rule for target.
@@ -266,19 +263,6 @@ rospack_gensrv: cmake_check_build_system
 rospack_gensrv/fast:
 	$(MAKE) -f CMakeFiles/rospack_gensrv.dir/build.make CMakeFiles/rospack_gensrv.dir/build
 .PHONY : rospack_gensrv/fast
-
-#=============================================================================
-# Target rules for targets named rospack_gensrv_all
-
-# Build rule for target.
-rospack_gensrv_all: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rospack_gensrv_all
-.PHONY : rospack_gensrv_all
-
-# fast build rule for target.
-rospack_gensrv_all/fast:
-	$(MAKE) -f CMakeFiles/rospack_gensrv_all.dir/build.make CMakeFiles/rospack_gensrv_all.dir/build
-.PHONY : rospack_gensrv_all/fast
 
 #=============================================================================
 # Target rules for targets named test
@@ -345,6 +329,66 @@ tests/fast:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
+# target to build an object file
+src/CameraROS.o:
+	$(MAKE) -f CMakeFiles/robotino_camera_node.dir/build.make CMakeFiles/robotino_camera_node.dir/src/CameraROS.o
+.PHONY : src/CameraROS.o
+
+# target to preprocess a source file
+src/CameraROS.i:
+	$(MAKE) -f CMakeFiles/robotino_camera_node.dir/build.make CMakeFiles/robotino_camera_node.dir/src/CameraROS.i
+.PHONY : src/CameraROS.i
+
+# target to generate assembly for a file
+src/CameraROS.s:
+	$(MAKE) -f CMakeFiles/robotino_camera_node.dir/build.make CMakeFiles/robotino_camera_node.dir/src/CameraROS.s
+.PHONY : src/CameraROS.s
+
+# target to build an object file
+src/ComROS.o:
+	$(MAKE) -f CMakeFiles/robotino_camera_node.dir/build.make CMakeFiles/robotino_camera_node.dir/src/ComROS.o
+.PHONY : src/ComROS.o
+
+# target to preprocess a source file
+src/ComROS.i:
+	$(MAKE) -f CMakeFiles/robotino_camera_node.dir/build.make CMakeFiles/robotino_camera_node.dir/src/ComROS.i
+.PHONY : src/ComROS.i
+
+# target to generate assembly for a file
+src/ComROS.s:
+	$(MAKE) -f CMakeFiles/robotino_camera_node.dir/build.make CMakeFiles/robotino_camera_node.dir/src/ComROS.s
+.PHONY : src/ComROS.s
+
+# target to build an object file
+src/RobotinoCameraNode.o:
+	$(MAKE) -f CMakeFiles/robotino_camera_node.dir/build.make CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.o
+.PHONY : src/RobotinoCameraNode.o
+
+# target to preprocess a source file
+src/RobotinoCameraNode.i:
+	$(MAKE) -f CMakeFiles/robotino_camera_node.dir/build.make CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.i
+.PHONY : src/RobotinoCameraNode.i
+
+# target to generate assembly for a file
+src/RobotinoCameraNode.s:
+	$(MAKE) -f CMakeFiles/robotino_camera_node.dir/build.make CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.s
+.PHONY : src/RobotinoCameraNode.s
+
+# target to build an object file
+src/robotino_camera_node.o:
+	$(MAKE) -f CMakeFiles/robotino_camera_node.dir/build.make CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.o
+.PHONY : src/robotino_camera_node.o
+
+# target to preprocess a source file
+src/robotino_camera_node.i:
+	$(MAKE) -f CMakeFiles/robotino_camera_node.dir/build.make CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.i
+.PHONY : src/robotino_camera_node.i
+
+# target to generate assembly for a file
+src/robotino_camera_node.s:
+	$(MAKE) -f CMakeFiles/robotino_camera_node.dir/build.make CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.s
+.PHONY : src/robotino_camera_node.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -360,18 +404,29 @@ help:
 	@echo "... clean-test-results"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... robotino_camera_node"
 	@echo "... rosbuild_precompile"
 	@echo "... rosbuild_premsgsrvgen"
 	@echo "... rospack_genmsg"
-	@echo "... rospack_genmsg_all"
 	@echo "... rospack_genmsg_libexe"
 	@echo "... rospack_gensrv"
-	@echo "... rospack_gensrv_all"
 	@echo "... test"
 	@echo "... test-future"
 	@echo "... test-results"
 	@echo "... test-results-run"
 	@echo "... tests"
+	@echo "... src/CameraROS.o"
+	@echo "... src/CameraROS.i"
+	@echo "... src/CameraROS.s"
+	@echo "... src/ComROS.o"
+	@echo "... src/ComROS.i"
+	@echo "... src/ComROS.s"
+	@echo "... src/RobotinoCameraNode.o"
+	@echo "... src/RobotinoCameraNode.i"
+	@echo "... src/RobotinoCameraNode.s"
+	@echo "... src/robotino_camera_node.o"
+	@echo "... src/robotino_camera_node.i"
+	@echo "... src/robotino_camera_node.s"
 .PHONY : help
 
 

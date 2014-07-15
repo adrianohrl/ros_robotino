@@ -17,9 +17,9 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 #uncomment if you have defined messages
-rosbuild_genmsg()
+#rosbuild_genmsg()
 #uncomment if you have defined services
-rosbuild_gensrv()
+#rosbuild_gensrv()
 
 #common commands for building c++ executables and libraries
 #rosbuild_add_library(${PROJECT_NAME} src/example.cpp)
@@ -28,3 +28,24 @@ rosbuild_gensrv()
 #rosbuild_link_boost(${PROJECT_NAME} thread)
 #rosbuild_add_executable(example examples/example.cpp)
 #target_link_libraries(example ${PROJECT_NAME})
+
+set(
+  CMAKE_MODULE_PATH
+  /usr/local/robotino/api2/cmake
+)
+find_package(RobotinoAPI2 REQUIRED)
+
+rosbuild_add_executable(
+  robotino_camera_node
+  src/robotino_camera_node.cpp
+  src/ComROS.cpp
+  src/CameraROS.cpp
+  src/RobotinoCameraNode.cpp
+)
+
+target_link_libraries(
+  robotino_camera_node
+  ${REC_ROBOTINO_API2_LIBRARY}
+)
+
+#rosbuild_add_executable(get_pucks_polar_coordinates_server src/get_pucks_polar_coordinates_server.cpp)
