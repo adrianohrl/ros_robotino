@@ -15,6 +15,18 @@ opencv2/core/core.hpp
 ../include/opencv2/core/core.hpp
 opencv2/highgui/highgui.hpp
 ../include/opencv2/highgui/highgui.hpp
+stdio.h
+-
+unistd.h
+-
+fcntl.h
+-
+errno.h
+-
+sys/ioctl.h
+-
+linux/usbdevice_fl.h
+-
 
 ../include/ComROS.h
 rec/robotino/api2/Com.h

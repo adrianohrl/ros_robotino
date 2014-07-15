@@ -7,20 +7,19 @@
 
 #include "CameraROS.h"
 
-
 CameraROS::CameraROS()
 	: enableImageReceivedEvent_(true),
-	  isInOrdinaryMode_(false)
+	  isInOrdinaryMode_(false),
+	  counter(0)
 {	
-	setFormat(640, 480, "raw");
+	setFormat(480, 640, "raw");
 	toggleMode();	
 }
 
 CameraROS::~CameraROS()
 {	
-	setAutoExposureEnabled(true);
-	setExposure(500);
-	setBGREnabled(true);
+	isInOrdinaryMode_ = false;
+	toggleMode();
 }
 
 void CameraROS::setNumber(int number)
@@ -40,13 +39,23 @@ void CameraROS::imageReceivedEvent(
 		unsigned int height, 
 		unsigned int step)
 {
+	if (counter > 20)
+	{
+		counter = 0;
+		toggleMode();
+	}
 	if (enableImageReceivedEvent_)
 	{
+		ROS_INFO("Image Format: (height: %d, width: %d)", height, width);
+		if (isInOrdinaryMode_)
+			ROS_INFO("Running Mode: Ordinary Mode");
+		else
+			ROS_INFO("Running Mode: Lamp Post Mode");
 		imgBGR_ = Mat(height, width, CV_8UC3, (void*) data, step); 
 		imshow("Amostragem", imgBGR_);
 		waitKey(80);		
-		//setEnableImageReceivedEvent(true);
 	}
+	counter++;
 }
 
 void CameraROS::setEnableImageReceivedEvent(bool enable)
@@ -67,7 +76,7 @@ void CameraROS::toggleMode()
 void CameraROS::activateLampPostMode()
 {
 	setAutoExposureEnabled(false);
-	setExposure(15);
+	setExposure(50);
 }
 
 void CameraROS::activateOrdinaryMode()
@@ -75,4 +84,15 @@ void CameraROS::activateOrdinaryMode()
 	setAutoExposureEnabled(true);
 	setAutoWhiteBalanceEnabled(true);
 	setAutoFocusEnabled(true);
+	const char usb_port = "/dev/bus/usb/001/019";
+	int fd, rc;
+	fd = open(usb_port, O_WRONLY);	
+	rc = ioctl(fd, USBDEVFS_RESET, 0);
+	if (rc < 0)
+	{
+		perror("Deu erro ao resetar a porta usb");
+		return;
+	}
+	ROS_INFO("Porta USB resetada!!!");
+	close(fd);
 }

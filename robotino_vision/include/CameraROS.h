@@ -12,6 +12,12 @@
 #include "rec/robotino/api2/Camera.h"
 #include "opencv2/core/core.hpp"
 #include "opencv2/highgui/highgui.hpp"
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <sys/ioctl.h>
+#include <linux/usbdevice_fl.h>
 using namespace cv;
 
 class CameraROS : public rec::robotino::api2::Camera
@@ -31,6 +37,7 @@ private:
 	bool enableImageReceivedEvent_;
 	bool isInOrdinaryMode_;
 	Mat imgBGR_;
+	unsigned int counter;
 
 	void imageReceivedEvent(
 			const unsigned char* data,
