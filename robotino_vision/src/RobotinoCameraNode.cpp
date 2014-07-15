@@ -35,7 +35,7 @@ void RobotinoCameraNode::initModules()
 
 bool RobotinoCameraNode::spin()
 {
-	ros::Rate loop_rate( 30 );
+	ros::Rate loop_rate(30);
 	while(nh_.ok())
 	{
 		ros::Time curr_time = ros::Time::now();

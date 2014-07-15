@@ -9,13 +9,18 @@
 
 
 CameraROS::CameraROS()
-	: enableImageReceivedEvent_(true)
-{
-	setBGREnabled(true);
+	: enableImageReceivedEvent_(true),
+	  isInOrdinaryMode_(false)
+{	
+	setFormat(640, 480, "raw");
+	toggleMode();	
 }
 
 CameraROS::~CameraROS()
-{
+{	
+	setAutoExposureEnabled(true);
+	setExposure(500);
+	setBGREnabled(true);
 }
 
 void CameraROS::setNumber(int number)
@@ -38,13 +43,36 @@ void CameraROS::imageReceivedEvent(
 	if (enableImageReceivedEvent_)
 	{
 		imgBGR_ = Mat(height, width, CV_8UC3, (void*) data, step); 
-		setEnableImageReceivedEvent(false);
 		imshow("Amostragem", imgBGR_);
-		waitKey(80);
+		waitKey(80);		
+		//setEnableImageReceivedEvent(true);
 	}
 }
 
 void CameraROS::setEnableImageReceivedEvent(bool enable)
 {	
 	enableImageReceivedEvent_ = enable;
+}
+
+void CameraROS::toggleMode()
+{
+	if (isInOrdinaryMode_)
+		activateLampPostMode();
+	else
+		activateOrdinaryMode();
+	isInOrdinaryMode_ = !isInOrdinaryMode_;
+	setBGREnabled(true);
+}
+
+void CameraROS::activateLampPostMode()
+{
+	setAutoExposureEnabled(false);
+	setExposure(15);
+}
+
+void CameraROS::activateOrdinaryMode()
+{
+	setAutoExposureEnabled(true);
+	setAutoWhiteBalanceEnabled(true);
+	setAutoFocusEnabled(true);
 }

@@ -32,6 +32,16 @@ CameraROS.h
 ros/ros.h
 -
 
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/CameraROS.cpp
+CameraROS.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/CameraROS.h
+
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/RobotinoCameraNode.cpp
+RobotinoCameraNode.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/RobotinoCameraNode.h
+sstream
+-
+
 /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/robotino_camera_node.cpp
 RobotinoCameraNode.h
 /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/RobotinoCameraNode.h

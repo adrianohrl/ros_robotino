@@ -23,11 +23,13 @@ public:
 	void setNumber(int number);
 	void setTimeStamp(ros::Time stamp);
 	void setEnableImageReceivedEvent(bool enable);
+	void toggleMode();
 
 private:
 
 	ros::Time stamp_;
 	bool enableImageReceivedEvent_;
+	bool isInOrdinaryMode_;
 	Mat imgBGR_;
 
 	void imageReceivedEvent(
@@ -35,7 +37,9 @@ private:
 			unsigned int dataSize,
 			unsigned int width,
 			unsigned int height,
-			unsigned int step );
+			unsigned int step );		
+	void activateOrdinaryMode();
+	void activateLampPostMode();
 };
 
 #endif /* CAMERAROS_H_ */
