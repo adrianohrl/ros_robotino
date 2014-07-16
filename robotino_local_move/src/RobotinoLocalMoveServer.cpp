@@ -146,7 +146,7 @@ void RobotinoLocalMoveServer::setCmdVel(double vel_x, double vel_y, double vel_p
 
 void RobotinoLocalMoveServer::spin()
 {
-	ros::Rate loop_rate(5);
+	ros::Rate loop_rate(10);
 
 	ROS_INFO("Robotino Local Move Server up and running");
 	while (nh_.ok())
@@ -216,9 +216,9 @@ void RobotinoLocalMoveServer::controlLoop()
 			if (dist_driven_x < forward_goal_x_abs || dist_driven_y < forward_goal_y_abs || dist_rotated_abs < rotation_goal_abs)
 			{
 				ROS_DEBUG("Moved (x, y) = (%f, %f) and rotated %f degrees", dist_driven_x, dist_driven_y, (dist_rotated_ * 180) / PI);
+	
+				double radius = .5 * sqrt(pow(forward_goal_x_abs, 2) + pow(forward_goal_y_abs, 2)) / sin(rotation_goal_abs / 2);
 
-				double radius = (dist_driven_x + dist_driven_y) / 2;
-					
 				vel_x = VEL_LIN;
 				vel_y = 0.0;
 				vel_phi = VEL_LIN / radius;
@@ -276,31 +276,17 @@ bool RobotinoLocalMoveServer::acceptNewGoal(const robotino_local_move::LocalMove
 			state_ = TRANSLATIONAL_ROTATIONAL_MOVEMENT;
 			break;
 		case 3:
-			if (forward_goal_x_ != forward_goal_y_)
+			/*if (forward_goal_x_ != forward_goal_y_)
 			{
 				ROS_ERROR("The move_x and move_y parameters must be equal");
 				return false;
-			}
+			}*/
 			state_ = TANGENT_MOVEMENT;
 			break;
 		default:
 			ROS_ERROR("Incorrect movement type parameter");
 			return false;
 	}
-/*
-		if( fabs( forward_goal_x_ ) > 0.02 || fabs( forward_goal_y_ ) > 0.02 )
-		{
-			state_ = Moving;
-		}
-		else if( fabs( rotation_goal_ ) > 0.01 )
-		{
-			state_ = Rotating;
-		}
-		else
-		{
-			state_ = Finished;
-		}
-*/
 	return true;
 }
 
