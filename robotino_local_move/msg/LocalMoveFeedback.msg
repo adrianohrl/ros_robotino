@@ -3,3 +3,4 @@
 float32 forward_dist_x	# forward distance to goal in x
 float32 forward_dist_y	# forward distance to goal in y
 float32 rotation_dist	# rotationaldistance to goal
+

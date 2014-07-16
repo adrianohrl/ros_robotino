@@ -19,9 +19,11 @@
 #include "robotino_local_move/LocalMoveActionGoal.h"
 
 #define PI 3.14159
+#define VEL_LIN 0.2 // 
+#define VEL_ANG 0.5  // 
 
 typedef actionlib::SimpleActionServer<robotino_local_move::LocalMoveAction> Server;
-typedef enum { Idle, Moving, Rotating, Finished } State;
+typedef enum {IDLE, TRANSLATIONAL_MOVEMENT, ROTATIONAL_MOVEMENT, TRANSLATIONAL_ROTATIONAL_MOVEMENT, TANGENT_MOVEMENT, FINISHED} State;
 
 class RobotinoLocalMoveServer
 {
@@ -57,15 +59,14 @@ private:
 
 	bool odom_set_;
 
-	void odomCallback( const nav_msgs::OdometryConstPtr& msg );
-	void teleopActivatedCallback( const std_msgs::BoolConstPtr& msg );
-	void execute( const robotino_local_move::LocalMoveGoalConstPtr& goal );
-	void setCmdVel( double vx, double vy, double omega );
+	void odomCallback(const nav_msgs::OdometryConstPtr& msg);
+	void teleopActivatedCallback(const std_msgs::BoolConstPtr& msg);
+	void execute(const robotino_local_move::LocalMoveGoalConstPtr& goal);
+	void setCmdVel(double vel_x, double vel_y, double vel_phi);
 	void controlLoop();
-	bool acceptNewGoal( const robotino_local_move::LocalMoveGoalConstPtr& goal );
-	void readParameters( ros::NodeHandle& n);
-	template< typename InputIterator > double linearApproximator(
-			InputIterator iter, InputIterator end, const double x );
+	bool acceptNewGoal(const robotino_local_move::LocalMoveGoalConstPtr& goal);
+	void readParameters(ros::NodeHandle& n);
+	template< typename InputIterator > double linearApproximator(InputIterator iter, InputIterator end, const double x);
 
 public:
 	void spin();

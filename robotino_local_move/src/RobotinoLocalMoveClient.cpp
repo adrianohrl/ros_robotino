@@ -28,9 +28,7 @@ bool RobotinoLocalMoveClient::checkServer()
 			return true;
 		}
 		else
-		{
 			ROS_INFO("Waiting for local move server");
-		}
 	}
 
 	ROS_ERROR("local move server not running");
@@ -45,22 +43,18 @@ int RobotinoLocalMoveClient::spin()
 	while (nh_.ok())
 	{
 		if (client_.getState() == actionlib::SimpleClientGoalState::RECALLED || client_.getState() == actionlib::SimpleClientGoalState::PREEMPTED)
-		{
 			return 0; // Aborted
-		}
 		else if (client_.waitForResult(ros::Duration(1.0)))
 		{
 			ROS_INFO("Local move succeeded");
 			return 1; // Succeeded
 		}
 		else
-		{
 			ROS_INFO("Local move is being executed");
-		}
 
 		if ((ros::Time::now() - start_time).toSec() > max_time_)
 		{
-			ROS_INFO("Aborting Local move");
+			ROS_INFO("Aborting Local Move");
 			client_.cancelAllGoals();
 			return 2; // Timeout
 		}

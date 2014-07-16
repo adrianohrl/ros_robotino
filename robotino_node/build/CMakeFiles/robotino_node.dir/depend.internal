@@ -3,8 +3,8 @@
 
 CMakeFiles/robotino_node.dir/src/AnalogInputArrayROS.o
  ../include/AnalogInputArrayROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/AnalogReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/AnalogInputArrayROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/AnalogReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/AnalogInputArrayROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -65,7 +65,7 @@ CMakeFiles/robotino_node.dir/src/AnalogInputArrayROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/BumperROS.o
  ../include/BumperROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/BumperROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/BumperROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -127,7 +127,7 @@ CMakeFiles/robotino_node.dir/src/BumperROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/CameraROS.o
  ../include/CameraROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/CameraROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/CameraROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -205,7 +205,7 @@ CMakeFiles/robotino_node.dir/src/CameraROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/ComROS.o
  ../include/ComROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/ComROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -265,9 +265,9 @@ CMakeFiles/robotino_node.dir/src/ComROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/CompactBHAROS.o
  ../include/CompactBHAROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/BHAReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetBHAPressures.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/CompactBHAROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/BHAReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetBHAPressures.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/CompactBHAROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -328,8 +328,8 @@ CMakeFiles/robotino_node.dir/src/CompactBHAROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/DigitalInputArrayROS.o
  ../include/DigitalInputArrayROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/DigitalReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/DigitalInputArrayROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/DigitalReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/DigitalInputArrayROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -390,8 +390,8 @@ CMakeFiles/robotino_node.dir/src/DigitalInputArrayROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/DigitalOutputArrayROS.o
  ../include/DigitalOutputArrayROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/DigitalReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/DigitalOutputArrayROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/DigitalReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/DigitalOutputArrayROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -452,7 +452,7 @@ CMakeFiles/robotino_node.dir/src/DigitalOutputArrayROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/DistanceSensorArrayROS.o
  ../include/DistanceSensorArrayROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/DistanceSensorArrayROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/DistanceSensorArrayROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Point32.h
@@ -518,9 +518,9 @@ CMakeFiles/robotino_node.dir/src/DistanceSensorArrayROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/ElectricalGripperROS.o
  ../include/ElectricalGripperROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/GripperState.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/SetGripperState.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ElectricalGripperROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/GripperState.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/SetGripperState.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/ElectricalGripperROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -581,9 +581,9 @@ CMakeFiles/robotino_node.dir/src/ElectricalGripperROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/EncoderInputROS.o
  ../include/EncoderInputROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/EncoderReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/EncoderInputROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/EncoderReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/EncoderInputROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -644,10 +644,10 @@ CMakeFiles/robotino_node.dir/src/EncoderInputROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/GrapplerROS.o
  ../include/GrapplerROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/GrapplerReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetGrapplerAxes.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetGrapplerAxis.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/GrapplerROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/GrapplerReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetGrapplerAxes.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetGrapplerAxis.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/GrapplerROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -709,7 +709,7 @@ CMakeFiles/robotino_node.dir/src/GrapplerROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/KinectROS.o
  ../include/KinectROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/KinectROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/KinectROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Point.h
@@ -858,6 +858,13 @@ CMakeFiles/robotino_node.dir/src/KinectROS.o
  /usr/include/eigen3/Eigen/StdVector
  /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h
  /usr/include/eigen3/Eigen/src/Cholesky/LLT.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/ArrayCwiseBinaryOps.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/MatrixCwiseBinaryOps.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h
  /usr/include/eigen3/Eigen/src/Core/Array.h
  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h
  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h
@@ -1020,20 +1027,13 @@ CMakeFiles/robotino_node.dir/src/KinectROS.o
  /usr/include/eigen3/Eigen/src/misc/Image.h
  /usr/include/eigen3/Eigen/src/misc/Kernel.h
  /usr/include/eigen3/Eigen/src/misc/Solve.h
- /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
- /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
- /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h
- /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
- /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
- /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
- /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  /usr/local/robotino/api2/include/rec/robotino/api2/ComId.h
  /usr/local/robotino/api2/include/rec/robotino/api2/ComObject.h
  /usr/local/robotino/api2/include/rec/robotino/api2/Kinect.h
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/LaserRangeFinderROS.o
  ../include/LaserRangeFinderROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/LaserRangeFinderROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/LaserRangeFinderROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -1097,8 +1097,8 @@ CMakeFiles/robotino_node.dir/src/LaserRangeFinderROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/MotorArrayROS.o
  ../include/MotorArrayROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/MotorReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/MotorArrayROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/MotorReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/MotorArrayROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -1159,8 +1159,8 @@ CMakeFiles/robotino_node.dir/src/MotorArrayROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/NorthStarROS.o
  ../include/NorthStarROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/NorthStarReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/NorthStarROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/NorthStarReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/NorthStarROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Point.h
@@ -1248,8 +1248,8 @@ CMakeFiles/robotino_node.dir/src/NorthStarROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/OdometryROS.o
  ../include/OdometryROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/ResetOdometry.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/OdometryROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/ResetOdometry.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/OdometryROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Point.h
@@ -1346,7 +1346,7 @@ CMakeFiles/robotino_node.dir/src/OdometryROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/OmniDriveROS.o
  ../include/OmniDriveROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/OmniDriveROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/OmniDriveROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Twist.h
@@ -1411,8 +1411,8 @@ CMakeFiles/robotino_node.dir/src/OmniDriveROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_node.dir/src/PowerManagementROS.o
  ../include/PowerManagementROS.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/PowerReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/PowerManagementROS.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/PowerReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/PowerManagementROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -1488,21 +1488,21 @@ CMakeFiles/robotino_node.dir/src/RobotinoNode.o
  ../include/OmniDriveROS.h
  ../include/PowerManagementROS.h
  ../include/RobotinoNode.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/AnalogReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/BHAReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/DigitalReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/EncoderReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/GrapplerReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/GripperState.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/MotorReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/NorthStarReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/PowerReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetBHAPressures.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetGrapplerAxes.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetGrapplerAxis.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/SetGripperState.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoNode.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/AnalogReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/BHAReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/DigitalReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/EncoderReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/GrapplerReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/GripperState.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/MotorReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/NorthStarReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/PowerReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetBHAPressures.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetGrapplerAxes.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetGrapplerAxis.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/SetGripperState.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/RobotinoNode.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Point.h
@@ -1616,6 +1616,13 @@ CMakeFiles/robotino_node.dir/src/RobotinoNode.o
  /usr/include/eigen3/Eigen/StdVector
  /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h
  /usr/include/eigen3/Eigen/src/Cholesky/LLT.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/ArrayCwiseBinaryOps.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/MatrixCwiseBinaryOps.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h
  /usr/include/eigen3/Eigen/src/Core/Array.h
  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h
  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h
@@ -1778,13 +1785,6 @@ CMakeFiles/robotino_node.dir/src/RobotinoNode.o
  /usr/include/eigen3/Eigen/src/misc/Image.h
  /usr/include/eigen3/Eigen/src/misc/Kernel.h
  /usr/include/eigen3/Eigen/src/misc/Solve.h
- /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
- /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
- /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h
- /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
- /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
- /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
- /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  /usr/local/robotino/api2/include/rec/robotino/api2/AnalogInputArray.h
  /usr/local/robotino/api2/include/rec/robotino/api2/Bumper.h
  /usr/local/robotino/api2/include/rec/robotino/api2/Com.h
@@ -1823,21 +1823,21 @@ CMakeFiles/robotino_node.dir/src/robotino_node.o
  ../include/OmniDriveROS.h
  ../include/PowerManagementROS.h
  ../include/RobotinoNode.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/AnalogReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/BHAReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/DigitalReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/EncoderReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/GrapplerReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/GripperState.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/MotorReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/NorthStarReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/PowerReadings.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetBHAPressures.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetGrapplerAxes.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetGrapplerAxis.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/SetGripperState.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_node.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/AnalogReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/BHAReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/DigitalReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/EncoderReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/GrapplerReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/GripperState.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/MotorReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/NorthStarReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/PowerReadings.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetBHAPressures.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetGrapplerAxes.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/cpp/include/robotino_msgs/SetGrapplerAxis.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/SetGripperState.h
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/robotino_node.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Point.h
@@ -1953,6 +1953,13 @@ CMakeFiles/robotino_node.dir/src/robotino_node.o
  /usr/include/eigen3/Eigen/StdVector
  /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h
  /usr/include/eigen3/Eigen/src/Cholesky/LLT.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/ArrayCwiseBinaryOps.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/MatrixCwiseBinaryOps.h
+ /usr/include/eigen3/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h
  /usr/include/eigen3/Eigen/src/Core/Array.h
  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h
  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h
@@ -2115,13 +2122,6 @@ CMakeFiles/robotino_node.dir/src/robotino_node.o
  /usr/include/eigen3/Eigen/src/misc/Image.h
  /usr/include/eigen3/Eigen/src/misc/Kernel.h
  /usr/include/eigen3/Eigen/src/misc/Solve.h
- /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
- /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
- /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h
- /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
- /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
- /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
- /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  /usr/local/robotino/api2/include/rec/robotino/api2/AnalogInputArray.h
  /usr/local/robotino/api2/include/rec/robotino/api2/Bumper.h
  /usr/local/robotino/api2/include/rec/robotino/api2/Com.h

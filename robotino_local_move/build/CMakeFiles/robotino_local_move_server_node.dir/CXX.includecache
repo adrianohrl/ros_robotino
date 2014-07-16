@@ -210,7 +210,7 @@ ros/macros.h
 ros/assert.h
 ../msg_gen/cpp/include/robotino_local_move/ros/assert.h
 
-../msg_gen/cpp/include/robotino_local_move/PathPosition.h
+../msg_gen/cpp/include/robotino_local_move/PathDisplacements.h
 string
 -
 vector
@@ -278,27 +278,23 @@ ros/assert.h
 ros/service_traits.h
 ../srv_gen/cpp/include/robotino_local_move/ros/service_traits.h
 
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/RobotinoLocalMoveClient.cpp
-RobotinoLocalMoveClient.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/RobotinoLocalMoveClient.h
-
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/RobotinoLocalMoveServer.cpp
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveServer.cpp
 RobotinoLocalMoveServer.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/RobotinoLocalMoveServer.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveServer.h
 tf/transform_datatypes.h
 -
 
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/robotino_local_move_server_node.cpp
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_local_move_server_node.cpp
 RobotinoLocalMoveServer.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/RobotinoLocalMoveServer.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveServer.h
 RobotinoLocalMoveClient.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/RobotinoLocalMoveClient.h
-robotino_local_move/PathPosition.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/robotino_local_move/PathPosition.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveClient.h
+robotino_local_move/PathDisplacements.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_local_move/PathDisplacements.h
 robotino_local_move/Stop.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/robotino_local_move/Stop.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_local_move/Stop.h
 robotino_local_move/PathStatus.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/robotino_local_move/PathStatus.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_local_move/PathStatus.h
 
 /opt/ros/fuerte/include/XmlRpcDecl.h
 ros/macros.h

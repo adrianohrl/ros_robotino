@@ -39,7 +39,7 @@ void CameraROS::imageReceivedEvent(
 		unsigned int height, 
 		unsigned int step)
 {
-	if (counter > 20)
+	if (counter > 100)
 	{
 		counter = 0;
 		toggleMode();
@@ -50,7 +50,10 @@ void CameraROS::imageReceivedEvent(
 		if (isInOrdinaryMode_)
 			ROS_INFO("Running Mode: Ordinary Mode");
 		else
+		{
+			activateLampPostMode();
 			ROS_INFO("Running Mode: Lamp Post Mode");
+		}
 		imgBGR_ = Mat(height, width, CV_8UC3, (void*) data, step); 
 		imshow("Amostragem", imgBGR_);
 		waitKey(80);		
@@ -77,6 +80,7 @@ void CameraROS::activateLampPostMode()
 {
 	setAutoExposureEnabled(false);
 	setExposure(50);
+	setGain(5);
 }
 
 void CameraROS::activateOrdinaryMode()
@@ -84,15 +88,21 @@ void CameraROS::activateOrdinaryMode()
 	setAutoExposureEnabled(true);
 	setAutoWhiteBalanceEnabled(true);
 	setAutoFocusEnabled(true);
-	const char usb_port = "/dev/bus/usb/001/019";
+	const char* usbPortPath = "/dev/bus/usb/001/019";
+	if (resetCameraUSBPort(usbPortPath))
+		ROS_INFO("The %s has not been resetted successfully!!!", usbPortPath);
+	else
+		ROS_INFO("The %s has been resetted successfully!!!", usbPortPath);
+}
+
+bool CameraROS::resetCameraUSBPort(const char* usbPortPath)
+{
+	bool succeed = false;
 	int fd, rc;
-	fd = open(usb_port, O_WRONLY);	
+	fd = open(usbPortPath, O_WRONLY);	
 	rc = ioctl(fd, USBDEVFS_RESET, 0);
-	if (rc < 0)
-	{
-		perror("Deu erro ao resetar a porta usb");
-		return;
-	}
-	ROS_INFO("Porta USB resetada!!!");
 	close(fd);
+	if (rc >= 0)
+		succeed = true;
+	return succeed;
 }

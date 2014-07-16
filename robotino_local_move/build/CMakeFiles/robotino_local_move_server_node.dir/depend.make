@@ -3,12 +3,6 @@
 
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ../include/RobotinoLocalMoveClient.h
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h
-CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h
-CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h
-CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h
-CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h
-CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h
-CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ../src/RobotinoLocalMoveClient.cpp
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/include/XmlRpcDecl.h
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/include/XmlRpcValue.h
@@ -211,7 +205,7 @@ CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_no
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h
-CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: ../msg_gen/cpp/include/robotino_local_move/PathPosition.h
+CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: ../msg_gen/cpp/include/robotino_local_move/PathDisplacements.h
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: ../msg_gen/cpp/include/robotino_local_move/PathStatus.h
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: ../srv_gen/cpp/include/robotino_local_move/Stop.h
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: ../src/robotino_local_move_server_node.cpp

@@ -4,13 +4,7 @@
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o
  ../include/RobotinoLocalMoveClient.h
  ../msg_gen/cpp/include/robotino_local_move/LocalMoveAction.h
- ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h
- ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionGoal.h
- ../msg_gen/cpp/include/robotino_local_move/LocalMoveActionResult.h
- ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h
- ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h
- ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/RobotinoLocalMoveClient.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveClient.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/actionlib/action_definition.h
@@ -97,7 +91,7 @@ CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o
  ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h
  ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h
  ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/RobotinoLocalMoveServer.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveServer.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/actionlib/action_definition.h
@@ -212,10 +206,10 @@ CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_no
  ../msg_gen/cpp/include/robotino_local_move/LocalMoveFeedback.h
  ../msg_gen/cpp/include/robotino_local_move/LocalMoveGoal.h
  ../msg_gen/cpp/include/robotino_local_move/LocalMoveResult.h
- ../msg_gen/cpp/include/robotino_local_move/PathPosition.h
+ ../msg_gen/cpp/include/robotino_local_move/PathDisplacements.h
  ../msg_gen/cpp/include/robotino_local_move/PathStatus.h
  ../srv_gen/cpp/include/robotino_local_move/Stop.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/robotino_local_move_server_node.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_local_move_server_node.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/actionlib/action_definition.h

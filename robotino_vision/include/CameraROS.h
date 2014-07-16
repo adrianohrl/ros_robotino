@@ -17,7 +17,7 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <sys/ioctl.h>
-#include <linux/usbdevice_fl.h>
+#include <linux/usbdevice_fs.h>
 using namespace cv;
 
 class CameraROS : public rec::robotino::api2::Camera
@@ -47,6 +47,7 @@ private:
 			unsigned int step );		
 	void activateOrdinaryMode();
 	void activateLampPostMode();
+	bool resetCameraUSBPort(const char* usbPortPath);
 };
 
 #endif /* CAMERAROS_H_ */

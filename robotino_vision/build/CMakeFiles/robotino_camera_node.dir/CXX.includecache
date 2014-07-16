@@ -25,7 +25,7 @@ errno.h
 -
 sys/ioctl.h
 -
-linux/usbdevice_fl.h
+linux/usbdevice_fs.h
 -
 
 ../include/ComROS.h

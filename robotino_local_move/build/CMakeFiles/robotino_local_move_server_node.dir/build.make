@@ -31,14 +31,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move
+CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build
+CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/robotino_local_move_server_node.dir/depend.make
@@ -55,7 +52,7 @@ CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_no
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/share/roslang/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/share/roscpp/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
+CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/share/nav_msgs/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/stacks/bullet/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
@@ -82,28 +79,28 @@ CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_no
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
-CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/manifest.xml
+CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/share/actionlib/manifest.xml
-CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
-CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
+CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
+CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/robotino_local_move_server_node.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o -c /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_local_move_server_node.cpp
 
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/robotino_local_move_server_node.cpp > CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_local_move_server_node.cpp > CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.i
 
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/robotino_local_move_server_node.cpp -o CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_local_move_server_node.cpp -o CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.s
 
 CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o.requires:
 .PHONY : CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o.requires
@@ -120,7 +117,7 @@ CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: ..
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/share/roslang/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/share/roscpp/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
+CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/share/nav_msgs/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/stacks/bullet/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
@@ -147,28 +144,28 @@ CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /o
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
-CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/manifest.xml
+CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/share/actionlib/manifest.xml
-CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
-CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
+CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
+CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/RobotinoLocalMoveServer.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o -c /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveServer.cpp
 
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/RobotinoLocalMoveServer.cpp > CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveServer.cpp > CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.i
 
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/RobotinoLocalMoveServer.cpp -o CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveServer.cpp -o CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.s
 
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o.requires:
 .PHONY : CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o.requires
@@ -185,7 +182,7 @@ CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: ..
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/share/roslang/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/share/roscpp/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
+CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/share/nav_msgs/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/stacks/bullet/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
@@ -212,28 +209,28 @@ CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /o
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
-CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/manifest.xml
+CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/share/actionlib/manifest.xml
-CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
-CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
+CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
+CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/RobotinoLocalMoveClient.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o -c /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveClient.cpp
 
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/RobotinoLocalMoveClient.cpp > CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveClient.cpp > CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.i
 
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/RobotinoLocalMoveClient.cpp -o CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/RobotinoLocalMoveClient.cpp -o CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.s
 
 CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o.requires:
 .PHONY : CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o.requires
@@ -275,6 +272,6 @@ CMakeFiles/robotino_local_move_server_node.dir/clean:
 .PHONY : CMakeFiles/robotino_local_move_server_node.dir/clean
 
 CMakeFiles/robotino_local_move_server_node.dir/depend:
-	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles/robotino_local_move_server_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles/robotino_local_move_server_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/robotino_local_move_server_node.dir/depend
 

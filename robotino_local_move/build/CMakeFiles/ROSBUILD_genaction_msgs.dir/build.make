@@ -31,14 +31,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move
+CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build
+CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build
 
 # Utility rule file for ROSBUILD_genaction_msgs.
 
@@ -55,9 +52,9 @@ CMakeFiles/ROSBUILD_genaction_msgs: ../msg/LocalMoveActionFeedback.msg
 
 ../msg/LocalMoveAction.msg: ../action/LocalMove.action
 ../msg/LocalMoveAction.msg: /opt/ros/fuerte/share/actionlib_msgs/scripts/genaction.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg/LocalMoveAction.msg, ../msg/LocalMoveGoal.msg, ../msg/LocalMoveActionGoal.msg, ../msg/LocalMoveResult.msg, ../msg/LocalMoveActionResult.msg, ../msg/LocalMoveFeedback.msg, ../msg/LocalMoveActionFeedback.msg"
-	/opt/ros/fuerte/share/actionlib_msgs/scripts/genaction.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/action/LocalMove.action -o /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/msg
+	/opt/ros/fuerte/share/actionlib_msgs/scripts/genaction.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/action/LocalMove.action -o /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg
 
 ../msg/LocalMoveGoal.msg: ../msg/LocalMoveAction.msg
 
@@ -91,6 +88,6 @@ CMakeFiles/ROSBUILD_genaction_msgs.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_genaction_msgs.dir/clean
 
 CMakeFiles/ROSBUILD_genaction_msgs.dir/depend:
-	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles/ROSBUILD_genaction_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles/ROSBUILD_genaction_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_genaction_msgs.dir/depend
 
