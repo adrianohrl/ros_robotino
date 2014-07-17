@@ -2,7 +2,7 @@
  * RobotinoLocalMoveServer.h
  *
  *  Created on: 13.12.2011
- *      Author: indorewala@servicerobotics.eu
+ *      Author: adrianohrl@unifei.edu.br
  */
 
 #ifndef ROBOTINOLOCALMOVESERVER_H_

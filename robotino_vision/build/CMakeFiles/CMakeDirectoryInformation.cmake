@@ -13,6 +13,7 @@ SET(CMAKE_C_INCLUDE_PATH
   "../include"
   "/opt/ros/fuerte/include"
   "/opt/ros/fuerte/include/opencv"
+  "../msg_gen/cpp/include"
   "/usr/local/robotino/api2/include"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})

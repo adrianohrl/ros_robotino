@@ -302,38 +302,38 @@ clean: CMakeFiles/clean-test-results.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/robotino_local_move_server_node.dir
+# Target rules for target CMakeFiles/robotino_local_move_node.dir
 
 # All Build rule for target.
-CMakeFiles/robotino_local_move_server_node.dir/all: CMakeFiles/rosbuild_precompile.dir/all
-	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/depend
-	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/build
+CMakeFiles/robotino_local_move_node.dir/all: CMakeFiles/rosbuild_precompile.dir/all
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/depend
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles  37 38 39
-	@echo "Built target robotino_local_move_server_node"
-.PHONY : CMakeFiles/robotino_local_move_server_node.dir/all
+	@echo "Built target robotino_local_move_node"
+.PHONY : CMakeFiles/robotino_local_move_node.dir/all
 
 # Include target in all.
-all: CMakeFiles/robotino_local_move_server_node.dir/all
+all: CMakeFiles/robotino_local_move_node.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/robotino_local_move_server_node.dir/rule: cmake_check_build_system
+CMakeFiles/robotino_local_move_node.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles 39
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/robotino_local_move_server_node.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/robotino_local_move_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles 0
-.PHONY : CMakeFiles/robotino_local_move_server_node.dir/rule
+.PHONY : CMakeFiles/robotino_local_move_node.dir/rule
 
 # Convenience name for target.
-robotino_local_move_server_node: CMakeFiles/robotino_local_move_server_node.dir/rule
-.PHONY : robotino_local_move_server_node
+robotino_local_move_node: CMakeFiles/robotino_local_move_node.dir/rule
+.PHONY : robotino_local_move_node
 
 # clean rule for target.
-CMakeFiles/robotino_local_move_server_node.dir/clean:
-	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/clean
-.PHONY : CMakeFiles/robotino_local_move_server_node.dir/clean
+CMakeFiles/robotino_local_move_node.dir/clean:
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/clean
+.PHONY : CMakeFiles/robotino_local_move_node.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/robotino_local_move_server_node.dir/clean
+clean: CMakeFiles/robotino_local_move_node.dir/clean
 .PHONY : clean
 
 #=============================================================================

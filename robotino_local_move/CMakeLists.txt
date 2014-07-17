@@ -34,8 +34,8 @@ rosbuild_gensrv()
 #target_link_libraries(example ${PROJECT_NAME})
 
 rosbuild_add_executable( 
-  robotino_local_move_server_node 
-  src/robotino_local_move_server_node.cpp
+  robotino_local_move_node 
+  src/robotino_local_move_node.cpp
   src/RobotinoLocalMoveServer.cpp
   src/RobotinoLocalMoveClient.cpp)
   

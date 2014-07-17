@@ -27,7 +27,7 @@ b0aca547c69cb1fc6fd1f276f1b1d86f ../src/robotino_local_move/msg/_LocalMoveAction
 8b0302b595858fcb92ac0f49c3923f0c ../src/robotino_local_move/msg/_LocalMoveResult.py
 0ca9accac115f2473a30a3b35e45cb18 ../src/robotino_local_move/msg/_PathDisplacements.py
 5b2e43edea6e361f2c4d80c101915b52 ../src/robotino_local_move/msg/_PathStatus.py
-0dd187ea4d11f5ba648cf08d54c2541a ../src/robotino_local_move/msg/__init__.py
+427d15f7dabf4619daffc9efb34950b7 ../src/robotino_local_move/msg/__init__.py
 4c2c22a4a179fb9d5903a39593c53f38 ../src/robotino_local_move/srv/_Stop.py
 0b44ba7bfb803694557e5ccf9c828566 ../src/robotino_local_move/srv/__init__.py
 fe5bd692ab8ded001aed5abbb000b76c ../srv_gen/cpp/include/robotino_local_move/Stop.h

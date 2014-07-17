@@ -11,7 +11,7 @@
 
 RobotinoLocalMoveServer::RobotinoLocalMoveServer():
 	nh_("~"),
-	server_ (nh_, "/local_move", boost::bind(&RobotinoLocalMoveServer::execute, this, _1), false),
+	server_(nh_, "/local_move", boost::bind(&RobotinoLocalMoveServer::execute, this, _1), false),
 	curr_x_(0.0),
 	curr_y_(0.0),
 	curr_phi_(0.0),
@@ -27,8 +27,8 @@ RobotinoLocalMoveServer::RobotinoLocalMoveServer():
 	start_phi_(0.0),
 	odom_set_(false)
 {
-	odometry_sub_ = nh_.subscribe("/odom", 1, &RobotinoLocalMoveServer::odomCallback, this);
-	cmd_vel_pub_ = nh_.advertise<geometry_msgs::Twist>("/cmd_vel", 1);
+	odometry_sub_ = nh_.subscribe("odom", 1, &RobotinoLocalMoveServer::odomCallback, this);
+	cmd_vel_pub_ = nh_.advertise<geometry_msgs::Twist>("cmd_vel", 1);
 	state_ = IDLE;
 	readParameters(nh_);
 }
@@ -79,7 +79,7 @@ void RobotinoLocalMoveServer::odomCallback(const nav_msgs::OdometryConstPtr& msg
 
 void RobotinoLocalMoveServer::execute(const robotino_local_move::LocalMoveGoalConstPtr& goal)
 {
-	ros::Rate loop_rate(10);
+	ros::Rate loop_rate(20);
 
 	if (!acceptNewGoal(goal))
 	{
@@ -146,7 +146,7 @@ void RobotinoLocalMoveServer::setCmdVel(double vel_x, double vel_y, double vel_p
 
 void RobotinoLocalMoveServer::spin()
 {
-	ros::Rate loop_rate(10);
+	ros::Rate loop_rate(20);
 
 	ROS_INFO("Robotino Local Move Server up and running");
 	while (nh_.ok())

@@ -17,7 +17,7 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 #uncomment if you have defined messages
-#rosbuild_genmsg()
+rosbuild_genmsg()
 #uncomment if you have defined services
 #rosbuild_gensrv()
 
@@ -36,15 +36,15 @@ set(
 find_package(RobotinoAPI2 REQUIRED)
 
 rosbuild_add_executable(
-  robotino_camera_node
-  src/robotino_camera_node.cpp
+  robotino_vision_node
+  src/robotino_vision_node.cpp
   src/ComROS.cpp
   src/CameraROS.cpp
-  src/RobotinoCameraNode.cpp
+  src/RobotinoVision.cpp
 )
 
 target_link_libraries(
-  robotino_camera_node
+  robotino_vision_node
   ${REC_ROBOTINO_API2_LIBRARY}
 )
 

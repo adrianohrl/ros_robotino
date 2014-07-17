@@ -49,7 +49,6 @@ CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_GetPucksPolarCoordinat
 ../srv_gen/lisp/GetPucksPolarCoordinates.lisp: ../srv/GetPucksPolarCoordinates.srv
 ../srv_gen/lisp/GetPucksPolarCoordinates.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
 ../srv_gen/lisp/GetPucksPolarCoordinates.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
-../srv_gen/lisp/GetPucksPolarCoordinates.lisp: ../msg/Puck.msg
 ../srv_gen/lisp/GetPucksPolarCoordinates.lisp: ../manifest.xml
 ../srv_gen/lisp/GetPucksPolarCoordinates.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
 ../srv_gen/lisp/GetPucksPolarCoordinates.lisp: /opt/ros/fuerte/share/roslang/manifest.xml

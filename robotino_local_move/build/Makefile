@@ -200,17 +200,17 @@ clean-test-results/fast:
 .PHONY : clean-test-results/fast
 
 #=============================================================================
-# Target rules for targets named robotino_local_move_server_node
+# Target rules for targets named robotino_local_move_node
 
 # Build rule for target.
-robotino_local_move_server_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 robotino_local_move_server_node
-.PHONY : robotino_local_move_server_node
+robotino_local_move_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robotino_local_move_node
+.PHONY : robotino_local_move_node
 
 # fast build rule for target.
-robotino_local_move_server_node/fast:
-	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/build
-.PHONY : robotino_local_move_server_node/fast
+robotino_local_move_node/fast:
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/build
+.PHONY : robotino_local_move_node/fast
 
 #=============================================================================
 # Target rules for targets named rosbuild_precompile
@@ -370,48 +370,48 @@ tests/fast:
 
 # target to build an object file
 src/RobotinoLocalMoveClient.o:
-	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.o
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/src/RobotinoLocalMoveClient.o
 .PHONY : src/RobotinoLocalMoveClient.o
 
 # target to preprocess a source file
 src/RobotinoLocalMoveClient.i:
-	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.i
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/src/RobotinoLocalMoveClient.i
 .PHONY : src/RobotinoLocalMoveClient.i
 
 # target to generate assembly for a file
 src/RobotinoLocalMoveClient.s:
-	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveClient.s
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/src/RobotinoLocalMoveClient.s
 .PHONY : src/RobotinoLocalMoveClient.s
 
 # target to build an object file
 src/RobotinoLocalMoveServer.o:
-	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.o
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/src/RobotinoLocalMoveServer.o
 .PHONY : src/RobotinoLocalMoveServer.o
 
 # target to preprocess a source file
 src/RobotinoLocalMoveServer.i:
-	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.i
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/src/RobotinoLocalMoveServer.i
 .PHONY : src/RobotinoLocalMoveServer.i
 
 # target to generate assembly for a file
 src/RobotinoLocalMoveServer.s:
-	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/src/RobotinoLocalMoveServer.s
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/src/RobotinoLocalMoveServer.s
 .PHONY : src/RobotinoLocalMoveServer.s
 
 # target to build an object file
-src/robotino_local_move_server_node.o:
-	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.o
-.PHONY : src/robotino_local_move_server_node.o
+src/robotino_local_move_node.o:
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/src/robotino_local_move_node.o
+.PHONY : src/robotino_local_move_node.o
 
 # target to preprocess a source file
-src/robotino_local_move_server_node.i:
-	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.i
-.PHONY : src/robotino_local_move_server_node.i
+src/robotino_local_move_node.i:
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/src/robotino_local_move_node.i
+.PHONY : src/robotino_local_move_node.i
 
 # target to generate assembly for a file
-src/robotino_local_move_server_node.s:
-	$(MAKE) -f CMakeFiles/robotino_local_move_server_node.dir/build.make CMakeFiles/robotino_local_move_server_node.dir/src/robotino_local_move_server_node.s
-.PHONY : src/robotino_local_move_server_node.s
+src/robotino_local_move_node.s:
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/src/robotino_local_move_node.s
+.PHONY : src/robotino_local_move_node.s
 
 # Help Target
 help:
@@ -429,7 +429,7 @@ help:
 	@echo "... clean-test-results"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... robotino_local_move_server_node"
+	@echo "... robotino_local_move_node"
 	@echo "... rosbuild_precompile"
 	@echo "... rosbuild_premsgsrvgen"
 	@echo "... rospack_genmsg"
@@ -448,9 +448,9 @@ help:
 	@echo "... src/RobotinoLocalMoveServer.o"
 	@echo "... src/RobotinoLocalMoveServer.i"
 	@echo "... src/RobotinoLocalMoveServer.s"
-	@echo "... src/robotino_local_move_server_node.o"
-	@echo "... src/robotino_local_move_server_node.i"
-	@echo "... src/robotino_local_move_server_node.s"
+	@echo "... src/robotino_local_move_node.o"
+	@echo "... src/robotino_local_move_node.i"
+	@echo "... src/robotino_local_move_node.s"
 .PHONY : help
 
 

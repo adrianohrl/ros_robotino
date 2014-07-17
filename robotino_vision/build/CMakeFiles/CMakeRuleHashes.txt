@@ -1,14 +1,17 @@
 # Hashes of file build rules.
-a205c4182e2b7c34f0161ad9443e0a86 ../msg_gen/cpp/include/robotino_vision/Lamp.h
-879ae6206838ba999e46cc2a17a40c7c ../msg_gen/cpp/include/robotino_vision/LampPost.h
-74b8211eca8b4e21a7fbcd5a7bc6b9fd ../msg_gen/cpp/include/robotino_vision/Puck.h
-55e90114fc6f284eb040749d50c8430b ../msg_gen/lisp/Lamp.lisp
-b0a8aa44fd1978cb81cafca7c36a960f ../msg_gen/lisp/LampPost.lisp
-0b16d0f853c0a5f0f1039131a2f988dc ../msg_gen/lisp/Puck.lisp
-f122f8e038133346a4c0afaa0aa8dc6b ../src/robotino_vision/msg/_Lamp.py
-ad9e1bfc95248c438024406cfda1115a ../src/robotino_vision/msg/_LampPost.py
-608bcce817c33b92aa891d301772ecf1 ../src/robotino_vision/msg/_Puck.py
-14c32f24acba1a23d65a43f452231f88 ../src/robotino_vision/msg/__init__.py
+86364d9b1158362c0d308bc76f5d5056 ../msg_gen/cpp/include/robotino_vision/CameraMode.h
+c95549147856fa61f918a1cb2ec35289 ../msg_gen/cpp/include/robotino_vision/LampPostState.h
+46a2575e7469c20ab68791784b8b9898 ../msg_gen/cpp/include/robotino_vision/LampState.h
+775b422eab13b3ba31664d57cd877410 ../msg_gen/cpp/include/robotino_vision/PuckState.h
+fb5e1bf008a45782001045d3a853660f ../msg_gen/lisp/CameraMode.lisp
+37ff1e6afedc30e962fed8ea1d982729 ../msg_gen/lisp/LampPostState.lisp
+06d90ec67e0d9aa5bf874f30d8000796 ../msg_gen/lisp/LampState.lisp
+cab7a7f858625db05dca98359c03a453 ../msg_gen/lisp/PuckState.lisp
+c6e8aa4345c4c4d185316bcd65a4aef9 ../src/robotino_vision/msg/_CameraMode.py
+cec76a1b59bd9a360c518d4d070563ef ../src/robotino_vision/msg/_LampPostState.py
+70ca1a6f44237e3aa17f43bf6022e5c6 ../src/robotino_vision/msg/_LampState.py
+a3d7ef2135883f042d0f946f977ece3d ../src/robotino_vision/msg/_PuckState.py
+9d4795be64b4c88ac1e1231fa1320ee5 ../src/robotino_vision/msg/__init__.py
 9cb7578a49fb00981b0b22847c46036d ../src/robotino_vision/srv/_GetPucksPolarCoordinates.py
 5406c04bb7bcb4f00653139af913dc09 ../src/robotino_vision/srv/__init__.py
 2631b0882dc6c197db03f63d30a780f9 ../srv_gen/cpp/include/robotino_vision/GetPucksPolarCoordinates.h
@@ -23,6 +26,7 @@ a798967df5140d32ae431efece252955 CMakeFiles/ROSBUILD_gensrv_py
 a798967df5140d32ae431efece252955 CMakeFiles/rosbuild_precompile
 a798967df5140d32ae431efece252955 CMakeFiles/rosbuild_premsgsrvgen
 a798967df5140d32ae431efece252955 CMakeFiles/rospack_genmsg
+a798967df5140d32ae431efece252955 CMakeFiles/rospack_genmsg_all
 a798967df5140d32ae431efece252955 CMakeFiles/rospack_genmsg_libexe
 a798967df5140d32ae431efece252955 CMakeFiles/rospack_gensrv
 a798967df5140d32ae431efece252955 CMakeFiles/test

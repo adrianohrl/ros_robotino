@@ -6,9 +6,10 @@ FILE(REMOVE_RECURSE
   "../msg_gen"
   "../srv_gen"
   "CMakeFiles/ROSBUILD_genmsg_cpp"
-  "../msg_gen/cpp/include/robotino_vision/Puck.h"
-  "../msg_gen/cpp/include/robotino_vision/LampPost.h"
-  "../msg_gen/cpp/include/robotino_vision/Lamp.h"
+  "../msg_gen/cpp/include/robotino_vision/LampPostState.h"
+  "../msg_gen/cpp/include/robotino_vision/CameraMode.h"
+  "../msg_gen/cpp/include/robotino_vision/PuckState.h"
+  "../msg_gen/cpp/include/robotino_vision/LampState.h"
 )
 
 # Per-language clean rules from dependency scanning.

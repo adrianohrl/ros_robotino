@@ -42,54 +42,69 @@ CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_v
 # Include the progress variables for this target.
 include CMakeFiles/ROSBUILD_genmsg_cpp.dir/progress.make
 
-CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_vision/Puck.h
-CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_vision/LampPost.h
-CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_vision/Lamp.h
+CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_vision/LampPostState.h
+CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_vision/CameraMode.h
+CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_vision/PuckState.h
+CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_vision/LampState.h
 
-../msg_gen/cpp/include/robotino_vision/Puck.h: ../msg/Puck.msg
-../msg_gen/cpp/include/robotino_vision/Puck.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
-../msg_gen/cpp/include/robotino_vision/Puck.h: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/cpp/include/robotino_vision/Puck.h: ../manifest.xml
-../msg_gen/cpp/include/robotino_vision/Puck.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_vision/Puck.h: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/cpp/include/robotino_vision/Puck.h: /opt/ros/fuerte/share/rospy/manifest.xml
-../msg_gen/cpp/include/robotino_vision/Puck.h: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/cpp/include/robotino_vision/Puck.h: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
+../msg_gen/cpp/include/robotino_vision/LampPostState.h: ../msg/LampPostState.msg
+../msg_gen/cpp/include/robotino_vision/LampPostState.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../msg_gen/cpp/include/robotino_vision/LampPostState.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/cpp/include/robotino_vision/LampPostState.h: ../msg/LampState.msg
+../msg_gen/cpp/include/robotino_vision/LampPostState.h: ../manifest.xml
+../msg_gen/cpp/include/robotino_vision/LampPostState.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_vision/LampPostState.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/cpp/include/robotino_vision/LampPostState.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/cpp/include/robotino_vision/LampPostState.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/cpp/include/robotino_vision/LampPostState.h: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_vision/Puck.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/msg/Puck.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_vision/LampPostState.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/msg/LampPostState.msg
 
-../msg_gen/cpp/include/robotino_vision/LampPost.h: ../msg/LampPost.msg
-../msg_gen/cpp/include/robotino_vision/LampPost.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
-../msg_gen/cpp/include/robotino_vision/LampPost.h: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/cpp/include/robotino_vision/LampPost.h: ../msg/Lamp.msg
-../msg_gen/cpp/include/robotino_vision/LampPost.h: ../manifest.xml
-../msg_gen/cpp/include/robotino_vision/LampPost.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_vision/LampPost.h: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/cpp/include/robotino_vision/LampPost.h: /opt/ros/fuerte/share/rospy/manifest.xml
-../msg_gen/cpp/include/robotino_vision/LampPost.h: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/cpp/include/robotino_vision/LampPost.h: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
+../msg_gen/cpp/include/robotino_vision/CameraMode.h: ../msg/CameraMode.msg
+../msg_gen/cpp/include/robotino_vision/CameraMode.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../msg_gen/cpp/include/robotino_vision/CameraMode.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/cpp/include/robotino_vision/CameraMode.h: ../manifest.xml
+../msg_gen/cpp/include/robotino_vision/CameraMode.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_vision/CameraMode.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/cpp/include/robotino_vision/CameraMode.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/cpp/include/robotino_vision/CameraMode.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/cpp/include/robotino_vision/CameraMode.h: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_vision/LampPost.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/msg/LampPost.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_vision/CameraMode.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/msg/CameraMode.msg
 
-../msg_gen/cpp/include/robotino_vision/Lamp.h: ../msg/Lamp.msg
-../msg_gen/cpp/include/robotino_vision/Lamp.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
-../msg_gen/cpp/include/robotino_vision/Lamp.h: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/cpp/include/robotino_vision/Lamp.h: ../manifest.xml
-../msg_gen/cpp/include/robotino_vision/Lamp.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_vision/Lamp.h: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/cpp/include/robotino_vision/Lamp.h: /opt/ros/fuerte/share/rospy/manifest.xml
-../msg_gen/cpp/include/robotino_vision/Lamp.h: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/cpp/include/robotino_vision/Lamp.h: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
+../msg_gen/cpp/include/robotino_vision/PuckState.h: ../msg/PuckState.msg
+../msg_gen/cpp/include/robotino_vision/PuckState.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../msg_gen/cpp/include/robotino_vision/PuckState.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/cpp/include/robotino_vision/PuckState.h: ../manifest.xml
+../msg_gen/cpp/include/robotino_vision/PuckState.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_vision/PuckState.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/cpp/include/robotino_vision/PuckState.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/cpp/include/robotino_vision/PuckState.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/cpp/include/robotino_vision/PuckState.h: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_vision/Lamp.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/msg/Lamp.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_vision/PuckState.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/msg/PuckState.msg
+
+../msg_gen/cpp/include/robotino_vision/LampState.h: ../msg/LampState.msg
+../msg_gen/cpp/include/robotino_vision/LampState.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../msg_gen/cpp/include/robotino_vision/LampState.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/cpp/include/robotino_vision/LampState.h: ../manifest.xml
+../msg_gen/cpp/include/robotino_vision/LampState.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_vision/LampState.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/cpp/include/robotino_vision/LampState.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/cpp/include/robotino_vision/LampState.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/cpp/include/robotino_vision/LampState.h: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_vision/LampState.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/msg/LampState.msg
 
 ROSBUILD_genmsg_cpp: CMakeFiles/ROSBUILD_genmsg_cpp
-ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_vision/Puck.h
-ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_vision/LampPost.h
-ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_vision/Lamp.h
+ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_vision/LampPostState.h
+ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_vision/CameraMode.h
+ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_vision/PuckState.h
+ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_vision/LampState.h
 ROSBUILD_genmsg_cpp: CMakeFiles/ROSBUILD_genmsg_cpp.dir/build.make
 .PHONY : ROSBUILD_genmsg_cpp
 

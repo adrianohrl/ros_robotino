@@ -195,7 +195,7 @@ TOOLCHAINCONFIG:FILEPATH=TOOLCHAINCONFIG-NOTFOUND
 USERCONFIG:FILEPATH=USERCONFIG-NOTFOUND
 
 //Path to a file.
-_file_name:FILEPATH=/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/RobotinoCameraNode.cpp
+_file_name:FILEPATH=/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/RobotinoVision.cpp
 
 //Value Computed by CMake
 robotino_vision_BINARY_DIR:STATIC=/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build
@@ -335,7 +335,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.3()]
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 _rosbuild_EXPORTS:INTERNAL=
-_rosbuild_cached_flag_time:INTERNAL=1405395477.36
+_rosbuild_cached_flag_time:INTERNAL=1405626298.65
 _roslang_LANGS:INTERNAL=rospy;roscpp;roslisp
 _rospack_deps_manifests_invoke_result:INTERNAL=/opt/ros/fuerte/share/std_msgs/manifest.xml;/opt/ros/fuerte/share/roslang/manifest.xml;/opt/ros/fuerte/share/rospy/manifest.xml;/opt/ros/fuerte/share/roscpp/manifest.xml;/opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
 _rospack_msgsrv_gen_invoke_result:INTERNAL=

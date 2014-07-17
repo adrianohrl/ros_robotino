@@ -22,7 +22,7 @@ CMakeFiles/refbox_talker.dir/src/refbox_talker.o
  ../include/protobuf_comm/queue_entry.h
  ../include/utils/misc/string_compare.h
  ../include/utils/system/argparser.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/src/refbox_talker.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/src/refbox_talker.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h

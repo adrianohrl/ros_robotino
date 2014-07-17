@@ -31,14 +31,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox
+CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build
+CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build
 
 # Utility rule file for test-results.
 
@@ -61,6 +58,6 @@ CMakeFiles/test-results.dir/clean:
 .PHONY : CMakeFiles/test-results.dir/clean
 
 CMakeFiles/test-results.dir/depend:
-	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles/test-results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build/CMakeFiles/test-results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test-results.dir/depend
 

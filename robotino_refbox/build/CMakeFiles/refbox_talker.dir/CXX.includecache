@@ -312,11 +312,11 @@ string
 getopt.h
 -
 
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/src/refbox_talker.cpp
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/src/refbox_talker.cpp
 ros/ros.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/src/ros/ros.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/src/ros/ros.h
 std_msgs/String.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/src/std_msgs/String.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/src/std_msgs/String.h
 protobuf_comm/peer.h
 -
 utils/system/argparser.h

@@ -6,7 +6,7 @@
 /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir
 /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles/ROSBUILD_gensrv_py.dir
 /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles/clean-test-results.dir
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles/robotino_local_move_server_node.dir
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles/robotino_local_move_node.dir
 /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles/rosbuild_precompile.dir
 /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles/rosbuild_premsgsrvgen.dir
 /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles/rospack_genmsg.dir

@@ -7,9 +7,10 @@ FILE(REMOVE_RECURSE
   "../srv_gen"
   "CMakeFiles/ROSBUILD_genmsg_py"
   "../src/robotino_vision/msg/__init__.py"
-  "../src/robotino_vision/msg/_Puck.py"
-  "../src/robotino_vision/msg/_LampPost.py"
-  "../src/robotino_vision/msg/_Lamp.py"
+  "../src/robotino_vision/msg/_LampPostState.py"
+  "../src/robotino_vision/msg/_CameraMode.py"
+  "../src/robotino_vision/msg/_PuckState.py"
+  "../src/robotino_vision/msg/_LampState.py"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -52,7 +52,6 @@ CMakeFiles/ROSBUILD_gensrv_py: ../src/robotino_vision/srv/__init__.py
 ../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: ../srv/GetPucksPolarCoordinates.srv
 ../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/gensrv_py.py
 ../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/share/roslib/bin/gendeps
-../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: ../msg/Puck.msg
 ../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: ../manifest.xml
 ../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
 ../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/share/roslang/manifest.xml
