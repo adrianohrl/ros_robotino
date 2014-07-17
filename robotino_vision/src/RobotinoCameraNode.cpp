@@ -11,7 +11,7 @@
 RobotinoCameraNode::RobotinoCameraNode()
 	: nh_("~")
 {
-	nh_.param<std::string>("hostname", hostname_, "192.168.10.102:12080");
+	nh_.param<std::string>("hostname", hostname_, "0.0.0.0:12080");
 	nh_.param<int>("cameraNumber", cameraNumber_, 0);
 
 	std::ostringstream os;

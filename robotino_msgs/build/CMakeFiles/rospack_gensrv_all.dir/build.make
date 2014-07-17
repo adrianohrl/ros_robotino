@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_msgs/build
 
 # Utility rule file for rospack_gensrv_all.
 
@@ -57,6 +60,6 @@ CMakeFiles/rospack_gensrv_all.dir/clean:
 .PHONY : CMakeFiles/rospack_gensrv_all.dir/clean
 
 CMakeFiles/rospack_gensrv_all.dir/depend:
-	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles/rospack_gensrv_all.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_msgs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_msgs /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_msgs /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_msgs/build /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_msgs/build /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles/rospack_gensrv_all.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rospack_gensrv_all.dir/depend
 

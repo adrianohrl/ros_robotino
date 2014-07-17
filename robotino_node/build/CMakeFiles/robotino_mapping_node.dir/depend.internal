@@ -3,7 +3,7 @@
 
 CMakeFiles/robotino_mapping_node.dir/src/ComROS.o
  ../include/ComROS.h
- /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/ComROS.cpp
+ /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node/src/ComROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -64,7 +64,7 @@ CMakeFiles/robotino_mapping_node.dir/src/ComROS.o
 CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.o
  ../include/InitialPoseROS.h
  ../include/transform.h
- /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/InitialPoseROS.cpp
+ /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node/src/InitialPoseROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Point.h
@@ -172,7 +172,7 @@ CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.o
 CMakeFiles/robotino_mapping_node.dir/src/MappingROS.o
  ../include/MappingROS.h
  ../include/transform.h
- /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/MappingROS.cpp
+ /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node/src/MappingROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Point.h
@@ -279,7 +279,7 @@ CMakeFiles/robotino_mapping_node.dir/src/MappingROS.o
 CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.o
  ../include/NavGoalROS.h
  ../include/transform.h
- /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/NavGoalROS.cpp
+ /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node/src/NavGoalROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Point.h
@@ -390,7 +390,7 @@ CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.o
  ../include/NavGoalROS.h
  ../include/RobotinoMappingNode.h
  ../include/transform.h
- /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/RobotinoMappingNode.cpp
+ /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node/src/RobotinoMappingNode.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Point.h
@@ -506,7 +506,7 @@ CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.o
  ../include/NavGoalROS.h
  ../include/RobotinoMappingNode.h
  ../include/transform.h
- /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/robotino_mapping_node.cpp
+ /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node/src/robotino_mapping_node.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Point.h

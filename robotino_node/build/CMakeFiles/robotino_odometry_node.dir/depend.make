@@ -62,7 +62,7 @@ CMakeFiles/robotino_odometry_node.dir/src/ComROS.o: /usr/local/robotino/api2/inc
 CMakeFiles/robotino_odometry_node.dir/src/ComROS.o: /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 
 CMakeFiles/robotino_odometry_node.dir/src/OdometryROS.o: ../include/OdometryROS.h
-CMakeFiles/robotino_odometry_node.dir/src/OdometryROS.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/ResetOdometry.h
+CMakeFiles/robotino_odometry_node.dir/src/OdometryROS.o: /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/ResetOdometry.h
 CMakeFiles/robotino_odometry_node.dir/src/OdometryROS.o: ../src/OdometryROS.cpp
 CMakeFiles/robotino_odometry_node.dir/src/OdometryROS.o: /opt/ros/fuerte/include/XmlRpcDecl.h
 CMakeFiles/robotino_odometry_node.dir/src/OdometryROS.o: /opt/ros/fuerte/include/XmlRpcValue.h
@@ -162,7 +162,7 @@ CMakeFiles/robotino_odometry_node.dir/src/OdometryROS.o: /usr/local/robotino/api
 CMakeFiles/robotino_odometry_node.dir/src/RobotinoOdometryNode.o: ../include/ComROS.h
 CMakeFiles/robotino_odometry_node.dir/src/RobotinoOdometryNode.o: ../include/OdometryROS.h
 CMakeFiles/robotino_odometry_node.dir/src/RobotinoOdometryNode.o: ../include/RobotinoOdometryNode.h
-CMakeFiles/robotino_odometry_node.dir/src/RobotinoOdometryNode.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/ResetOdometry.h
+CMakeFiles/robotino_odometry_node.dir/src/RobotinoOdometryNode.o: /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/ResetOdometry.h
 CMakeFiles/robotino_odometry_node.dir/src/RobotinoOdometryNode.o: ../src/RobotinoOdometryNode.cpp
 CMakeFiles/robotino_odometry_node.dir/src/RobotinoOdometryNode.o: /opt/ros/fuerte/include/XmlRpcDecl.h
 CMakeFiles/robotino_odometry_node.dir/src/RobotinoOdometryNode.o: /opt/ros/fuerte/include/XmlRpcValue.h
@@ -264,7 +264,7 @@ CMakeFiles/robotino_odometry_node.dir/src/RobotinoOdometryNode.o: /usr/local/rob
 CMakeFiles/robotino_odometry_node.dir/src/robotino_odometry_node.o: ../include/ComROS.h
 CMakeFiles/robotino_odometry_node.dir/src/robotino_odometry_node.o: ../include/OdometryROS.h
 CMakeFiles/robotino_odometry_node.dir/src/robotino_odometry_node.o: ../include/RobotinoOdometryNode.h
-CMakeFiles/robotino_odometry_node.dir/src/robotino_odometry_node.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/ResetOdometry.h
+CMakeFiles/robotino_odometry_node.dir/src/robotino_odometry_node.o: /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/ResetOdometry.h
 CMakeFiles/robotino_odometry_node.dir/src/robotino_odometry_node.o: ../src/robotino_odometry_node.cpp
 CMakeFiles/robotino_odometry_node.dir/src/robotino_odometry_node.o: /opt/ros/fuerte/include/XmlRpcDecl.h
 CMakeFiles/robotino_odometry_node.dir/src/robotino_odometry_node.o: /opt/ros/fuerte/include/XmlRpcValue.h

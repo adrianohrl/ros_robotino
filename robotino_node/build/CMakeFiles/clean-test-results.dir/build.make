@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node/build
 
 # Utility rule file for clean-test-results.
 
@@ -43,7 +46,7 @@ CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_n
 include CMakeFiles/clean-test-results.dir/progress.make
 
 CMakeFiles/clean-test-results:
-	if ! rm -rf /home/viki/.ros/test_results/robotino_node; then echo WARNING:\ failed\ to\ remove\ test-results\ directory ; fi
+	if ! rm -rf /home/robotino/.ros/test_results/robotino_node; then echo WARNING:\ failed\ to\ remove\ test-results\ directory ; fi
 
 clean-test-results: CMakeFiles/clean-test-results
 clean-test-results: CMakeFiles/clean-test-results.dir/build.make
@@ -58,6 +61,6 @@ CMakeFiles/clean-test-results.dir/clean:
 .PHONY : CMakeFiles/clean-test-results.dir/clean
 
 CMakeFiles/clean-test-results.dir/depend:
-	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/build/CMakeFiles/clean-test-results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node/build /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node/build /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node/build/CMakeFiles/clean-test-results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean-test-results.dir/depend
 

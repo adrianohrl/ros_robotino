@@ -1,8 +1,8 @@
 FILE(REMOVE_RECURSE
-  "../src/robotino_msgs/msg"
-  "../src/robotino_msgs/srv"
   "../msg_gen"
   "../srv_gen"
+  "../src/robotino_msgs/msg"
+  "../src/robotino_msgs/srv"
   "../msg_gen"
   "../srv_gen"
   "CMakeFiles/test"

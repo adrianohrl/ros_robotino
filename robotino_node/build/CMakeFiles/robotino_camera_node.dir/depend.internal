@@ -3,7 +3,7 @@
 
 CMakeFiles/robotino_camera_node.dir/src/CameraROS.o
  ../include/CameraROS.h
- /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/CameraROS.cpp
+ /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node/src/CameraROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -81,7 +81,7 @@ CMakeFiles/robotino_camera_node.dir/src/CameraROS.o
  /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 CMakeFiles/robotino_camera_node.dir/src/ComROS.o
  ../include/ComROS.h
- /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/ComROS.cpp
+ /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node/src/ComROS.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -143,7 +143,7 @@ CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.o
  ../include/CameraROS.h
  ../include/ComROS.h
  ../include/RobotinoCameraNode.h
- /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/RobotinoCameraNode.cpp
+ /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node/src/RobotinoCameraNode.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
@@ -223,7 +223,7 @@ CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.o
  ../include/CameraROS.h
  ../include/ComROS.h
  ../include/RobotinoCameraNode.h
- /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/robotino_camera_node.cpp
+ /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_node/src/robotino_camera_node.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h
