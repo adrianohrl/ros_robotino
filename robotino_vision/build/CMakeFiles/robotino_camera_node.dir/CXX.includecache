@@ -22,33 +22,9 @@ opencv2/imgproc/imgproc.hpp
 rec/robotino/api2/Camera.h
 ../include/rec/robotino/api2/Camera.h
 
-../include/ComROS.h
-rec/robotino/api2/Com.h
-../include/rec/robotino/api2/Com.h
-ros/ros.h
--
-string
--
-
-../include/RobotinoCameraNode.h
-ComROS.h
-../include/ComROS.h
+/home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/CameraROS.cpp
 CameraROS.h
-../include/CameraROS.h
-ros/ros.h
--
-
-/home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/RobotinoCameraNode.cpp
-RobotinoCameraNode.h
-/home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/RobotinoCameraNode.h
-sstream
--
-
-/home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/robotino_camera_node.cpp
-RobotinoCameraNode.h
-/home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/RobotinoCameraNode.h
-ros/ros.h
--
+/home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/CameraROS.h
 
 /opt/ros/fuerte/include/XmlRpcDecl.h
 ros/macros.h
@@ -1398,14 +1374,6 @@ rec/robotino/api2/CameraFormat.h
 string.h
 -
 
-/usr/local/robotino/api2/include/rec/robotino/api2/Com.h
-rec/robotino/api2/defines.h
-/usr/local/robotino/api2/include/rec/robotino/api2/rec/robotino/api2/defines.h
-rec/robotino/api2/ComId.h
-/usr/local/robotino/api2/include/rec/robotino/api2/rec/robotino/api2/ComId.h
-rec/robotino/api2/RobotinoException.h
-/usr/local/robotino/api2/include/rec/robotino/api2/rec/robotino/api2/RobotinoException.h
-
 /usr/local/robotino/api2/include/rec/robotino/api2/ComId.h
 rec/robotino/api2/defines.h
 /usr/local/robotino/api2/include/rec/robotino/api2/rec/robotino/api2/defines.h
@@ -1413,12 +1381,6 @@ rec/robotino/api2/defines.h
 /usr/local/robotino/api2/include/rec/robotino/api2/ComObject.h
 rec/robotino/api2/ComId.h
 /usr/local/robotino/api2/include/rec/robotino/api2/rec/robotino/api2/ComId.h
-
-/usr/local/robotino/api2/include/rec/robotino/api2/RobotinoException.h
-exception
--
-string
--
 
 /usr/local/robotino/api2/include/rec/robotino/api2/defines.h
 

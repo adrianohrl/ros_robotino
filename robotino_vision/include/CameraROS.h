@@ -37,7 +37,6 @@ public:
 	void toggleMode();
 	Mat getImage();
 	void processImage();
-	bool isUpdatingImage();
 
 private:
 
