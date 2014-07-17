@@ -1,0 +1,20 @@
+<package>
+  <description brief="robotino_vision_fb">
+
+     robotino_vision_fb
+
+  </description>
+  <author>Robotino</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/robotino_vision_fb</url>
+  <depend package="std_msgs"/>
+  <depend package="roscpp"/>
+  <depend package="robotino_msgs"/>
+  <depend package="opencv2"/>
+  <depend package="cv_bridge"/>
+  <depend package="image_transport"/>
+
+</package>
+
+

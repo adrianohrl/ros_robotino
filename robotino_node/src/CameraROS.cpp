@@ -17,6 +17,7 @@ extern bool fillImage(Image &image, const std::string &encoding_arg, uint32_t ro
 CameraROS::CameraROS():
 	img_transport_(nh_)
 {
+	setBGREnabled(true);
 }
 
 CameraROS::~CameraROS()

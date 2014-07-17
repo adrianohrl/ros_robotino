@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/viki/ros_workspace/sensors_simulator/src/image_publisher.cpp
+/home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator/src/image_publisher.cpp
 ros/ros.h
 -
 image_transport/image_transport.h

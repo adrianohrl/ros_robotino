@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/ros_workspace/sensors_simulator
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/ros_workspace/sensors_simulator/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/image_publisher.dir/depend.make
@@ -63,17 +66,17 @@ CMakeFiles/image_publisher.dir/src/image_publisher.o: /opt/ros/fuerte/share/rosc
 CMakeFiles/image_publisher.dir/src/image_publisher.o: /opt/ros/fuerte/stacks/pluginlib/manifest.xml
 CMakeFiles/image_publisher.dir/src/image_publisher.o: /opt/ros/fuerte/share/message_filters/manifest.xml
 CMakeFiles/image_publisher.dir/src/image_publisher.o: /opt/ros/fuerte/stacks/image_common/image_transport/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/sensors_simulator/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/image_publisher.dir/src/image_publisher.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/image_publisher.dir/src/image_publisher.o -c /home/viki/ros_workspace/sensors_simulator/src/image_publisher.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/image_publisher.dir/src/image_publisher.o -c /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator/src/image_publisher.cpp
 
 CMakeFiles/image_publisher.dir/src/image_publisher.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_publisher.dir/src/image_publisher.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/viki/ros_workspace/sensors_simulator/src/image_publisher.cpp > CMakeFiles/image_publisher.dir/src/image_publisher.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator/src/image_publisher.cpp > CMakeFiles/image_publisher.dir/src/image_publisher.i
 
 CMakeFiles/image_publisher.dir/src/image_publisher.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_publisher.dir/src/image_publisher.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/viki/ros_workspace/sensors_simulator/src/image_publisher.cpp -o CMakeFiles/image_publisher.dir/src/image_publisher.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator/src/image_publisher.cpp -o CMakeFiles/image_publisher.dir/src/image_publisher.s
 
 CMakeFiles/image_publisher.dir/src/image_publisher.o.requires:
 .PHONY : CMakeFiles/image_publisher.dir/src/image_publisher.o.requires
@@ -109,6 +112,6 @@ CMakeFiles/image_publisher.dir/clean:
 .PHONY : CMakeFiles/image_publisher.dir/clean
 
 CMakeFiles/image_publisher.dir/depend:
-	cd /home/viki/ros_workspace/sensors_simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/sensors_simulator /home/viki/ros_workspace/sensors_simulator /home/viki/ros_workspace/sensors_simulator/build /home/viki/ros_workspace/sensors_simulator/build /home/viki/ros_workspace/sensors_simulator/build/CMakeFiles/image_publisher.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator/build /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator/build /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator/build/CMakeFiles/image_publisher.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/image_publisher.dir/depend
 

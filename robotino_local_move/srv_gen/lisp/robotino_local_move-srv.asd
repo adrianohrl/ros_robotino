@@ -6,4 +6,6 @@
   :components ((:file "_package")
     (:file "Stop" :depends-on ("_package_Stop"))
     (:file "_package_Stop" :depends-on ("_package"))
+    (:file "FullPath" :depends-on ("_package_FullPath"))
+    (:file "_package_FullPath" :depends-on ("_package"))
   ))

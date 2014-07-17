@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/ros_workspace/sensors_simulator
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/ros_workspace/sensors_simulator/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator/build
 
 # Utility rule file for rospack_gensrv.
 
@@ -57,6 +60,6 @@ CMakeFiles/rospack_gensrv.dir/clean:
 .PHONY : CMakeFiles/rospack_gensrv.dir/clean
 
 CMakeFiles/rospack_gensrv.dir/depend:
-	cd /home/viki/ros_workspace/sensors_simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/sensors_simulator /home/viki/ros_workspace/sensors_simulator /home/viki/ros_workspace/sensors_simulator/build /home/viki/ros_workspace/sensors_simulator/build /home/viki/ros_workspace/sensors_simulator/build/CMakeFiles/rospack_gensrv.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator/build /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator/build /home/robotino/fuerte_workspace/sandbox/robotino/sensors_simulator/build/CMakeFiles/rospack_gensrv.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rospack_gensrv.dir/depend
 
