@@ -22,9 +22,9 @@ opencv2/imgproc/imgproc.hpp
 rec/robotino/api2/Camera.h
 ../include/rec/robotino/api2/Camera.h
 
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/CameraROS.cpp
+/home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/CameraROS.cpp
 CameraROS.h
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/CameraROS.h
+/home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/CameraROS.h
 
 /opt/ros/fuerte/include/XmlRpcDecl.h
 ros/macros.h

@@ -185,7 +185,6 @@ CMakeFiles/robotino_vision_node.dir/src/ComROS.o: /usr/local/robotino/api2/inclu
 CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o: ../include/CameraROS.h
 CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o: ../include/ComROS.h
 CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o: ../include/RobotinoVision.h
-CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o: ../msg_gen/cpp/include/robotino_vision/CameraMode.h
 CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o: ../msg_gen/cpp/include/robotino_vision/LampPostState.h
 CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o: ../msg_gen/cpp/include/robotino_vision/LampState.h
 CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o: ../msg_gen/cpp/include/robotino_vision/PuckState.h

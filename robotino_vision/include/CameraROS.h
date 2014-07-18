@@ -46,6 +46,16 @@ private:
 	bool updatingImgRGB_;
 	Mat imgRGB_;
 	//unsigned int counter_;
+	int threshVal;
+	int dilationSize;
+	int redThreshMinVal1;
+	int redThreshMaxVal1;
+	int redThreshMinVal2;
+	int redThreshMaxVal2;
+	int yellowThreshMinVal;
+	int yellowThreshMaxVal;
+	int greenThreshMinVal;
+	int greenThreshMaxVal;
 
 	void imageReceivedEvent(
 			const unsigned char* data,

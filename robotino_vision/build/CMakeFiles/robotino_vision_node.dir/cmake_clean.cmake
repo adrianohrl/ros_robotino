@@ -1,8 +1,8 @@
 FILE(REMOVE_RECURSE
-  "../src/robotino_vision/msg"
-  "../src/robotino_vision/srv"
   "../msg_gen"
   "../srv_gen"
+  "../src/robotino_vision/msg"
+  "../src/robotino_vision/srv"
   "../msg_gen"
   "../srv_gen"
   "CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.o"

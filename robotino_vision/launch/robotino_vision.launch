@@ -3,8 +3,8 @@
 	<arg name="robot" default="r1"/>
 	<group ns="$(arg robot)">
 	  	<node pkg="robotino_vision" type="robotino_vision_node" name="robotino_vision_node" output="screen">
-	    		<param name="hostname" value="$(arg hostname)">
-	    		<param name="cameraNumber" value="0">
+	    		<param name="hostname" value="$(arg hostname)"/>
+	    		<param name="cameraNumber" value="0"/>
 		</node>
 	</group>
 </launch>

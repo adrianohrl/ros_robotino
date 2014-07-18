@@ -1,12 +1,10 @@
 (cl:defpackage robotino_vision-msg
   (:use )
   (:export
-   "<LAMPPOSTSTATE>"
-   "LAMPPOSTSTATE"
-   "<CAMERAMODE>"
-   "CAMERAMODE"
    "<PUCKSTATE>"
    "PUCKSTATE"
+   "<LAMPPOSTSTATE>"
+   "LAMPPOSTSTATE"
    "<LAMPSTATE>"
    "LAMPSTATE"
   ))

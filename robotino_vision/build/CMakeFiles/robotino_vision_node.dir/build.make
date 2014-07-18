@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/robotino_vision_node.dir/depend.make
@@ -54,17 +57,17 @@ CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.o: /opt/ros/fuerte/
 CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.o: /opt/ros/fuerte/share/rospy/manifest.xml
 CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.o: /opt/ros/fuerte/share/roscpp/manifest.xml
 CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.o: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.o -c /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/robotino_vision_node.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.o -c /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/robotino_vision_node.cpp
 
 CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/robotino_vision_node.cpp > CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/robotino_vision_node.cpp > CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.i
 
 CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/robotino_vision_node.cpp -o CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/robotino_vision_node.cpp -o CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.s
 
 CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.o.requires:
 .PHONY : CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.o.requires
@@ -83,17 +86,17 @@ CMakeFiles/robotino_vision_node.dir/src/ComROS.o: /opt/ros/fuerte/share/roslang/
 CMakeFiles/robotino_vision_node.dir/src/ComROS.o: /opt/ros/fuerte/share/rospy/manifest.xml
 CMakeFiles/robotino_vision_node.dir/src/ComROS.o: /opt/ros/fuerte/share/roscpp/manifest.xml
 CMakeFiles/robotino_vision_node.dir/src/ComROS.o: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_vision_node.dir/src/ComROS.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_vision_node.dir/src/ComROS.o -c /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/ComROS.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_vision_node.dir/src/ComROS.o -c /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/ComROS.cpp
 
 CMakeFiles/robotino_vision_node.dir/src/ComROS.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_vision_node.dir/src/ComROS.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/ComROS.cpp > CMakeFiles/robotino_vision_node.dir/src/ComROS.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/ComROS.cpp > CMakeFiles/robotino_vision_node.dir/src/ComROS.i
 
 CMakeFiles/robotino_vision_node.dir/src/ComROS.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_vision_node.dir/src/ComROS.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/ComROS.cpp -o CMakeFiles/robotino_vision_node.dir/src/ComROS.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/ComROS.cpp -o CMakeFiles/robotino_vision_node.dir/src/ComROS.s
 
 CMakeFiles/robotino_vision_node.dir/src/ComROS.o.requires:
 .PHONY : CMakeFiles/robotino_vision_node.dir/src/ComROS.o.requires
@@ -112,17 +115,17 @@ CMakeFiles/robotino_vision_node.dir/src/CameraROS.o: /opt/ros/fuerte/share/rosla
 CMakeFiles/robotino_vision_node.dir/src/CameraROS.o: /opt/ros/fuerte/share/rospy/manifest.xml
 CMakeFiles/robotino_vision_node.dir/src/CameraROS.o: /opt/ros/fuerte/share/roscpp/manifest.xml
 CMakeFiles/robotino_vision_node.dir/src/CameraROS.o: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_vision_node.dir/src/CameraROS.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_vision_node.dir/src/CameraROS.o -c /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/CameraROS.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_vision_node.dir/src/CameraROS.o -c /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/CameraROS.cpp
 
 CMakeFiles/robotino_vision_node.dir/src/CameraROS.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_vision_node.dir/src/CameraROS.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/CameraROS.cpp > CMakeFiles/robotino_vision_node.dir/src/CameraROS.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/CameraROS.cpp > CMakeFiles/robotino_vision_node.dir/src/CameraROS.i
 
 CMakeFiles/robotino_vision_node.dir/src/CameraROS.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_vision_node.dir/src/CameraROS.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/CameraROS.cpp -o CMakeFiles/robotino_vision_node.dir/src/CameraROS.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/CameraROS.cpp -o CMakeFiles/robotino_vision_node.dir/src/CameraROS.s
 
 CMakeFiles/robotino_vision_node.dir/src/CameraROS.o.requires:
 .PHONY : CMakeFiles/robotino_vision_node.dir/src/CameraROS.o.requires
@@ -141,17 +144,17 @@ CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o: /opt/ros/fuerte/share/
 CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o: /opt/ros/fuerte/share/rospy/manifest.xml
 CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o: /opt/ros/fuerte/share/roscpp/manifest.xml
 CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o -c /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/RobotinoVision.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o -c /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/RobotinoVision.cpp
 
 CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/RobotinoVision.cpp > CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/RobotinoVision.cpp > CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.i
 
 CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/src/RobotinoVision.cpp -o CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/src/RobotinoVision.cpp -o CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.s
 
 CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o.requires:
 .PHONY : CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o.requires
@@ -197,6 +200,6 @@ CMakeFiles/robotino_vision_node.dir/clean:
 .PHONY : CMakeFiles/robotino_vision_node.dir/clean
 
 CMakeFiles/robotino_vision_node.dir/depend:
-	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles/robotino_vision_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles/robotino_vision_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/robotino_vision_node.dir/depend
 
