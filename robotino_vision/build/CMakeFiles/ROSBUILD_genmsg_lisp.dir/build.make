@@ -45,9 +45,6 @@ include CMakeFiles/ROSBUILD_genmsg_lisp.dir/progress.make
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/LampPostState.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LampPostState.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/CameraMode.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_CameraMode.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/PuckState.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_PuckState.lisp
@@ -73,23 +70,6 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LampState.lisp
 
 ../msg_gen/lisp/_package_LampPostState.lisp: ../msg_gen/lisp/LampPostState.lisp
 
-../msg_gen/lisp/CameraMode.lisp: ../msg/CameraMode.msg
-../msg_gen/lisp/CameraMode.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
-../msg_gen/lisp/CameraMode.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/lisp/CameraMode.lisp: ../manifest.xml
-../msg_gen/lisp/CameraMode.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../msg_gen/lisp/CameraMode.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/lisp/CameraMode.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
-../msg_gen/lisp/CameraMode.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/lisp/CameraMode.lisp: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/CameraMode.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_CameraMode.lisp"
-	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/msg/CameraMode.msg
-
-../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/CameraMode.lisp
-
-../msg_gen/lisp/_package_CameraMode.lisp: ../msg_gen/lisp/CameraMode.lisp
-
 ../msg_gen/lisp/PuckState.lisp: ../msg/PuckState.msg
 ../msg_gen/lisp/PuckState.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
 ../msg_gen/lisp/PuckState.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
@@ -99,7 +79,7 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LampState.lisp
 ../msg_gen/lisp/PuckState.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
 ../msg_gen/lisp/PuckState.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/lisp/PuckState.lisp: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/PuckState.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_PuckState.lisp"
 	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/msg/PuckState.msg
 
@@ -116,7 +96,7 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LampState.lisp
 ../msg_gen/lisp/LampState.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
 ../msg_gen/lisp/LampState.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/lisp/LampState.lisp: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/LampState.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_LampState.lisp"
 	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_vision/msg/LampState.msg
 
@@ -128,9 +108,6 @@ ROSBUILD_genmsg_lisp: CMakeFiles/ROSBUILD_genmsg_lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/LampPostState.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_LampPostState.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/CameraMode.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_CameraMode.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/PuckState.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_PuckState.lisp

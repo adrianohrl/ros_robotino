@@ -7,7 +7,6 @@ FILE(REMOVE_RECURSE
   "../srv_gen"
   "CMakeFiles/ROSBUILD_genmsg_cpp"
   "../msg_gen/cpp/include/robotino_vision/LampPostState.h"
-  "../msg_gen/cpp/include/robotino_vision/CameraMode.h"
   "../msg_gen/cpp/include/robotino_vision/PuckState.h"
   "../msg_gen/cpp/include/robotino_vision/LampState.h"
 )

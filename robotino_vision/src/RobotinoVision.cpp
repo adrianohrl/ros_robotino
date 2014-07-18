@@ -9,15 +9,13 @@
 #include <sstream>
 
 RobotinoVision::RobotinoVision()
-	: nh_("~"),
-	mode_(OFF)
+	: nh_("~")
 {
 	nh_.param<std::string>("hostname", hostname_, "0.0.0.0:12080");
 	nh_.param<int>("cameraNumber", cameraNumber_, 0);
 
-	camera_mode_sub_ = nh_.subscribe("/camera/mode", 1, &RobotinoCameraNode::cameraModeCallback, this);
-	lamp_post_state_pub_ = nh_.advertise<robotino_vision::LampPostState>("/lamp_post/state", 10);
-	puck_state_pub_ = nh_.advertise<robotino_vision::PuckState>("/puck/state", 10);
+	//lamp_post_state_pub_ = nh_.advertise<robotino_vision::LampPostState>("/lamp_post/state", 10);
+	//puck_state_pub_ = nh_.advertise<robotino_vision::PuckState>("/puck/state", 10);
 
 	std::ostringstream os;
 	os << "Camera" << cameraNumber_;
@@ -28,9 +26,8 @@ RobotinoVision::RobotinoVision()
 
 RobotinoVision::~RobotinoVision()
 {
-	camera_mode_sub_.shutdown();
-	lamp_post_pub_.shutdown();
-	puck_state_.shutdown();
+	//lamp_post_pub_.shutdown();
+	//puck_state_.shutdown();
 }
 
 void RobotinoVision::initModules()
@@ -55,30 +52,7 @@ bool RobotinoVision::spin()
 	return true;
 }
 
-void RobotinoVision::cameraModeCallback(const robotino_vision::CameraModeConstPtr& msg)
-{
-	switch (msg->mode)
-	{
-		case 1:
-			mode_ = LAMP_POST;
-			camera_.activateLampPostMode();
-		break;
-		case 2:
-			mode_ = PUCK;
-			camera_.activateOrdinaryMode();
-		break;
-		default:
-			mode_ = OFF;
-			camera_.activateOrdinaryMode();
-	}
-}
-
-Mat getImage()
+Mat RobotinoVision::getImage()
 {
 	return camera_.getImage();
-}
-
-Mode getMode()
-{
-	return mode_;
 }

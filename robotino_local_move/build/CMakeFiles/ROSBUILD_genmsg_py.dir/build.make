@@ -51,15 +51,31 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_local_move/msg/__init__.py
 ../src/robotino_local_move/msg/__init__.py: ../src/robotino_local_move/msg/_LocalMoveActionResult.py
 ../src/robotino_local_move/msg/__init__.py: ../src/robotino_local_move/msg/_LocalMoveFeedback.py
 ../src/robotino_local_move/msg/__init__.py: ../src/robotino_local_move/msg/_LocalMoveActionFeedback.py
+../src/robotino_local_move/msg/__init__.py: ../src/robotino_local_move/msg/_LocalMoveActionFeedback.py
+../src/robotino_local_move/msg/__init__.py: ../src/robotino_local_move/msg/_LocalMoveActionResult.py
+../src/robotino_local_move/msg/__init__.py: ../src/robotino_local_move/msg/_LocalMoveAction.py
+../src/robotino_local_move/msg/__init__.py: ../src/robotino_local_move/msg/_LocalMoveGoal.py
 ../src/robotino_local_move/msg/__init__.py: ../src/robotino_local_move/msg/_PathDisplacements.py
+../src/robotino_local_move/msg/__init__.py: ../src/robotino_local_move/msg/_LocalMoveResult.py
+../src/robotino_local_move/msg/__init__.py: ../src/robotino_local_move/msg/_LocalMoveFeedback.py
+../src/robotino_local_move/msg/__init__.py: ../src/robotino_local_move/msg/_LocalMoveActionGoal.py
 ../src/robotino_local_move/msg/__init__.py: ../src/robotino_local_move/msg/_PathStatus.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_local_move/msg/__init__.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --initpy /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveAction.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveGoal.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveActionGoal.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveResult.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveActionResult.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveFeedback.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveActionFeedback.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/PathDisplacements.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/PathStatus.msg
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --initpy /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveAction.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveGoal.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveActionGoal.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveResult.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveActionResult.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveFeedback.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveActionFeedback.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveActionFeedback.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveActionResult.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveAction.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveGoal.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/PathDisplacements.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveResult.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveFeedback.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/LocalMoveActionGoal.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/msg/PathStatus.msg
 
 ../src/robotino_local_move/msg/_LocalMoveAction.py: ../msg/LocalMoveAction.msg
 ../src/robotino_local_move/msg/_LocalMoveAction.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
 ../src/robotino_local_move/msg/_LocalMoveAction.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/robotino_local_move/msg/_LocalMoveAction.py: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalID.msg
+../src/robotino_local_move/msg/_LocalMoveAction.py: ../msg/LocalMoveResult.msg
+../src/robotino_local_move/msg/_LocalMoveAction.py: ../msg/LocalMoveActionResult.msg
+../src/robotino_local_move/msg/_LocalMoveAction.py: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../src/robotino_local_move/msg/_LocalMoveAction.py: ../msg/LocalMoveActionFeedback.msg
+../src/robotino_local_move/msg/_LocalMoveAction.py: ../msg/LocalMoveActionGoal.msg
+../src/robotino_local_move/msg/_LocalMoveAction.py: ../msg/LocalMoveGoal.msg
+../src/robotino_local_move/msg/_LocalMoveAction.py: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalStatus.msg
+../src/robotino_local_move/msg/_LocalMoveAction.py: ../msg/LocalMoveFeedback.msg
 ../src/robotino_local_move/msg/_LocalMoveAction.py: ../manifest.xml
 ../src/robotino_local_move/msg/_LocalMoveAction.py: /opt/ros/fuerte/share/roslang/manifest.xml
 ../src/robotino_local_move/msg/_LocalMoveAction.py: /opt/ros/fuerte/share/roscpp/manifest.xml
@@ -158,6 +174,9 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_local_move/msg/__init__.py
 ../src/robotino_local_move/msg/_LocalMoveActionGoal.py: ../msg/LocalMoveActionGoal.msg
 ../src/robotino_local_move/msg/_LocalMoveActionGoal.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
 ../src/robotino_local_move/msg/_LocalMoveActionGoal.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/robotino_local_move/msg/_LocalMoveActionGoal.py: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalID.msg
+../src/robotino_local_move/msg/_LocalMoveActionGoal.py: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../src/robotino_local_move/msg/_LocalMoveActionGoal.py: ../msg/LocalMoveGoal.msg
 ../src/robotino_local_move/msg/_LocalMoveActionGoal.py: ../manifest.xml
 ../src/robotino_local_move/msg/_LocalMoveActionGoal.py: /opt/ros/fuerte/share/roslang/manifest.xml
 ../src/robotino_local_move/msg/_LocalMoveActionGoal.py: /opt/ros/fuerte/share/roscpp/manifest.xml
@@ -256,6 +275,10 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_local_move/msg/__init__.py
 ../src/robotino_local_move/msg/_LocalMoveActionResult.py: ../msg/LocalMoveActionResult.msg
 ../src/robotino_local_move/msg/_LocalMoveActionResult.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
 ../src/robotino_local_move/msg/_LocalMoveActionResult.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/robotino_local_move/msg/_LocalMoveActionResult.py: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalID.msg
+../src/robotino_local_move/msg/_LocalMoveActionResult.py: ../msg/LocalMoveResult.msg
+../src/robotino_local_move/msg/_LocalMoveActionResult.py: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalStatus.msg
+../src/robotino_local_move/msg/_LocalMoveActionResult.py: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
 ../src/robotino_local_move/msg/_LocalMoveActionResult.py: ../manifest.xml
 ../src/robotino_local_move/msg/_LocalMoveActionResult.py: /opt/ros/fuerte/share/roslang/manifest.xml
 ../src/robotino_local_move/msg/_LocalMoveActionResult.py: /opt/ros/fuerte/share/roscpp/manifest.xml
@@ -354,6 +377,10 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_local_move/msg/__init__.py
 ../src/robotino_local_move/msg/_LocalMoveActionFeedback.py: ../msg/LocalMoveActionFeedback.msg
 ../src/robotino_local_move/msg/_LocalMoveActionFeedback.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
 ../src/robotino_local_move/msg/_LocalMoveActionFeedback.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/robotino_local_move/msg/_LocalMoveActionFeedback.py: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalID.msg
+../src/robotino_local_move/msg/_LocalMoveActionFeedback.py: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../src/robotino_local_move/msg/_LocalMoveActionFeedback.py: /opt/ros/fuerte/share/actionlib_msgs/msg/GoalStatus.msg
+../src/robotino_local_move/msg/_LocalMoveActionFeedback.py: ../msg/LocalMoveFeedback.msg
 ../src/robotino_local_move/msg/_LocalMoveActionFeedback.py: ../manifest.xml
 ../src/robotino_local_move/msg/_LocalMoveActionFeedback.py: /opt/ros/fuerte/share/roslang/manifest.xml
 ../src/robotino_local_move/msg/_LocalMoveActionFeedback.py: /opt/ros/fuerte/share/roscpp/manifest.xml

@@ -11,7 +11,7 @@ c6e8aa4345c4c4d185316bcd65a4aef9 ../src/robotino_vision/msg/_CameraMode.py
 cec76a1b59bd9a360c518d4d070563ef ../src/robotino_vision/msg/_LampPostState.py
 70ca1a6f44237e3aa17f43bf6022e5c6 ../src/robotino_vision/msg/_LampState.py
 a3d7ef2135883f042d0f946f977ece3d ../src/robotino_vision/msg/_PuckState.py
-9d4795be64b4c88ac1e1231fa1320ee5 ../src/robotino_vision/msg/__init__.py
+f6ba3262b0c23fca51f921f47c7ab219 ../src/robotino_vision/msg/__init__.py
 9cb7578a49fb00981b0b22847c46036d ../src/robotino_vision/srv/_GetPucksPolarCoordinates.py
 5406c04bb7bcb4f00653139af913dc09 ../src/robotino_vision/srv/__init__.py
 2631b0882dc6c197db03f63d30a780f9 ../srv_gen/cpp/include/robotino_vision/GetPucksPolarCoordinates.h

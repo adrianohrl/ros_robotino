@@ -184,6 +184,7 @@ CMakeFiles/robotino_local_move_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/
 CMakeFiles/robotino_local_move_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/include/ros/wall_timer.h
 CMakeFiles/robotino_local_move_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/include/ros/wall_timer_options.h
 CMakeFiles/robotino_local_move_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/include/rosconsole/macros_generated.h
+CMakeFiles/robotino_local_move_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/include/sensor_msgs/LaserScan.h
 CMakeFiles/robotino_local_move_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/include/std_msgs/Bool.h
 CMakeFiles/robotino_local_move_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/include/std_msgs/Header.h
 CMakeFiles/robotino_local_move_node.dir/src/RobotinoLocalMoveServer.o: /opt/ros/fuerte/stacks/bullet/include/LinearMath/btMatrix3x3.h
@@ -310,6 +311,7 @@ CMakeFiles/robotino_local_move_node.dir/src/robotino_local_move_node.o: /opt/ros
 CMakeFiles/robotino_local_move_node.dir/src/robotino_local_move_node.o: /opt/ros/fuerte/include/ros/wall_timer.h
 CMakeFiles/robotino_local_move_node.dir/src/robotino_local_move_node.o: /opt/ros/fuerte/include/ros/wall_timer_options.h
 CMakeFiles/robotino_local_move_node.dir/src/robotino_local_move_node.o: /opt/ros/fuerte/include/rosconsole/macros_generated.h
+CMakeFiles/robotino_local_move_node.dir/src/robotino_local_move_node.o: /opt/ros/fuerte/include/sensor_msgs/LaserScan.h
 CMakeFiles/robotino_local_move_node.dir/src/robotino_local_move_node.o: /opt/ros/fuerte/include/std_msgs/Bool.h
 CMakeFiles/robotino_local_move_node.dir/src/robotino_local_move_node.o: /opt/ros/fuerte/include/std_msgs/Header.h
 

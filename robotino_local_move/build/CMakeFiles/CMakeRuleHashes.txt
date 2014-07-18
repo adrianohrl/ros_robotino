@@ -27,10 +27,13 @@ b0aca547c69cb1fc6fd1f276f1b1d86f ../src/robotino_local_move/msg/_LocalMoveAction
 8b0302b595858fcb92ac0f49c3923f0c ../src/robotino_local_move/msg/_LocalMoveResult.py
 0ca9accac115f2473a30a3b35e45cb18 ../src/robotino_local_move/msg/_PathDisplacements.py
 5b2e43edea6e361f2c4d80c101915b52 ../src/robotino_local_move/msg/_PathStatus.py
-427d15f7dabf4619daffc9efb34950b7 ../src/robotino_local_move/msg/__init__.py
+0dd187ea4d11f5ba648cf08d54c2541a ../src/robotino_local_move/msg/__init__.py
+f71e6e787dc04bd4a3a998114287be70 ../src/robotino_local_move/srv/_FullPath.py
 4c2c22a4a179fb9d5903a39593c53f38 ../src/robotino_local_move/srv/_Stop.py
-0b44ba7bfb803694557e5ccf9c828566 ../src/robotino_local_move/srv/__init__.py
+65954f16d0f9537a31bc2ae4212ac5f8 ../src/robotino_local_move/srv/__init__.py
+424b2bfb8c9c015b18340d2bc09f1b6e ../srv_gen/cpp/include/robotino_local_move/FullPath.h
 fe5bd692ab8ded001aed5abbb000b76c ../srv_gen/cpp/include/robotino_local_move/Stop.h
+54e5c1f7f45fce21ce5a93c68e89fb45 ../srv_gen/lisp/FullPath.lisp
 9bdca6578f960e1bd1ce7cf0edd1f4de ../srv_gen/lisp/Stop.lisp
 9a50dbc66ad2a0cb2483d8810f83e7f7 CMakeFiles/ROSBUILD_genaction_msgs
 9a50dbc66ad2a0cb2483d8810f83e7f7 CMakeFiles/ROSBUILD_genmsg_cpp

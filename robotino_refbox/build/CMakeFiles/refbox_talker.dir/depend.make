@@ -24,6 +24,14 @@ CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/utils/system/argpar
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../src/refbox_talker.cpp
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/XmlRpcDecl.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/XmlRpcValue.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/geometry_msgs/Point.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/geometry_msgs/Pose.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/geometry_msgs/PoseWithCovariance.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/geometry_msgs/Quaternion.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/geometry_msgs/Twist.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/geometry_msgs/TwistWithCovariance.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/geometry_msgs/Vector3.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/nav_msgs/Odometry.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/ros/advertise_options.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/ros/advertise_service_options.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/ros/assert.h
@@ -76,5 +84,6 @@ CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/ros/ty
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/ros/wall_timer.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/ros/wall_timer_options.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/rosconsole/macros_generated.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/std_msgs/Header.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/std_msgs/String.h
 

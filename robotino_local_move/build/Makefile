@@ -200,6 +200,19 @@ clean-test-results/fast:
 .PHONY : clean-test-results/fast
 
 #=============================================================================
+# Target rules for targets named manager_client
+
+# Build rule for target.
+manager_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 manager_client
+.PHONY : manager_client
+
+# fast build rule for target.
+manager_client/fast:
+	$(MAKE) -f CMakeFiles/manager_client.dir/build.make CMakeFiles/manager_client.dir/build
+.PHONY : manager_client/fast
+
+#=============================================================================
 # Target rules for targets named robotino_local_move_node
 
 # Build rule for target.
@@ -211,6 +224,19 @@ robotino_local_move_node: cmake_check_build_system
 robotino_local_move_node/fast:
 	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/build
 .PHONY : robotino_local_move_node/fast
+
+#=============================================================================
+# Target rules for targets named robotino_manager
+
+# Build rule for target.
+robotino_manager: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robotino_manager
+.PHONY : robotino_manager
+
+# fast build rule for target.
+robotino_manager/fast:
+	$(MAKE) -f CMakeFiles/robotino_manager.dir/build.make CMakeFiles/robotino_manager.dir/build
+.PHONY : robotino_manager/fast
 
 #=============================================================================
 # Target rules for targets named rosbuild_precompile
@@ -399,6 +425,21 @@ src/RobotinoLocalMoveServer.s:
 .PHONY : src/RobotinoLocalMoveServer.s
 
 # target to build an object file
+src/manager_client.o:
+	$(MAKE) -f CMakeFiles/manager_client.dir/build.make CMakeFiles/manager_client.dir/src/manager_client.o
+.PHONY : src/manager_client.o
+
+# target to preprocess a source file
+src/manager_client.i:
+	$(MAKE) -f CMakeFiles/manager_client.dir/build.make CMakeFiles/manager_client.dir/src/manager_client.i
+.PHONY : src/manager_client.i
+
+# target to generate assembly for a file
+src/manager_client.s:
+	$(MAKE) -f CMakeFiles/manager_client.dir/build.make CMakeFiles/manager_client.dir/src/manager_client.s
+.PHONY : src/manager_client.s
+
+# target to build an object file
 src/robotino_local_move_node.o:
 	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/src/robotino_local_move_node.o
 .PHONY : src/robotino_local_move_node.o
@@ -412,6 +453,21 @@ src/robotino_local_move_node.i:
 src/robotino_local_move_node.s:
 	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/src/robotino_local_move_node.s
 .PHONY : src/robotino_local_move_node.s
+
+# target to build an object file
+src/robotino_manager.o:
+	$(MAKE) -f CMakeFiles/robotino_manager.dir/build.make CMakeFiles/robotino_manager.dir/src/robotino_manager.o
+.PHONY : src/robotino_manager.o
+
+# target to preprocess a source file
+src/robotino_manager.i:
+	$(MAKE) -f CMakeFiles/robotino_manager.dir/build.make CMakeFiles/robotino_manager.dir/src/robotino_manager.i
+.PHONY : src/robotino_manager.i
+
+# target to generate assembly for a file
+src/robotino_manager.s:
+	$(MAKE) -f CMakeFiles/robotino_manager.dir/build.make CMakeFiles/robotino_manager.dir/src/robotino_manager.s
+.PHONY : src/robotino_manager.s
 
 # Help Target
 help:
@@ -428,8 +484,10 @@ help:
 	@echo "... ROSBUILD_gensrv_py"
 	@echo "... clean-test-results"
 	@echo "... edit_cache"
+	@echo "... manager_client"
 	@echo "... rebuild_cache"
 	@echo "... robotino_local_move_node"
+	@echo "... robotino_manager"
 	@echo "... rosbuild_precompile"
 	@echo "... rosbuild_premsgsrvgen"
 	@echo "... rospack_genmsg"
@@ -448,9 +506,15 @@ help:
 	@echo "... src/RobotinoLocalMoveServer.o"
 	@echo "... src/RobotinoLocalMoveServer.i"
 	@echo "... src/RobotinoLocalMoveServer.s"
+	@echo "... src/manager_client.o"
+	@echo "... src/manager_client.i"
+	@echo "... src/manager_client.s"
 	@echo "... src/robotino_local_move_node.o"
 	@echo "... src/robotino_local_move_node.i"
 	@echo "... src/robotino_local_move_node.s"
+	@echo "... src/robotino_manager.o"
+	@echo "... src/robotino_manager.i"
+	@echo "... src/robotino_manager.s"
 .PHONY : help
 
 

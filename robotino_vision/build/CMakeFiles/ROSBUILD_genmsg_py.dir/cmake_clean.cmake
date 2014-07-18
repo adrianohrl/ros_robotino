@@ -8,7 +8,6 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/ROSBUILD_genmsg_py"
   "../src/robotino_vision/msg/__init__.py"
   "../src/robotino_vision/msg/_LampPostState.py"
-  "../src/robotino_vision/msg/_CameraMode.py"
   "../src/robotino_vision/msg/_PuckState.py"
   "../src/robotino_vision/msg/_LampState.py"
 )

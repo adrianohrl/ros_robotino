@@ -1,6 +1,6 @@
 <launch>
 	<arg name="hostname" default="0.0.0.0:12080"/>
-	<arg name="robot" default="R1"/
+	<arg name="robot" default="R1"/>
 	<group ns="$(arg robot)">
 		<node name="robotino_node" pkg="robotino_node" type="robotino_node" output="screen">
 			<param name="hostname" value="$(arg hostname)" />
@@ -29,10 +29,10 @@
 	    		<param name="hostname" value="$(arg hostname)" />
 	  	</node>
 
-		<node pkg="robotino_vision" type="robotino_vision_node" name="robotino_vision_node" output="screen">
-	    		<param name="hostname" value="$(arg hostname)">
-	    		<param name="cameraNumber" value="0">
-		</node>	  	
+		<!--node pkg="robotino_vision" type="robotino_vision_node" name="robotino_vision_node" output="screen">
+	    		<param name="hostname" value="$(arg hostname)"/>
+	    		<param name="cameraNumber" value="0"/>
+		</node-->	  	
 	
 		<node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher" output="screen">
 	    		<param name="publish_frequency" type="double" value="20.0" />
