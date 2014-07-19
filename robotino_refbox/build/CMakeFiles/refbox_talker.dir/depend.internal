@@ -13,7 +13,6 @@ CMakeFiles/refbox_talker.dir/src/refbox_talker.o
  ../include/msgs/OrderInfo.pb.h
  ../include/msgs/Pose2D.pb.h
  ../include/msgs/PuckInfo.pb.h
- ../include/msgs/RobotInfo.pb.h
  ../include/msgs/Team.pb.h
  ../include/msgs/Time.pb.h
  ../include/protobuf_comm/frame_header.h
@@ -22,7 +21,14 @@ CMakeFiles/refbox_talker.dir/src/refbox_talker.o
  ../include/protobuf_comm/queue_entry.h
  ../include/utils/misc/string_compare.h
  ../include/utils/system/argparser.h
- /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/src/refbox_talker.cpp
+ ../msg_gen/cpp/include/robotino_refbox/Exploration_Info.h
+ ../msg_gen/cpp/include/robotino_refbox/Game_Info.h
+ ../msg_gen/cpp/include/robotino_refbox/Machine_Types.h
+ ../msg_gen/cpp/include/robotino_refbox/Order_Info.h
+ ../msg_gen/cpp/include/robotino_refbox/Reported_Machines.h
+ ../msg_gen/cpp/include/robotino_refbox/RobotPos.h
+ ../srv_gen/cpp/include/robotino_refbox/ReportMachine.h
+ /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/src/refbox_talker.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Point.h

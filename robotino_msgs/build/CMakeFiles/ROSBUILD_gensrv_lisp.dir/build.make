@@ -31,26 +31,44 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build
 
 # Utility rule file for ROSBUILD_gensrv_lisp.
 
 # Include the progress variables for this target.
 include CMakeFiles/ROSBUILD_gensrv_lisp.dir/progress.make
 
+CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/SetGripperState.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_SetGripperState.lisp
 CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/ResetOdometry.lisp
 CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package.lisp
 CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_ResetOdometry.lisp
 CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/SetEncoderPosition.lisp
 CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package.lisp
 CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_SetEncoderPosition.lisp
-CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/SetGripperState.lisp
-CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package.lisp
-CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_SetGripperState.lisp
+
+../srv_gen/lisp/SetGripperState.lisp: ../srv/SetGripperState.srv
+../srv_gen/lisp/SetGripperState.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../srv_gen/lisp/SetGripperState.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../srv_gen/lisp/SetGripperState.lisp: ../manifest.xml
+../srv_gen/lisp/SetGripperState.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../srv_gen/lisp/SetGripperState.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+../srv_gen/lisp/SetGripperState.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/lisp/SetGripperState.lisp, ../srv_gen/lisp/_package.lisp, ../srv_gen/lisp/_package_SetGripperState.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv/SetGripperState.srv
+
+../srv_gen/lisp/_package.lisp: ../srv_gen/lisp/SetGripperState.lisp
+
+../srv_gen/lisp/_package_SetGripperState.lisp: ../srv_gen/lisp/SetGripperState.lisp
 
 ../srv_gen/lisp/ResetOdometry.lisp: ../srv/ResetOdometry.srv
 ../srv_gen/lisp/ResetOdometry.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
@@ -59,9 +77,9 @@ CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_SetGripperState.lisp
 ../srv_gen/lisp/ResetOdometry.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
 ../srv_gen/lisp/ResetOdometry.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../srv_gen/lisp/ResetOdometry.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/lisp/ResetOdometry.lisp, ../srv_gen/lisp/_package.lisp, ../srv_gen/lisp/_package_ResetOdometry.lisp"
-	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv/ResetOdometry.srv
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv/ResetOdometry.srv
 
 ../srv_gen/lisp/_package.lisp: ../srv_gen/lisp/ResetOdometry.lisp
 
@@ -74,39 +92,24 @@ CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_SetGripperState.lisp
 ../srv_gen/lisp/SetEncoderPosition.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
 ../srv_gen/lisp/SetEncoderPosition.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../srv_gen/lisp/SetEncoderPosition.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/lisp/SetEncoderPosition.lisp, ../srv_gen/lisp/_package.lisp, ../srv_gen/lisp/_package_SetEncoderPosition.lisp"
-	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv/SetEncoderPosition.srv
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv/SetEncoderPosition.srv
 
 ../srv_gen/lisp/_package.lisp: ../srv_gen/lisp/SetEncoderPosition.lisp
 
 ../srv_gen/lisp/_package_SetEncoderPosition.lisp: ../srv_gen/lisp/SetEncoderPosition.lisp
 
-../srv_gen/lisp/SetGripperState.lisp: ../srv/SetGripperState.srv
-../srv_gen/lisp/SetGripperState.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
-../srv_gen/lisp/SetGripperState.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
-../srv_gen/lisp/SetGripperState.lisp: ../manifest.xml
-../srv_gen/lisp/SetGripperState.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
-../srv_gen/lisp/SetGripperState.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
-../srv_gen/lisp/SetGripperState.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/lisp/SetGripperState.lisp, ../srv_gen/lisp/_package.lisp, ../srv_gen/lisp/_package_SetGripperState.lisp"
-	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv/SetGripperState.srv
-
-../srv_gen/lisp/_package.lisp: ../srv_gen/lisp/SetGripperState.lisp
-
-../srv_gen/lisp/_package_SetGripperState.lisp: ../srv_gen/lisp/SetGripperState.lisp
-
 ROSBUILD_gensrv_lisp: CMakeFiles/ROSBUILD_gensrv_lisp
+ROSBUILD_gensrv_lisp: ../srv_gen/lisp/SetGripperState.lisp
+ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package.lisp
+ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_SetGripperState.lisp
 ROSBUILD_gensrv_lisp: ../srv_gen/lisp/ResetOdometry.lisp
 ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package.lisp
 ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_ResetOdometry.lisp
 ROSBUILD_gensrv_lisp: ../srv_gen/lisp/SetEncoderPosition.lisp
 ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package.lisp
 ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_SetEncoderPosition.lisp
-ROSBUILD_gensrv_lisp: ../srv_gen/lisp/SetGripperState.lisp
-ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package.lisp
-ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_SetGripperState.lisp
 ROSBUILD_gensrv_lisp: CMakeFiles/ROSBUILD_gensrv_lisp.dir/build.make
 .PHONY : ROSBUILD_gensrv_lisp
 
@@ -119,6 +122,6 @@ CMakeFiles/ROSBUILD_gensrv_lisp.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_gensrv_lisp.dir/clean
 
 CMakeFiles/ROSBUILD_gensrv_lisp.dir/depend:
-	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_gensrv_lisp.dir/depend
 

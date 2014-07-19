@@ -27,7 +27,7 @@ CameraROS::CameraROS()
 	//setFormat(640, 320, "raw");
 	imgRGB_ = Mat(320, 240, CV_8UC3, Scalar::all(0));
 	activateLampPostMode();
-	//setBGREnabled(false);	
+	//setBGREnabled(true);	
 }
 
 CameraROS::~CameraROS()

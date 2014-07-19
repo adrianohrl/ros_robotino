@@ -35,22 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,19 +162,6 @@ ROSBUILD_gensrv_lisp: cmake_check_build_system
 ROSBUILD_gensrv_lisp/fast:
 	$(MAKE) -f CMakeFiles/ROSBUILD_gensrv_lisp.dir/build.make CMakeFiles/ROSBUILD_gensrv_lisp.dir/build
 .PHONY : ROSBUILD_gensrv_lisp/fast
-
-#=============================================================================
-# Target rules for targets named ROSBUILD_gensrv_py
-
-# Build rule for target.
-ROSBUILD_gensrv_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ROSBUILD_gensrv_py
-.PHONY : ROSBUILD_gensrv_py
-
-# fast build rule for target.
-ROSBUILD_gensrv_py/fast:
-	$(MAKE) -f CMakeFiles/ROSBUILD_gensrv_py.dir/build.make CMakeFiles/ROSBUILD_gensrv_py.dir/build
-.PHONY : ROSBUILD_gensrv_py/fast
 
 #=============================================================================
 # Target rules for targets named clean-test-results
@@ -345,6 +332,19 @@ tests/fast:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
+#=============================================================================
+# Target rules for targets named vision_move_to_puck
+
+# Build rule for target.
+vision_move_to_puck: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vision_move_to_puck
+.PHONY : vision_move_to_puck
+
+# fast build rule for target.
+vision_move_to_puck/fast:
+	$(MAKE) -f CMakeFiles/vision_move_to_puck.dir/build.make CMakeFiles/vision_move_to_puck.dir/build
+.PHONY : vision_move_to_puck/fast
+
 # target to build an object file
 src/CameraROS.o:
 	$(MAKE) -f CMakeFiles/robotino_vision_node.dir/build.make CMakeFiles/robotino_vision_node.dir/src/CameraROS.o
@@ -376,6 +376,21 @@ src/ComROS.s:
 .PHONY : src/ComROS.s
 
 # target to build an object file
+src/FindPuck.o:
+	$(MAKE) -f CMakeFiles/robotino_vision_node.dir/build.make CMakeFiles/robotino_vision_node.dir/src/FindPuck.o
+.PHONY : src/FindPuck.o
+
+# target to preprocess a source file
+src/FindPuck.i:
+	$(MAKE) -f CMakeFiles/robotino_vision_node.dir/build.make CMakeFiles/robotino_vision_node.dir/src/FindPuck.i
+.PHONY : src/FindPuck.i
+
+# target to generate assembly for a file
+src/FindPuck.s:
+	$(MAKE) -f CMakeFiles/robotino_vision_node.dir/build.make CMakeFiles/robotino_vision_node.dir/src/FindPuck.s
+.PHONY : src/FindPuck.s
+
+# target to build an object file
 src/RobotinoVision.o:
 	$(MAKE) -f CMakeFiles/robotino_vision_node.dir/build.make CMakeFiles/robotino_vision_node.dir/src/RobotinoVision.o
 .PHONY : src/RobotinoVision.o
@@ -405,6 +420,21 @@ src/robotino_vision_node.s:
 	$(MAKE) -f CMakeFiles/robotino_vision_node.dir/build.make CMakeFiles/robotino_vision_node.dir/src/robotino_vision_node.s
 .PHONY : src/robotino_vision_node.s
 
+# target to build an object file
+src/vision_move_to_puck.o:
+	$(MAKE) -f CMakeFiles/vision_move_to_puck.dir/build.make CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.o
+.PHONY : src/vision_move_to_puck.o
+
+# target to preprocess a source file
+src/vision_move_to_puck.i:
+	$(MAKE) -f CMakeFiles/vision_move_to_puck.dir/build.make CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.i
+.PHONY : src/vision_move_to_puck.i
+
+# target to generate assembly for a file
+src/vision_move_to_puck.s:
+	$(MAKE) -f CMakeFiles/vision_move_to_puck.dir/build.make CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.s
+.PHONY : src/vision_move_to_puck.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -416,7 +446,6 @@ help:
 	@echo "... ROSBUILD_genmsg_py"
 	@echo "... ROSBUILD_gensrv_cpp"
 	@echo "... ROSBUILD_gensrv_lisp"
-	@echo "... ROSBUILD_gensrv_py"
 	@echo "... clean-test-results"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
@@ -432,18 +461,25 @@ help:
 	@echo "... test-results"
 	@echo "... test-results-run"
 	@echo "... tests"
+	@echo "... vision_move_to_puck"
 	@echo "... src/CameraROS.o"
 	@echo "... src/CameraROS.i"
 	@echo "... src/CameraROS.s"
 	@echo "... src/ComROS.o"
 	@echo "... src/ComROS.i"
 	@echo "... src/ComROS.s"
+	@echo "... src/FindPuck.o"
+	@echo "... src/FindPuck.i"
+	@echo "... src/FindPuck.s"
 	@echo "... src/RobotinoVision.o"
 	@echo "... src/RobotinoVision.i"
 	@echo "... src/RobotinoVision.s"
 	@echo "... src/robotino_vision_node.o"
 	@echo "... src/robotino_vision_node.i"
 	@echo "... src/robotino_vision_node.s"
+	@echo "... src/vision_move_to_puck.o"
+	@echo "... src/vision_move_to_puck.i"
+	@echo "... src/vision_move_to_puck.s"
 .PHONY : help
 
 

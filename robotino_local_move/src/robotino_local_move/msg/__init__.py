@@ -7,3 +7,4 @@ from ._PathStatus import *
 from ._LocalMoveGoal import *
 from ._LocalMoveResult import *
 from ._LocalMoveActionFeedback import *
+from ._RobotPos import *

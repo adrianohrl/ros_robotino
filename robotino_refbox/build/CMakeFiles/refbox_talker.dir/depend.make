@@ -12,7 +12,6 @@ CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/msgs/MachineReport.
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/msgs/OrderInfo.pb.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/msgs/Pose2D.pb.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/msgs/PuckInfo.pb.h
-CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/msgs/RobotInfo.pb.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/msgs/Team.pb.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/msgs/Time.pb.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/protobuf_comm/frame_header.h
@@ -21,6 +20,13 @@ CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/protobuf_comm/peer.
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/protobuf_comm/queue_entry.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/utils/misc/string_compare.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../include/utils/system/argparser.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../msg_gen/cpp/include/robotino_refbox/Exploration_Info.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../msg_gen/cpp/include/robotino_refbox/Game_Info.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../msg_gen/cpp/include/robotino_refbox/Machine_Types.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../msg_gen/cpp/include/robotino_refbox/Order_Info.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../msg_gen/cpp/include/robotino_refbox/Reported_Machines.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../msg_gen/cpp/include/robotino_refbox/RobotPos.h
+CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../srv_gen/cpp/include/robotino_refbox/ReportMachine.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: ../src/refbox_talker.cpp
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/XmlRpcDecl.h
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/include/XmlRpcValue.h

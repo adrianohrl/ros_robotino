@@ -31,20 +31,154 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build
 
 # Utility rule file for ROSBUILD_genmsg_lisp.
 
 # Include the progress variables for this target.
 include CMakeFiles/ROSBUILD_genmsg_lisp.dir/progress.make
 
-CMakeFiles/ROSBUILD_genmsg_lisp:
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/Exploration_Info.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_Exploration_Info.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/Order_Info.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_Order_Info.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/Reported_Machines.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_Reported_Machines.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/Machine_Types.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_Machine_Types.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/RobotPos.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_RobotPos.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/Game_Info.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_Game_Info.lisp
+
+../msg_gen/lisp/Exploration_Info.lisp: ../msg/Exploration_Info.msg
+../msg_gen/lisp/Exploration_Info.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/Exploration_Info.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/Exploration_Info.lisp: ../manifest.xml
+../msg_gen/lisp/Exploration_Info.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/lisp/Exploration_Info.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/Exploration_Info.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/lisp/Exploration_Info.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/Exploration_Info.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_Exploration_Info.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Exploration_Info.msg
+
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/Exploration_Info.lisp
+
+../msg_gen/lisp/_package_Exploration_Info.lisp: ../msg_gen/lisp/Exploration_Info.lisp
+
+../msg_gen/lisp/Order_Info.lisp: ../msg/Order_Info.msg
+../msg_gen/lisp/Order_Info.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/Order_Info.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/Order_Info.lisp: ../manifest.xml
+../msg_gen/lisp/Order_Info.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/lisp/Order_Info.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/Order_Info.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/lisp/Order_Info.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/Order_Info.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_Order_Info.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Order_Info.msg
+
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/Order_Info.lisp
+
+../msg_gen/lisp/_package_Order_Info.lisp: ../msg_gen/lisp/Order_Info.lisp
+
+../msg_gen/lisp/Reported_Machines.lisp: ../msg/Reported_Machines.msg
+../msg_gen/lisp/Reported_Machines.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/Reported_Machines.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/Reported_Machines.lisp: ../manifest.xml
+../msg_gen/lisp/Reported_Machines.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/lisp/Reported_Machines.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/Reported_Machines.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/lisp/Reported_Machines.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/Reported_Machines.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_Reported_Machines.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Reported_Machines.msg
+
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/Reported_Machines.lisp
+
+../msg_gen/lisp/_package_Reported_Machines.lisp: ../msg_gen/lisp/Reported_Machines.lisp
+
+../msg_gen/lisp/Machine_Types.lisp: ../msg/Machine_Types.msg
+../msg_gen/lisp/Machine_Types.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/Machine_Types.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/Machine_Types.lisp: ../manifest.xml
+../msg_gen/lisp/Machine_Types.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/lisp/Machine_Types.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/Machine_Types.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/lisp/Machine_Types.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/Machine_Types.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_Machine_Types.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Machine_Types.msg
+
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/Machine_Types.lisp
+
+../msg_gen/lisp/_package_Machine_Types.lisp: ../msg_gen/lisp/Machine_Types.lisp
+
+../msg_gen/lisp/RobotPos.lisp: ../msg/RobotPos.msg
+../msg_gen/lisp/RobotPos.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/RobotPos.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/RobotPos.lisp: ../manifest.xml
+../msg_gen/lisp/RobotPos.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/lisp/RobotPos.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/RobotPos.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/lisp/RobotPos.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/RobotPos.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_RobotPos.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/RobotPos.msg
+
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/RobotPos.lisp
+
+../msg_gen/lisp/_package_RobotPos.lisp: ../msg_gen/lisp/RobotPos.lisp
+
+../msg_gen/lisp/Game_Info.lisp: ../msg/Game_Info.msg
+../msg_gen/lisp/Game_Info.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/Game_Info.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/Game_Info.lisp: ../manifest.xml
+../msg_gen/lisp/Game_Info.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/lisp/Game_Info.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/Game_Info.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/lisp/Game_Info.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/Game_Info.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_Game_Info.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Game_Info.msg
+
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/Game_Info.lisp
+
+../msg_gen/lisp/_package_Game_Info.lisp: ../msg_gen/lisp/Game_Info.lisp
 
 ROSBUILD_genmsg_lisp: CMakeFiles/ROSBUILD_genmsg_lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/Exploration_Info.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_Exploration_Info.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/Order_Info.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_Order_Info.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/Reported_Machines.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_Reported_Machines.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/Machine_Types.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_Machine_Types.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/RobotPos.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_RobotPos.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/Game_Info.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_Game_Info.lisp
 ROSBUILD_genmsg_lisp: CMakeFiles/ROSBUILD_genmsg_lisp.dir/build.make
 .PHONY : ROSBUILD_genmsg_lisp
 
@@ -57,6 +191,6 @@ CMakeFiles/ROSBUILD_genmsg_lisp.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_genmsg_lisp.dir/clean
 
 CMakeFiles/ROSBUILD_genmsg_lisp.dir/depend:
-	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_genmsg_lisp.dir/depend
 

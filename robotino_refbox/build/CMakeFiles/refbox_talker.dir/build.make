@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/refbox_talker.dir/depend.make
@@ -53,17 +56,17 @@ CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/share/std_msgs
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/share/roslang/manifest.xml
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/share/rospy/manifest.xml
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o: /opt/ros/fuerte/share/roscpp/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/refbox_talker.dir/src/refbox_talker.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/refbox_talker.dir/src/refbox_talker.o -c /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/src/refbox_talker.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/refbox_talker.dir/src/refbox_talker.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/src/refbox_talker.cpp
 
 CMakeFiles/refbox_talker.dir/src/refbox_talker.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/refbox_talker.dir/src/refbox_talker.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/src/refbox_talker.cpp > CMakeFiles/refbox_talker.dir/src/refbox_talker.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/src/refbox_talker.cpp > CMakeFiles/refbox_talker.dir/src/refbox_talker.i
 
 CMakeFiles/refbox_talker.dir/src/refbox_talker.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/refbox_talker.dir/src/refbox_talker.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/src/refbox_talker.cpp -o CMakeFiles/refbox_talker.dir/src/refbox_talker.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/src/refbox_talker.cpp -o CMakeFiles/refbox_talker.dir/src/refbox_talker.s
 
 CMakeFiles/refbox_talker.dir/src/refbox_talker.o.requires:
 .PHONY : CMakeFiles/refbox_talker.dir/src/refbox_talker.o.requires
@@ -99,6 +102,6 @@ CMakeFiles/refbox_talker.dir/clean:
 .PHONY : CMakeFiles/refbox_talker.dir/clean
 
 CMakeFiles/refbox_talker.dir/depend:
-	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build/CMakeFiles/refbox_talker.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles/refbox_talker.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/refbox_talker.dir/depend
 

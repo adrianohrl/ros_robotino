@@ -31,44 +31,23 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build
 
 # Utility rule file for ROSBUILD_gensrv_cpp.
 
 # Include the progress variables for this target.
 include CMakeFiles/ROSBUILD_gensrv_cpp.dir/progress.make
 
+CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/robotino_msgs/SetGripperState.h
 CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h
 CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h
-CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/robotino_msgs/SetGripperState.h
-
-../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: ../srv/ResetOdometry.srv
-../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py
-../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
-../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: /opt/ros/fuerte/share/roslib/bin/gendeps
-../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: ../manifest.xml
-../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: /opt/ros/fuerte/share/roslang/manifest.xml
-../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: /opt/ros/fuerte/share/roscpp/manifest.xml
-../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv/ResetOdometry.srv
-
-../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: ../srv/SetEncoderPosition.srv
-../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py
-../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
-../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: /opt/ros/fuerte/share/roslib/bin/gendeps
-../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: ../manifest.xml
-../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: /opt/ros/fuerte/share/roslang/manifest.xml
-../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: /opt/ros/fuerte/share/roscpp/manifest.xml
-../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv/SetEncoderPosition.srv
 
 ../srv_gen/cpp/include/robotino_msgs/SetGripperState.h: ../srv/SetGripperState.srv
 ../srv_gen/cpp/include/robotino_msgs/SetGripperState.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py
@@ -78,14 +57,38 @@ CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/robotino_msgs/SetGripperS
 ../srv_gen/cpp/include/robotino_msgs/SetGripperState.h: /opt/ros/fuerte/share/roslang/manifest.xml
 ../srv_gen/cpp/include/robotino_msgs/SetGripperState.h: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../srv_gen/cpp/include/robotino_msgs/SetGripperState.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/robotino_msgs/SetGripperState.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv/SetGripperState.srv
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv/SetGripperState.srv
+
+../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: ../srv/ResetOdometry.srv
+../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py
+../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: ../manifest.xml
+../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv/ResetOdometry.srv
+
+../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: ../srv/SetEncoderPosition.srv
+../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py
+../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: ../manifest.xml
+../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv/SetEncoderPosition.srv
 
 ROSBUILD_gensrv_cpp: CMakeFiles/ROSBUILD_gensrv_cpp
+ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/robotino_msgs/SetGripperState.h
 ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/robotino_msgs/ResetOdometry.h
 ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/robotino_msgs/SetEncoderPosition.h
-ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/robotino_msgs/SetGripperState.h
 ROSBUILD_gensrv_cpp: CMakeFiles/ROSBUILD_gensrv_cpp.dir/build.make
 .PHONY : ROSBUILD_gensrv_cpp
 
@@ -98,6 +101,6 @@ CMakeFiles/ROSBUILD_gensrv_cpp.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_gensrv_cpp.dir/clean
 
 CMakeFiles/ROSBUILD_gensrv_cpp.dir/depend:
-	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles/ROSBUILD_gensrv_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles/ROSBUILD_gensrv_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_gensrv_cpp.dir/depend
 

@@ -18,6 +18,9 @@
 
 #include "robotino_local_move/LocalMoveAction.h"
 #include "robotino_local_move/LocalMoveActionGoal.h"
+#include "robotino_local_move/RobotPos.h"
+
+#include "Robot.h"
 
 #define PI 3.14159
 #define VEL_LIN 0.2 // 
@@ -39,6 +42,9 @@ private:
 	ros::Subscriber scan_sub_;
 
 	ros::Publisher cmd_vel_pub_;
+	ros::Publisher robot_pub;
+
+	Robot robot;
 
 	Server server_;
 
@@ -51,8 +57,8 @@ private:
 	nav_msgs::Odometry current_odom_msg_;
 	nav_msgs::Odometry start_odom_msgs_;
 
-	double curr_x_, curr_y_, curr_phi_, prev_phi_;
-	double dist_moved_x_, dist_moved_y_, dist_rotated_;
+	double curr_x_, curr_y_, curr_phi_, prev_phi_, prev_x_, prev_y_;
+	double dist_moved_x_, dist_moved_y_, dist_rotated_, mini_x_, mini_y_, mini_phi_;
 	double forward_goal_x_, forward_goal_y_, rotation_goal_;
 	double start_x_, start_y_, start_phi_;
 
@@ -71,6 +77,7 @@ private:
 	void controlLoop();
 	bool acceptNewGoal(const robotino_local_move::LocalMoveGoalConstPtr& goal);
 	void readParameters(ros::NodeHandle& n);
+	template< typename InputIterator > double linearApproximator(InputIterator iter, InputIterator end, const double x);
 
 public:
 	void spin();

@@ -46,6 +46,11 @@ bool RobotinoVision::spin()
 		ros::Time curr_time = ros::Time::now();
 		camera_.setTimeStamp(curr_time);
 		com_.processEvents();
+		
+		//find_puck.publish_obj_pos(camera_.getImage());
+		//find_puck.calibrate(camera_.getImage());
+		//find_puck.tresCores(camera_.getImage());
+
 		ros::spinOnce();
 		loop_rate.sleep();
 	}

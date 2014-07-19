@@ -8,9 +8,11 @@ SET(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "CMakeFiles/CMakeCCompiler.cmake"
-  "CMakeFiles/CMakeCXXCompiler.cmake"
-  "CMakeFiles/CMakeSystem.cmake"
+  "CMakeFiles/2.8.12.2/CMakeCCompiler.cmake"
+  "CMakeFiles/2.8.12.2/CMakeCXXCompiler.cmake"
+  "CMakeFiles/2.8.12.2/CMakeSystem.cmake"
+  "/opt/ros/fuerte/share/OpenCV/OpenCVConfig-version.cmake"
+  "/opt/ros/fuerte/share/OpenCV/OpenCVConfig.cmake"
   "/opt/ros/fuerte/share/ros/core/rosbuild/ProcessorCount.cmake"
   "/opt/ros/fuerte/share/ros/core/rosbuild/private.cmake"
   "/opt/ros/fuerte/share/ros/core/rosbuild/public.cmake"
@@ -63,7 +65,6 @@ SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ROSBUILD_genmsg_py.dir/DependInfo.cmake"
   "CMakeFiles/ROSBUILD_gensrv_cpp.dir/DependInfo.cmake"
   "CMakeFiles/ROSBUILD_gensrv_lisp.dir/DependInfo.cmake"
-  "CMakeFiles/ROSBUILD_gensrv_py.dir/DependInfo.cmake"
   "CMakeFiles/clean-test-results.dir/DependInfo.cmake"
   "CMakeFiles/robotino_vision_node.dir/DependInfo.cmake"
   "CMakeFiles/rosbuild_precompile.dir/DependInfo.cmake"
@@ -77,4 +78,5 @@ SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test-results.dir/DependInfo.cmake"
   "CMakeFiles/test-results-run.dir/DependInfo.cmake"
   "CMakeFiles/tests.dir/DependInfo.cmake"
+  "CMakeFiles/vision_move_to_puck.dir/DependInfo.cmake"
   )

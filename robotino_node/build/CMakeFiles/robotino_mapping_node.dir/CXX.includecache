@@ -86,31 +86,31 @@ nav_msgs/OccupancyGrid.h
 nav_msgs/Odometry.h
 -
 
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/ComROS.cpp
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp
 ComROS.h
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/ComROS.h
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.h
 sstream
 -
 
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/InitialPoseROS.cpp
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/InitialPoseROS.cpp
 InitialPoseROS.h
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/InitialPoseROS.h
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/InitialPoseROS.h
 
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/MappingROS.cpp
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/MappingROS.cpp
 MappingROS.h
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/MappingROS.h
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/MappingROS.h
 
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/NavGoalROS.cpp
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/NavGoalROS.cpp
 NavGoalROS.h
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/NavGoalROS.h
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/NavGoalROS.h
 
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/RobotinoMappingNode.cpp
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoMappingNode.cpp
 RobotinoMappingNode.h
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/RobotinoMappingNode.h
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoMappingNode.h
 
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/robotino_mapping_node.cpp
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_mapping_node.cpp
 RobotinoMappingNode.h
-/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/RobotinoMappingNode.h
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoMappingNode.h
 ros/ros.h
 -
 

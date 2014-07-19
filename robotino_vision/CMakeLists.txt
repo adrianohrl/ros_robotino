@@ -41,11 +41,20 @@ rosbuild_add_executable(
   src/ComROS.cpp
   src/CameraROS.cpp
   src/RobotinoVision.cpp
+  src/FindPuck.cpp
 )
+
+# openCV 
+
+find_package(OpenCV)
+include_directories(${OpenCV_INCLUDE_DIRS})
 
 target_link_libraries(
   robotino_vision_node
   ${REC_ROBOTINO_API2_LIBRARY}
+  ${OpenCV_LIBRARIES}
 )
+
+rosbuild_add_executable(vision_move_to_puck src/vision_move_to_puck.cpp)
 
 #rosbuild_add_executable(get_pucks_polar_coordinates_server src/get_pucks_polar_coordinates_server.cpp)

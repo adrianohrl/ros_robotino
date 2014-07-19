@@ -31,20 +31,44 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build
 
 # Utility rule file for ROSBUILD_gensrv_lisp.
 
 # Include the progress variables for this target.
 include CMakeFiles/ROSBUILD_gensrv_lisp.dir/progress.make
 
-CMakeFiles/ROSBUILD_gensrv_lisp:
+CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/ReportMachine.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_ReportMachine.lisp
+
+../srv_gen/lisp/ReportMachine.lisp: ../srv/ReportMachine.srv
+../srv_gen/lisp/ReportMachine.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../srv_gen/lisp/ReportMachine.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../srv_gen/lisp/ReportMachine.lisp: ../manifest.xml
+../srv_gen/lisp/ReportMachine.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../srv_gen/lisp/ReportMachine.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../srv_gen/lisp/ReportMachine.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../srv_gen/lisp/ReportMachine.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/lisp/ReportMachine.lisp, ../srv_gen/lisp/_package.lisp, ../srv_gen/lisp/_package_ReportMachine.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/srv/ReportMachine.srv
+
+../srv_gen/lisp/_package.lisp: ../srv_gen/lisp/ReportMachine.lisp
+
+../srv_gen/lisp/_package_ReportMachine.lisp: ../srv_gen/lisp/ReportMachine.lisp
 
 ROSBUILD_gensrv_lisp: CMakeFiles/ROSBUILD_gensrv_lisp
+ROSBUILD_gensrv_lisp: ../srv_gen/lisp/ReportMachine.lisp
+ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package.lisp
+ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_ReportMachine.lisp
 ROSBUILD_gensrv_lisp: CMakeFiles/ROSBUILD_gensrv_lisp.dir/build.make
 .PHONY : ROSBUILD_gensrv_lisp
 
@@ -57,6 +81,6 @@ CMakeFiles/ROSBUILD_gensrv_lisp.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_gensrv_lisp.dir/clean
 
 CMakeFiles/ROSBUILD_gensrv_lisp.dir/depend:
-	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_refbox/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_gensrv_lisp.dir/depend
 

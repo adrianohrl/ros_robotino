@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build
 
 # Utility rule file for tests.
 
@@ -60,6 +60,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

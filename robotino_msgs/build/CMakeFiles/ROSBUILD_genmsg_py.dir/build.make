@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build
 
 # Utility rule file for ROSBUILD_genmsg_py.
 
@@ -44,54 +47,21 @@ include CMakeFiles/ROSBUILD_genmsg_py.dir/progress.make
 
 CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/__init__.py
 
-../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_SetGrapplerAxes.py
-../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_MotorReadings.py
-../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_EncoderReadings.py
 ../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_BHAReadings.py
+../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_EncoderReadings.py
 ../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_SetBHAPressures.py
-../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_DigitalReadings.py
+../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_MotorReadings.py
+../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_GripperState.py
+../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_SetGrapplerAxes.py
+../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_NorthStarReadings.py
+../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_GrapplerReadings.py
 ../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_SetGrapplerAxis.py
 ../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_AnalogReadings.py
-../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_NorthStarReadings.py
-../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_GripperState.py
-../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_GrapplerReadings.py
 ../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_PowerReadings.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_1)
+../src/robotino_msgs/msg/__init__.py: ../src/robotino_msgs/msg/_DigitalReadings.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/__init__.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --initpy /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/SetGrapplerAxes.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/MotorReadings.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/EncoderReadings.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/BHAReadings.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/SetBHAPressures.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/DigitalReadings.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/SetGrapplerAxis.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/AnalogReadings.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/NorthStarReadings.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/GripperState.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/GrapplerReadings.msg /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/PowerReadings.msg
-
-../src/robotino_msgs/msg/_SetGrapplerAxes.py: ../msg/SetGrapplerAxes.msg
-../src/robotino_msgs/msg/_SetGrapplerAxes.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
-../src/robotino_msgs/msg/_SetGrapplerAxes.py: /opt/ros/fuerte/share/roslib/bin/gendeps
-../src/robotino_msgs/msg/_SetGrapplerAxes.py: ../manifest.xml
-../src/robotino_msgs/msg/_SetGrapplerAxes.py: /opt/ros/fuerte/share/roslang/manifest.xml
-../src/robotino_msgs/msg/_SetGrapplerAxes.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-../src/robotino_msgs/msg/_SetGrapplerAxes.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_SetGrapplerAxes.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/SetGrapplerAxes.msg
-
-../src/robotino_msgs/msg/_MotorReadings.py: ../msg/MotorReadings.msg
-../src/robotino_msgs/msg/_MotorReadings.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
-../src/robotino_msgs/msg/_MotorReadings.py: /opt/ros/fuerte/share/roslib/bin/gendeps
-../src/robotino_msgs/msg/_MotorReadings.py: ../manifest.xml
-../src/robotino_msgs/msg/_MotorReadings.py: /opt/ros/fuerte/share/roslang/manifest.xml
-../src/robotino_msgs/msg/_MotorReadings.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-../src/robotino_msgs/msg/_MotorReadings.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_MotorReadings.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/MotorReadings.msg
-
-../src/robotino_msgs/msg/_EncoderReadings.py: ../msg/EncoderReadings.msg
-../src/robotino_msgs/msg/_EncoderReadings.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
-../src/robotino_msgs/msg/_EncoderReadings.py: /opt/ros/fuerte/share/roslib/bin/gendeps
-../src/robotino_msgs/msg/_EncoderReadings.py: ../manifest.xml
-../src/robotino_msgs/msg/_EncoderReadings.py: /opt/ros/fuerte/share/roslang/manifest.xml
-../src/robotino_msgs/msg/_EncoderReadings.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-../src/robotino_msgs/msg/_EncoderReadings.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_EncoderReadings.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/EncoderReadings.msg
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --initpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/BHAReadings.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/EncoderReadings.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/SetBHAPressures.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/MotorReadings.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/GripperState.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/SetGrapplerAxes.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/NorthStarReadings.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/GrapplerReadings.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/SetGrapplerAxis.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/AnalogReadings.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/PowerReadings.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/DigitalReadings.msg
 
 ../src/robotino_msgs/msg/_BHAReadings.py: ../msg/BHAReadings.msg
 ../src/robotino_msgs/msg/_BHAReadings.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
@@ -100,9 +70,20 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/__init__.py
 ../src/robotino_msgs/msg/_BHAReadings.py: /opt/ros/fuerte/share/roslang/manifest.xml
 ../src/robotino_msgs/msg/_BHAReadings.py: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../src/robotino_msgs/msg/_BHAReadings.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_BHAReadings.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/BHAReadings.msg
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/BHAReadings.msg
+
+../src/robotino_msgs/msg/_EncoderReadings.py: ../msg/EncoderReadings.msg
+../src/robotino_msgs/msg/_EncoderReadings.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/robotino_msgs/msg/_EncoderReadings.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/robotino_msgs/msg/_EncoderReadings.py: ../manifest.xml
+../src/robotino_msgs/msg/_EncoderReadings.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/robotino_msgs/msg/_EncoderReadings.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/robotino_msgs/msg/_EncoderReadings.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_EncoderReadings.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/EncoderReadings.msg
 
 ../src/robotino_msgs/msg/_SetBHAPressures.py: ../msg/SetBHAPressures.msg
 ../src/robotino_msgs/msg/_SetBHAPressures.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
@@ -111,42 +92,42 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/__init__.py
 ../src/robotino_msgs/msg/_SetBHAPressures.py: /opt/ros/fuerte/share/roslang/manifest.xml
 ../src/robotino_msgs/msg/_SetBHAPressures.py: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../src/robotino_msgs/msg/_SetBHAPressures.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_SetBHAPressures.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/SetBHAPressures.msg
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/SetBHAPressures.msg
 
-../src/robotino_msgs/msg/_DigitalReadings.py: ../msg/DigitalReadings.msg
-../src/robotino_msgs/msg/_DigitalReadings.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
-../src/robotino_msgs/msg/_DigitalReadings.py: /opt/ros/fuerte/share/roslib/bin/gendeps
-../src/robotino_msgs/msg/_DigitalReadings.py: ../manifest.xml
-../src/robotino_msgs/msg/_DigitalReadings.py: /opt/ros/fuerte/share/roslang/manifest.xml
-../src/robotino_msgs/msg/_DigitalReadings.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-../src/robotino_msgs/msg/_DigitalReadings.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_DigitalReadings.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/DigitalReadings.msg
+../src/robotino_msgs/msg/_MotorReadings.py: ../msg/MotorReadings.msg
+../src/robotino_msgs/msg/_MotorReadings.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/robotino_msgs/msg/_MotorReadings.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/robotino_msgs/msg/_MotorReadings.py: ../manifest.xml
+../src/robotino_msgs/msg/_MotorReadings.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/robotino_msgs/msg/_MotorReadings.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/robotino_msgs/msg/_MotorReadings.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_MotorReadings.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/MotorReadings.msg
 
-../src/robotino_msgs/msg/_SetGrapplerAxis.py: ../msg/SetGrapplerAxis.msg
-../src/robotino_msgs/msg/_SetGrapplerAxis.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
-../src/robotino_msgs/msg/_SetGrapplerAxis.py: /opt/ros/fuerte/share/roslib/bin/gendeps
-../src/robotino_msgs/msg/_SetGrapplerAxis.py: ../manifest.xml
-../src/robotino_msgs/msg/_SetGrapplerAxis.py: /opt/ros/fuerte/share/roslang/manifest.xml
-../src/robotino_msgs/msg/_SetGrapplerAxis.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-../src/robotino_msgs/msg/_SetGrapplerAxis.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_SetGrapplerAxis.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/SetGrapplerAxis.msg
+../src/robotino_msgs/msg/_GripperState.py: ../msg/GripperState.msg
+../src/robotino_msgs/msg/_GripperState.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/robotino_msgs/msg/_GripperState.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/robotino_msgs/msg/_GripperState.py: ../manifest.xml
+../src/robotino_msgs/msg/_GripperState.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/robotino_msgs/msg/_GripperState.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/robotino_msgs/msg/_GripperState.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_GripperState.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/GripperState.msg
 
-../src/robotino_msgs/msg/_AnalogReadings.py: ../msg/AnalogReadings.msg
-../src/robotino_msgs/msg/_AnalogReadings.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
-../src/robotino_msgs/msg/_AnalogReadings.py: /opt/ros/fuerte/share/roslib/bin/gendeps
-../src/robotino_msgs/msg/_AnalogReadings.py: ../manifest.xml
-../src/robotino_msgs/msg/_AnalogReadings.py: /opt/ros/fuerte/share/roslang/manifest.xml
-../src/robotino_msgs/msg/_AnalogReadings.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-../src/robotino_msgs/msg/_AnalogReadings.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_AnalogReadings.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/AnalogReadings.msg
+../src/robotino_msgs/msg/_SetGrapplerAxes.py: ../msg/SetGrapplerAxes.msg
+../src/robotino_msgs/msg/_SetGrapplerAxes.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/robotino_msgs/msg/_SetGrapplerAxes.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/robotino_msgs/msg/_SetGrapplerAxes.py: ../manifest.xml
+../src/robotino_msgs/msg/_SetGrapplerAxes.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/robotino_msgs/msg/_SetGrapplerAxes.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/robotino_msgs/msg/_SetGrapplerAxes.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_SetGrapplerAxes.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/SetGrapplerAxes.msg
 
 ../src/robotino_msgs/msg/_NorthStarReadings.py: ../msg/NorthStarReadings.msg
 ../src/robotino_msgs/msg/_NorthStarReadings.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
@@ -158,20 +139,9 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/__init__.py
 ../src/robotino_msgs/msg/_NorthStarReadings.py: /opt/ros/fuerte/share/roslang/manifest.xml
 ../src/robotino_msgs/msg/_NorthStarReadings.py: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../src/robotino_msgs/msg/_NorthStarReadings.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_NorthStarReadings.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/NorthStarReadings.msg
-
-../src/robotino_msgs/msg/_GripperState.py: ../msg/GripperState.msg
-../src/robotino_msgs/msg/_GripperState.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
-../src/robotino_msgs/msg/_GripperState.py: /opt/ros/fuerte/share/roslib/bin/gendeps
-../src/robotino_msgs/msg/_GripperState.py: ../manifest.xml
-../src/robotino_msgs/msg/_GripperState.py: /opt/ros/fuerte/share/roslang/manifest.xml
-../src/robotino_msgs/msg/_GripperState.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-../src/robotino_msgs/msg/_GripperState.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_11)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_GripperState.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/GripperState.msg
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/NorthStarReadings.msg
 
 ../src/robotino_msgs/msg/_GrapplerReadings.py: ../msg/GrapplerReadings.msg
 ../src/robotino_msgs/msg/_GrapplerReadings.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
@@ -180,9 +150,31 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/__init__.py
 ../src/robotino_msgs/msg/_GrapplerReadings.py: /opt/ros/fuerte/share/roslang/manifest.xml
 ../src/robotino_msgs/msg/_GrapplerReadings.py: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../src/robotino_msgs/msg/_GrapplerReadings.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_GrapplerReadings.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/GrapplerReadings.msg
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/GrapplerReadings.msg
+
+../src/robotino_msgs/msg/_SetGrapplerAxis.py: ../msg/SetGrapplerAxis.msg
+../src/robotino_msgs/msg/_SetGrapplerAxis.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/robotino_msgs/msg/_SetGrapplerAxis.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/robotino_msgs/msg/_SetGrapplerAxis.py: ../manifest.xml
+../src/robotino_msgs/msg/_SetGrapplerAxis.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/robotino_msgs/msg/_SetGrapplerAxis.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/robotino_msgs/msg/_SetGrapplerAxis.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_SetGrapplerAxis.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/SetGrapplerAxis.msg
+
+../src/robotino_msgs/msg/_AnalogReadings.py: ../msg/AnalogReadings.msg
+../src/robotino_msgs/msg/_AnalogReadings.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/robotino_msgs/msg/_AnalogReadings.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/robotino_msgs/msg/_AnalogReadings.py: ../manifest.xml
+../src/robotino_msgs/msg/_AnalogReadings.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/robotino_msgs/msg/_AnalogReadings.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/robotino_msgs/msg/_AnalogReadings.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_AnalogReadings.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/AnalogReadings.msg
 
 ../src/robotino_msgs/msg/_PowerReadings.py: ../msg/PowerReadings.msg
 ../src/robotino_msgs/msg/_PowerReadings.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
@@ -191,24 +183,35 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/__init__.py
 ../src/robotino_msgs/msg/_PowerReadings.py: /opt/ros/fuerte/share/roslang/manifest.xml
 ../src/robotino_msgs/msg/_PowerReadings.py: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../src/robotino_msgs/msg/_PowerReadings.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_PowerReadings.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg/PowerReadings.msg
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/PowerReadings.msg
+
+../src/robotino_msgs/msg/_DigitalReadings.py: ../msg/DigitalReadings.msg
+../src/robotino_msgs/msg/_DigitalReadings.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/robotino_msgs/msg/_DigitalReadings.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/robotino_msgs/msg/_DigitalReadings.py: ../manifest.xml
+../src/robotino_msgs/msg/_DigitalReadings.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/robotino_msgs/msg/_DigitalReadings.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/robotino_msgs/msg/_DigitalReadings.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_msgs/msg/_DigitalReadings.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/DigitalReadings.msg
 
 ROSBUILD_genmsg_py: CMakeFiles/ROSBUILD_genmsg_py
 ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/__init__.py
-ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_SetGrapplerAxes.py
-ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_MotorReadings.py
-ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_EncoderReadings.py
 ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_BHAReadings.py
+ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_EncoderReadings.py
 ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_SetBHAPressures.py
-ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_DigitalReadings.py
+ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_MotorReadings.py
+ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_GripperState.py
+ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_SetGrapplerAxes.py
+ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_NorthStarReadings.py
+ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_GrapplerReadings.py
 ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_SetGrapplerAxis.py
 ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_AnalogReadings.py
-ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_NorthStarReadings.py
-ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_GripperState.py
-ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_GrapplerReadings.py
 ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_PowerReadings.py
+ROSBUILD_genmsg_py: ../src/robotino_msgs/msg/_DigitalReadings.py
 ROSBUILD_genmsg_py: CMakeFiles/ROSBUILD_genmsg_py.dir/build.make
 .PHONY : ROSBUILD_genmsg_py
 
@@ -221,6 +224,6 @@ CMakeFiles/ROSBUILD_genmsg_py.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_genmsg_py.dir/clean
 
 CMakeFiles/ROSBUILD_genmsg_py.dir/depend:
-	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/build/CMakeFiles/ROSBUILD_genmsg_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles/ROSBUILD_genmsg_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_genmsg_py.dir/depend
 

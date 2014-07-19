@@ -104,15 +104,17 @@ import struct
 
 
 class FullPathResponse(genpy.Message):
-  _md5sum = "0682999222387d4d313fb014729f5f45"
+  _md5sum = "6b2530fdfa739ffe368570ee045dc6c4"
   _type = "robotino_local_move/FullPathResponse"
   _has_header = False #flag to mark the presence of a Header object
-  _full_text = """string full_path
+  _full_text = """int32 path_size
+int32 num_turns
+string full_path
 
 
 """
-  __slots__ = ['full_path']
-  _slot_types = ['string']
+  __slots__ = ['path_size','num_turns','full_path']
+  _slot_types = ['int32','int32','string']
 
   def __init__(self, *args, **kwds):
     """
@@ -122,7 +124,7 @@ class FullPathResponse(genpy.Message):
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       full_path
+       path_size,num_turns,full_path
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -131,9 +133,15 @@ class FullPathResponse(genpy.Message):
     if args or kwds:
       super(FullPathResponse, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
+      if self.path_size is None:
+        self.path_size = 0
+      if self.num_turns is None:
+        self.num_turns = 0
       if self.full_path is None:
         self.full_path = ''
     else:
+      self.path_size = 0
+      self.num_turns = 0
       self.full_path = ''
 
   def _get_types(self):
@@ -148,6 +156,8 @@ class FullPathResponse(genpy.Message):
     :param buff: buffer, ``StringIO``
     """
     try:
+      _x = self
+      buff.write(_struct_2i.pack(_x.path_size, _x.num_turns))
       _x = self.full_path
       length = len(_x)
       if python3 or type(_x) == unicode:
@@ -164,6 +174,10 @@ class FullPathResponse(genpy.Message):
     """
     try:
       end = 0
+      _x = self
+      start = end
+      end += 8
+      (_x.path_size, _x.num_turns,) = _struct_2i.unpack(str[start:end])
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])
@@ -185,6 +199,8 @@ class FullPathResponse(genpy.Message):
     :param numpy: numpy python module
     """
     try:
+      _x = self
+      buff.write(_struct_2i.pack(_x.path_size, _x.num_turns))
       _x = self.full_path
       length = len(_x)
       if python3 or type(_x) == unicode:
@@ -202,6 +218,10 @@ class FullPathResponse(genpy.Message):
     """
     try:
       end = 0
+      _x = self
+      start = end
+      end += 8
+      (_x.path_size, _x.num_turns,) = _struct_2i.unpack(str[start:end])
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])
@@ -216,8 +236,9 @@ class FullPathResponse(genpy.Message):
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
+_struct_2i = struct.Struct("<2i")
 class FullPath(object):
   _type          = 'robotino_local_move/FullPath'
-  _md5sum = 'e27a1c3698284a9b9f545d211e208fd5'
+  _md5sum = '03a4f20dd60c4c41c218f9ce72db01fd'
   _request_class  = FullPathRequest
   _response_class = FullPathResponse

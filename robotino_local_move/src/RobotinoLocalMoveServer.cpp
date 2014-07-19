@@ -10,12 +10,17 @@
 #include <tf/transform_datatypes.h>
 
 RobotinoLocalMoveServer::RobotinoLocalMoveServer():
-	//nh_(),
+	//nh_("~"),
 	server_ (nh_, "local_move", boost::bind(&RobotinoLocalMoveServer::execute, this, _1), false),
 	curr_x_(0.0),
 	curr_y_(0.0),
 	curr_phi_(0.0),
 	prev_phi_(0.0),
+	prev_x_(0.0),
+	prev_y_(0.0),
+	mini_x_(0.0),
+	mini_y_(0.0),
+	mini_phi_(0.0),
 	dist_moved_x_(0.0),
 	dist_moved_y_(0.0),
 	dist_rotated_(0.0),
@@ -27,9 +32,10 @@ RobotinoLocalMoveServer::RobotinoLocalMoveServer():
 	start_phi_(0.0),
 	odom_set_(false)
 {
-	odometry_sub_ = nh_.subscribe("odom2123", 1, &RobotinoLocalMoveServer::odomCallback, this);
+	odometry_sub_ = nh_.subscribe("odom", 1, &RobotinoLocalMoveServer::odomCallback, this);
 	scan_sub_ = nh_.subscribe("scan", 10, &RobotinoLocalMoveServer::scanCallback, this); 
 	cmd_vel_pub_ = nh_.advertise<geometry_msgs::Twist>("cmd_vel", 1, true);
+	robot_pub = nh_.advertise<robotino_local_move::RobotPos>("robot_pos", 10);
 	state_ = IDLE;
 	readParameters(nh_);
 	obstacle_ = false;
@@ -45,12 +51,10 @@ RobotinoLocalMoveServer::~RobotinoLocalMoveServer()
 
 void RobotinoLocalMoveServer::scanCallback(const sensor_msgs::LaserScan& msg)
 {
-	ROS_INFO("Entrou no scanCallBack -------------------------------");
 	if(ident_obstacle_ == true)
 	{
 		if(msg.ranges[0] < 0.59 || msg.ranges[1] < 0.59 || msg.ranges[8] < 0.59)
 		{
-			ROS_INFO("Entrou aqui obtacle = true -------------------------------");
 			obstacle_=true;
 		}
 		else
@@ -72,6 +76,8 @@ void RobotinoLocalMoveServer::odomCallback(const nav_msgs::OdometryConstPtr& msg
 
 		odom_set_ = true;
 		prev_phi_ = curr_phi_;
+		prev_x_ = curr_x_;
+		prev_y_ = curr_y_;
 
 		server_.start();
 	}
@@ -87,7 +93,15 @@ void RobotinoLocalMoveServer::odomCallback(const nav_msgs::OdometryConstPtr& msg
 	}
 
 	dist_rotated_ += curr_phi_ - prev_phi_;
+
+	mini_phi_ = curr_phi_ - prev_phi_;
+	mini_x_  = curr_x_ - prev_x_;
+	mini_y_  = curr_y_ - prev_y_;
+
 	prev_phi_ = curr_phi_;
+	prev_x_ = curr_x_;
+	prev_y_ = curr_y_;
+
 	dist_moved_x_ = curr_x_ - start_x_;
 	dist_moved_y_ = curr_y_ - start_y_;
 
@@ -154,8 +168,6 @@ void RobotinoLocalMoveServer::execute(const robotino_local_move::LocalMoveGoalCo
 			cmd_vel_pub_.publish(cmd_vel_msg_);
 			server_.publishFeedback(feedback_);
 		}
-		
-		
 
 		ros::spinOnce();
 		loop_rate.sleep();
@@ -222,6 +234,19 @@ void RobotinoLocalMoveServer::controlLoop()
 
 				vel_x = VEL_LIN * cos(ang_res);	
 				vel_y = VEL_LIN * sin(ang_res);
+
+				//considerando que vamos sempre andar para frente e nunca de lado
+				if(vel_x != 0 && vel_y == 0)
+				{
+					if( robot.orientation == 0 )
+						robot.posX += mini_x_;
+					else if( robot.orientation == 1 )
+						robot.posY += mini_x_;
+					else if( robot.orientation == 2 )
+						robot.posX -= mini_x_;
+					else if( robot.orientation == 3 )
+						robot.posY -= mini_x_;
+				}
 			}
 		break;
 		case ROTATIONAL_MOVEMENT:
@@ -230,6 +255,9 @@ void RobotinoLocalMoveServer::controlLoop()
 				ROS_DEBUG("Rotated %f degrees", (dist_rotated_ * 180) / PI);
 
 				vel_phi = VEL_ANG;
+
+				//robot.phi += mini_phi_;
+				//if ( //////////////////////////////////////////////////////////////// CONTINUAR!
 			}
 		break;
 		case TRANSLATIONAL_ROTATIONAL_MOVEMENT:	
@@ -407,4 +435,55 @@ void RobotinoLocalMoveServer::readParameters( ros::NodeHandle& n)
 	point.x = max_rotational_vel_distance;
 	point.y = max_rotational_vel;
 	rotation_vel_vector_.push_back( point );
+}
+
+template< typename InputIterator > double RobotinoLocalMoveServer::linearApproximator(
+		InputIterator iter, InputIterator end, const double x )
+{
+	double y = 0.0;
+
+	if( iter != end )
+	{
+		if( x < (*iter).x )
+		{
+			y = (*iter).y;
+		}
+		else
+		{
+			while( end != iter )
+			{
+				const geometry_msgs::Point32& p = (*iter);
+				++iter;
+
+				if( x >= p.x )
+				{
+					if( end != iter )
+					{
+						if( x < (*iter).x )
+						{
+							const geometry_msgs::Point32& p2 = (*iter);
+							double dx = p2.x - p.x;
+							double dy = p2.y - p.y;
+
+							if( 0.0 == dx )
+							{
+								y = p.y;
+							}
+							else
+							{
+								double a = dy / dx;
+								y = a * ( x - p.x ) + p.y;
+							}
+						}
+					}
+					else
+					{
+						y = p.y;
+					}
+				}
+			}
+		}
+	}
+
+	return y;
 }

@@ -12,6 +12,7 @@
 #include "CameraROS.h"
 #include "robotino_vision/LampPostState.h"
 #include "robotino_vision/PuckState.h"
+#include "FindPuck.h"
 
 #include <ros/ros.h>
 
@@ -33,6 +34,7 @@ private:
 
 	ComROS com_;
 	CameraROS camera_;
+	FindPuck find_puck;
 
 	void initModules();
 	Mat getImage();

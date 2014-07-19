@@ -35,11 +35,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -66,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -395,6 +398,21 @@ tests/fast:
 .PHONY : tests/fast
 
 # target to build an object file
+src/Robot.o:
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/src/Robot.o
+.PHONY : src/Robot.o
+
+# target to preprocess a source file
+src/Robot.i:
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/src/Robot.i
+.PHONY : src/Robot.i
+
+# target to generate assembly for a file
+src/Robot.s:
+	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/src/Robot.s
+.PHONY : src/Robot.s
+
+# target to build an object file
 src/RobotinoLocalMoveClient.o:
 	$(MAKE) -f CMakeFiles/robotino_local_move_node.dir/build.make CMakeFiles/robotino_local_move_node.dir/src/RobotinoLocalMoveClient.o
 .PHONY : src/RobotinoLocalMoveClient.o
@@ -500,6 +518,9 @@ help:
 	@echo "... test-results"
 	@echo "... test-results-run"
 	@echo "... tests"
+	@echo "... src/Robot.o"
+	@echo "... src/Robot.i"
+	@echo "... src/Robot.s"
 	@echo "... src/RobotinoLocalMoveClient.o"
 	@echo "... src/RobotinoLocalMoveClient.i"
 	@echo "... src/RobotinoLocalMoveClient.s"

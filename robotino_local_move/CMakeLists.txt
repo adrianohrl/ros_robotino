@@ -37,7 +37,8 @@ rosbuild_add_executable(
   robotino_local_move_node 
   src/robotino_local_move_node.cpp
   src/RobotinoLocalMoveServer.cpp
-  src/RobotinoLocalMoveClient.cpp)
+  src/RobotinoLocalMoveClient.cpp
+  src/Robot.cpp)
 
 rosbuild_add_executable(robotino_manager src/robotino_manager.cpp)
 rosbuild_add_executable(manager_client src/manager_client.cpp)
