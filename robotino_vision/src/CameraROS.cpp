@@ -94,7 +94,7 @@ void CameraROS::processImage()
 {
 	Mat imgBGR;
 	cvtColor(imgRGB_, imgBGR, CV_RGB2BGR);
-	imshow("BRG Model", imgBGR);
+	//imshow("BRG Model", imgBGR);
 	Mat imgHSL;
 	cvtColor(imgRGB_, imgHSL, CV_RGB2HLS);
 	//imshow("HSL Model", imgHSL);
@@ -108,8 +108,8 @@ void CameraROS::processImage()
 	//imshow("Lightness", imgL);
 	
 	Mat threshImgL;
-	namedWindow("Lightness Window", 1);
-	createTrackbar("Lightness threshold value:", "Lightness Window", &threshVal, 255);
+	//namedWindow("Lightness Window", 1);
+	//createTrackbar("Lightness threshold value:", "Lightness Window", &threshVal, 255);
 	int maxVal = 255;
 	threshold(imgL, threshImgL, threshVal, maxVal, THRESH_BINARY);
 //	std::vector<std::vector<Point>> contours;
@@ -119,7 +119,7 @@ void CameraROS::processImage()
 //	for (int i = 0; i < contours.size(); i++)
 //		drawContours(imgBorders, contours, i, Scalar(255), 2, 8, hierarchy, 0, Point());
 //	imshow("Contours", imgBorders);
-	imshow("Lightness Window", threshImgL);
+	//imshow("Lightness Window", threshImgL);
 	
 	/*const int maskSize = 7;
 	int mask[maskSize][maskSize] = {{0, 0, 0, 0, 0, 0, 0},
@@ -130,8 +130,8 @@ void CameraROS::processImage()
 					{0, 0, 0, 0, 0, 0, 0}, 
 					{0, 0, 0, 0, 0, 0, 0}};  
 	Mat kernel = Mat(maskSize, maskSize, CV_8U, (void*) mask, maskSize);*/
-	namedWindow("Dilated Lightness", 1);
-	createTrackbar("Dilation Size", "Dilated Lightness", &dilationSize, 10);
+	//namedWindow("Dilated Lightness", 1);
+	//createTrackbar("Dilation Size", "Dilated Lightness", &dilationSize, 10);
 	Mat element = getStructuringElement(MORPH_RECT, Size(2 * dilationSize + 1, 2 * dilationSize + 1), Point(dilationSize, dilationSize)); 
 	/*std::sstream == "";
 	for (t_size i = 0; i < element.rows; i++)
@@ -143,7 +143,7 @@ void CameraROS::processImage()
 
 	Mat dilatedImgL;
 	dilate(threshImgL, dilatedImgL, element);
-	imshow("Dilated Lightness", dilatedImgL);
+	//imshow("Dilated Lightness", dilatedImgL);
 	
 	Mat mask = dilatedImgL - threshImgL;
 	//imshow("Mask", mask);
@@ -167,51 +167,51 @@ void CameraROS::processImage()
 	Mat maskedImgBGR;
 	maskedImgBGR = imgBGR.mul(imgMask);
 	Mat finalImgH = imgH.mul(mask); 
-	imshow("Final Filter", maskedImgBGR);
+	//imshow("Final Filter", maskedImgBGR);
 
 	Mat imgRed, imgRed1, imgRed2, imgRed3, imgRed4;
 	//int redThreshMinVal1 = 0;
 	//int redThreshMaxVal1 = 10;
-	namedWindow("Red Range", 1);
-	createTrackbar("Range1MinVal", "Red Range", &redThreshMinVal1, 255);
-	createTrackbar("Range1MaxVal", "Red Range", &redThreshMaxVal1, 255);
+	//namedWindow("Red Range", 1);
+	//createTrackbar("Range1MinVal", "Red Range", &redThreshMinVal1, 255);
+	//createTrackbar("Range1MaxVal", "Red Range", &redThreshMaxVal1, 255);
 	int redMaxVal = 1;
 	threshold(finalImgH, imgRed1, redThreshMinVal1, redMaxVal, THRESH_BINARY);
 	threshold(finalImgH, imgRed2, redThreshMaxVal1, redMaxVal, THRESH_BINARY_INV);
 	imgRed3 = imgRed1.mul(imgRed2); 
 	//int redThreshMinVal2 = 228;
 	//int redThreshMaxVal2 = 255;
-	createTrackbar("Range2MinVal", "Red Range", &redThreshMinVal2, 255);
-	createTrackbar("Range2MaxVal", "Red Range", &redThreshMaxVal2, 255);
+	//createTrackbar("Range2MinVal", "Red Range", &redThreshMinVal2, 255);
+	//createTrackbar("Range2MaxVal", "Red Range", &redThreshMaxVal2, 255);
 	threshold(finalImgH, imgRed1, redThreshMinVal2, redMaxVal, THRESH_BINARY);
 	threshold(finalImgH, imgRed2, redThreshMaxVal2, redMaxVal, THRESH_BINARY_INV);
 	imgRed4 = imgRed1.mul(imgRed2);
 	imgRed = (imgRed3 + imgRed4) * 255;
-	imshow("Red Range", imgRed);
+	//imshow("Red Range", imgRed);
 
 	Mat imgYellow, imgYellow1, imgYellow2;
 	//int yellowThreshMinVal = 15;
 	//int yellowThreshMaxVal = 55;
-	namedWindow("Yellow Range", 1);
-	createTrackbar("RangeMinVal", "Yellow Range", &yellowThreshMinVal, 255);
-	createTrackbar("RangeMaxVal", "Yellow Range", &yellowThreshMaxVal, 255);
+	//namedWindow("Yellow Range", 1);
+	//createTrackbar("RangeMinVal", "Yellow Range", &yellowThreshMinVal, 255);
+	//createTrackbar("RangeMaxVal", "Yellow Range", &yellowThreshMaxVal, 255);
 	int yellowMaxVal = 1;
 	threshold(finalImgH, imgYellow1, yellowThreshMinVal, yellowMaxVal, THRESH_BINARY);
 	threshold(finalImgH, imgYellow2, yellowThreshMaxVal, yellowMaxVal, THRESH_BINARY_INV);
 	imgYellow = imgYellow1.mul(imgYellow2) * 255;
-	imshow("Yellow Range", imgYellow);
+	//imshow("Yellow Range", imgYellow);
 	
 	Mat imgGreen, imgGreen1, imgGreen2;
 	//int greenThreshMinVal = 58;
 	//int greenThreshMaxVal = 96;
-	namedWindow("Green Range", 1);
-	createTrackbar("RangeMinVal", "Green Range", &greenThreshMinVal, 255);
-	createTrackbar("RangeMaxVal", "Green Range", &greenThreshMaxVal, 255);
+	//namedWindow("Green Range", 1);
+	//createTrackbar("RangeMinVal", "Green Range", &greenThreshMinVal, 255);
+	//createTrackbar("RangeMaxVal", "Green Range", &greenThreshMaxVal, 255);
 	int greenMaxVal = 1;
 	threshold(finalImgH, imgGreen1, greenThreshMinVal, greenMaxVal, THRESH_BINARY);
 	threshold(finalImgH, imgGreen2, greenThreshMaxVal, greenMaxVal, THRESH_BINARY_INV);
 	imgGreen = imgGreen1.mul(imgGreen2) * 255;
-	imshow("Green Range", imgGreen);
+	//imshow("Green Range", imgGreen);
 
 	
 	waitKey(80);

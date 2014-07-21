@@ -1,0 +1,18 @@
+<package>
+  <description brief="robotino_movements">
+
+     robotino_movements
+
+  </description>
+  <author>Robotino</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/robotino_movements</url>
+  <depend package="std_msgs"/>
+  <depend package="roscpp"/>
+  <depend package="robotino_msgs"/>
+  <depend package="tf"/>
+
+</package>
+
+

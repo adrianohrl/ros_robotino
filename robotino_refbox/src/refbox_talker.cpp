@@ -263,6 +263,7 @@ void robotPosCallback(const robotino_refbox::RobotPos& msg)
 
 int main(int argc, char **argv)
 {
+	ROS_INFO("Robotino Refbox is running!");
     posX = 0;
     posY = 0;
     posTheta = 0;

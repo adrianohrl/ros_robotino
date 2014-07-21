@@ -256,7 +256,7 @@ void RobotinoLocalMoveServer::controlLoop()
 
 				vel_phi = VEL_ANG;
 
-				//robot.phi += mini_phi_;
+				robot.phi += mini_phi_;
 				//if ( //////////////////////////////////////////////////////////////// CONTINUAR!
 			}
 		break;
