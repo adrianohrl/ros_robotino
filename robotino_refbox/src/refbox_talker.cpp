@@ -48,6 +48,10 @@ ProtobufBroadcastPeer *peer_public_ = NULL;
 ProtobufBroadcastPeer *peer_team_ = NULL;
 float posX, posY, posTheta;
 int robotNumber;
+bool crypto_setup_ = false;
+bool weAreInTheGame = false;
+
+std::shared_ptr<GameState> gs;
 
 llsfrb::Configuration *config_;
 
@@ -101,7 +105,6 @@ void handle_message(boost::asio::ip::udp::endpoint &sender, uint16_t component_i
 
 	// IMPLEMENTADO!
         // GameState - Lê as informações enviadas no GameState
-        std::shared_ptr<GameState> gs;
         if ((gs = std::dynamic_pointer_cast<GameState>(msg)))
         {
 		robotino_refbox::Game_Info game_msg;
@@ -113,7 +116,42 @@ void handle_message(boost::asio::ip::udp::endpoint &sender, uint16_t component_i
 		game_msg.state = gs->state();
 
 		gamePhase_pub.publish(game_msg);
-        }
+
+		if (team_name_ == gs->team_cyan() || team_name_ == gs->team_magenta())
+		{
+			weAreInTheGame = true;
+			if (team_name_ == gs->team_cyan() && team_color_ != CYAN)
+			{
+				printf("WARNING: sending as magenta, but our team is announced as cyan by refbox!\n");
+			}
+			else if (team_name_ == gs->team_magenta() && team_color_ != MAGENTA)
+			{
+				printf("WARNING: sending as cyan, but our team is announced as magenta by refbox!\n");
+			}
+			if (! crypto_setup_)
+			{
+				crypto_setup_ = true;
+
+				std::string crypto_key = "", cipher = "aes-128-cbc";
+				try
+				{
+					crypto_key = config_->get_string(("/llsfrb/game/crypto-keys/" + team_name_).c_str());
+					printf("Set crypto key to %s (cipher %s)\n", crypto_key.c_str(), cipher.c_str());
+					peer_team_->setup_crypto(crypto_key, cipher);
+				}
+				catch (Exception &e)
+				{
+					printf("No encryption key configured for team, not enabling crypto");
+				}
+			}
+		}
+		else if (crypto_setup_)
+		{
+			printf("Our team is not set, training game? Disabling crypto.\n");
+			crypto_setup_ = false;
+			peer_team_->setup_crypto("", "");
+		}
+	}
 
 	// IMPLEMENTADO!
         // OrderInfo - Lê as informações enviadas no OrderInfo
@@ -217,7 +255,7 @@ bool reportMachine_Callback(robotino_refbox::ReportMachine::Request &req, roboti
 		MachineReportEntry *entry = report.add_machines();
 		entry->set_name(req.machine);
 		entry->set_type(req.type);
-		peer_public_->send(report);
+		peer_team_->send(report);
 		counter++;
 		sleep(1);
 	}
@@ -226,32 +264,36 @@ bool reportMachine_Callback(robotino_refbox::ReportMachine::Request &req, roboti
 
 void send_beacon()
 {
-    timespec start;
-    clock_gettime(CLOCK_REALTIME, &start);
-    int32_t sec = start.tv_sec;
-    int32_t nsec = start.tv_nsec;
+	if (weAreInTheGame)
+	{
+		printf("Estou no jogo!!\n");
+		timespec start;
+		clock_gettime(CLOCK_REALTIME, &start);
+		int32_t sec = start.tv_sec;
+		int32_t nsec = start.tv_nsec;
 
-    std::shared_ptr<BeaconSignal> signal(new BeaconSignal());
+		std::shared_ptr<BeaconSignal> signal(new BeaconSignal());
 
-    Time *time = signal->mutable_time();
-    time->set_sec(sec);
-    time->set_nsec(nsec);
+		Time *time = signal->mutable_time();
+		time->set_sec(sec);
+		time->set_nsec(nsec);
 
-    Pose2D *pose = signal->mutable_pose();
-    pose->set_x(posX);   // Enviar a posição X do robô
-    pose->set_y(posY);   // Enviar a posição Y do robô
-    pose->set_ori(posTheta); // Enviar a orientação do robô
+		Pose2D *pose = signal->mutable_pose();
+		pose->set_x(posX);   // Enviar a posição X do robô
+		pose->set_y(posY);   // Enviar a posição Y do robô
+		pose->set_ori(posTheta); // Enviar a orientação do robô
 
-    Time *pose_time = pose->mutable_timestamp();
-    pose_time->set_sec(4);
-    pose_time->set_nsec(5);
+		Time *pose_time = pose->mutable_timestamp();
+		pose_time->set_sec(4);
+		pose_time->set_nsec(5);
 
-    signal->set_number(robotNumber);
-    signal->set_peer_name(name_);
-    signal->set_team_name(team_name_);
-    signal->set_team_color(team_color_);
-    signal->set_seq(++seq_);
-    peer_team_->send(signal);
+		signal->set_number(robotNumber);
+		signal->set_peer_name(name_);
+		signal->set_team_name(team_name_);
+		signal->set_team_color(team_color_);
+		signal->set_seq(++seq_);
+		peer_team_->send(signal);
+	}
 }
 
 void robotPosCallback(const robotino_refbox::RobotPos& msg)
@@ -271,24 +313,24 @@ int main(int argc, char **argv)
 //////////////////////////////////////////////////////////////// ATUALIZAR //////////////////////////////////////////////
     name_ = "R1";   // Nome do robô
     robotNumber = 1; // Número individual do Robo!
-    team_color_ = CYAN; // Cor do time
+    team_color_ = MAGENTA; // Cor do time
 //////////////////////////////////////////////////////////////// ATUALIZAR //////////////////////////////////////////////
 
     team_name_ = "Expertinos";
     config_ = new llsfrb::YamlConfiguration("/home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/cfg");
     config_->load("config.yaml");
 
-    if (config_->exists("/llsfrb/comm/public-peer/send-port") && config_->exists("/llsfrb/comm/public-peer/recv-port") )
-    {
-        peer_public_ = new ProtobufBroadcastPeer(config_->get_string("/llsfrb/comm/public-peer/host"),
-                config_->get_uint("/llsfrb/comm/public-peer/recv-port"),
-                config_->get_uint("/llsfrb/comm/public-peer/send-port"));
-    }
-    else
-    {
-        peer_public_ = new ProtobufBroadcastPeer(config_->get_string("/llsfrb/comm/public-peer/host"),
-                config_->get_uint("/llsfrb/comm/public-peer/port"));
-    }
+    if (config_->exists("/llsfrb/comm/public-peer/send-port") &&
+      config_->exists("/llsfrb/comm/public-peer/recv-port") )
+  {
+    peer_public_ = new ProtobufBroadcastPeer(config_->get_string("/llsfrb/comm/public-peer/host"),
+					     config_->get_uint("/llsfrb/comm/public-peer/recv-port"),
+					     config_->get_uint("/llsfrb/comm/public-peer/send-port"));
+  } else {
+    peer_public_ = new ProtobufBroadcastPeer(config_->get_string("/llsfrb/comm/public-peer/host"),
+					     config_->get_uint("/llsfrb/comm/public-peer/port"));
+  }
+
 
     MessageRegister & message_register = peer_public_->message_register();
     message_register.add_message_type<BeaconSignal>();
@@ -299,7 +341,9 @@ int main(int argc, char **argv)
     message_register.add_message_type<MachineReport>();
     message_register.add_message_type<MachineReportInfo>();
 
-    std::string cfg_prefix = std::string("/llsfrb/comm/") +	((team_color_ == CYAN) ? "cyan" : "magenta") + "-peer/";
+    std::string cfg_prefix =
+    std::string("/llsfrb/comm/") +
+    ((team_color_ == CYAN) ? "cyan" : "magenta") + "-peer/";
 
     /*
     // better to this dynamically be reacting to the public GameState
@@ -312,19 +356,18 @@ int main(int argc, char **argv)
     }
     */
 
-    if (config_->exists((cfg_prefix + "send-port").c_str()) && config_->exists((cfg_prefix + "recv-port").c_str()) )
-    {
-        peer_team_ = new ProtobufBroadcastPeer(config_->get_string((cfg_prefix + "host").c_str()),
-                                               config_->get_uint((cfg_prefix + "recv-port").c_str()),
-                                               config_->get_uint((cfg_prefix + "send-port").c_str()),
-                                               &message_register /*, crypto_key, cipher*/);
-    }
-    else
-    {
-        peer_team_ = new ProtobufBroadcastPeer(config_->get_string((cfg_prefix + "host").c_str()),
-                                               config_->get_uint((cfg_prefix + "port").c_str()),
-                                               &message_register/*, crypto_key, cipher*/);
-    }
+    if (config_->exists((cfg_prefix + "send-port").c_str()) &&
+      config_->exists((cfg_prefix + "recv-port").c_str()) )
+  {
+    peer_team_ = new ProtobufBroadcastPeer(config_->get_string((cfg_prefix + "host").c_str()),
+					   config_->get_uint((cfg_prefix + "recv-port").c_str()),
+					   config_->get_uint((cfg_prefix + "send-port").c_str()),
+					   &message_register /*, crypto_key, cipher*/);
+  } else {
+    peer_team_ = new ProtobufBroadcastPeer(config_->get_string((cfg_prefix + "host").c_str()),
+					   config_->get_uint((cfg_prefix + "port").c_str()),
+					   &message_register/*, crypto_key, cipher*/);
+  }
 
     boost::asio::io_service io_service;
 
