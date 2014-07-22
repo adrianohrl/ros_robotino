@@ -3,6 +3,8 @@
 
 CMakeFiles/robotino_movements.dir/src/Movements.o
  ../include/Movements.h
+ ../msg_gen/cpp/include/robotino_movements/RobotPos.h
+ ../srv_gen/cpp/include/robotino_movements/Prova.h
  /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/src/Movements.cpp
  /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/ResetOdometry.h
  /opt/ros/fuerte/include/XmlRpcDecl.h
@@ -92,6 +94,8 @@ CMakeFiles/robotino_movements.dir/src/Movements.o
  /opt/ros/fuerte/stacks/geometry/tf/include/tf/transform_datatypes.h
 CMakeFiles/robotino_movements.dir/src/robotino_movements.o
  ../include/Movements.h
+ ../msg_gen/cpp/include/robotino_movements/RobotPos.h
+ ../srv_gen/cpp/include/robotino_movements/Prova.h
  /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/src/robotino_movements.cpp
  /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/cpp/include/robotino_msgs/ResetOdometry.h
  /opt/ros/fuerte/include/XmlRpcDecl.h

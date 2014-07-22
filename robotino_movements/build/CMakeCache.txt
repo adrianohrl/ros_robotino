@@ -7,7 +7,7 @@
 # The syntax for the file is as follows:
 # KEY:TYPE=VALUE
 # KEY is the name of a variable in the cache.
-# TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+# TYPE is a hint to GUI's for the type of VALUE, DO NOT EDIT TYPE!.
 # VALUE is the current value for the KEY.
 
 ########################
@@ -234,7 +234,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=2
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=8
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=12
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=7
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
@@ -245,6 +245,7 @@ CMAKE_CPACK_COMMAND:INTERNAL=/usr/bin/cpack
 CMAKE_CTEST_COMMAND:INTERNAL=/usr/bin/ctest
 //ADVANCED property for variable: CMAKE_CXX_COMPILER
 CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
+CMAKE_CXX_COMPILER_WORKS:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
 CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
@@ -257,6 +258,7 @@ CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER
 CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
+CMAKE_C_COMPILER_WORKS:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
 CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
@@ -267,6 +269,12 @@ CMAKE_C_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_RELWITHDEBINFO
 CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//Result of TRY_COMPILE
+CMAKE_DETERMINE_CXX_ABI_COMPILED:INTERNAL=TRUE
+//Result of TRY_COMPILE
+CMAKE_DETERMINE_C_ABI_COMPILED:INTERNAL=TRUE
+//Path to cache edit program executable.
+CMAKE_EDIT_COMMAND:INTERNAL=/usr/bin/ccmake
 //Executable file format
 CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
@@ -356,7 +364,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.3()]
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 _rosbuild_EXPORTS:INTERNAL=
-_rosbuild_cached_flag_time:INTERNAL=1405808121.28
+_rosbuild_cached_flag_time:INTERNAL=1406035765.72
 _roslang_LANGS:INTERNAL=roslisp;rospy;roscpp
 _rospack_deps_manifests_invoke_result:INTERNAL=/opt/ros/fuerte/share/std_msgs/manifest.xml;/opt/ros/fuerte/share/roslang/manifest.xml;/opt/ros/fuerte/share/roscpp/manifest.xml;/opt/ros/fuerte/share/geometry_msgs/manifest.xml;/home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml;/opt/ros/fuerte/stacks/bullet/manifest.xml;/opt/ros/fuerte/share/sensor_msgs/manifest.xml;/opt/ros/fuerte/share/rosconsole/manifest.xml;/opt/ros/fuerte/stacks/geometry/angles/manifest.xml;/opt/ros/fuerte/share/rospy/manifest.xml;/opt/ros/fuerte/share/rostest/manifest.xml;/opt/ros/fuerte/share/roswtf/manifest.xml;/opt/ros/fuerte/share/message_filters/manifest.xml;/opt/ros/fuerte/stacks/geometry/tf/manifest.xml
 _rospack_msgsrv_gen_invoke_result:INTERNAL=/home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated;/home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated;/opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated;/opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated

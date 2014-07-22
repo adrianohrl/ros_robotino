@@ -31,8 +31,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision
@@ -71,15 +71,15 @@ CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.o: /home/robotino/fue
 CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/src/vision_move_to_puck.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/src/vision_move_to_puck.cpp
 
 CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/src/vision_move_to_puck.cpp > CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/src/vision_move_to_puck.cpp > CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.i
 
 CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/src/vision_move_to_puck.cpp -o CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/src/vision_move_to_puck.cpp -o CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.s
 
 CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.o.requires:
 .PHONY : CMakeFiles/vision_move_to_puck.dir/src/vision_move_to_puck.o.requires

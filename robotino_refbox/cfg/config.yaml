@@ -76,7 +76,7 @@ llsfrb:
   game:
     teams: [Expertinos]
     crypto-keys:
-      Expertinos: randomkey
+      Expertinos: wwncq4xG
 
   shell:
     refbox-host: localhost

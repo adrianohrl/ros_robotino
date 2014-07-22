@@ -17,7 +17,7 @@ d6a12f207c4c2a4b68d7336b7635d40d ../src/robotino_refbox/msg/_Machine_Types.py
 122e5e28a9e8c93f5e1d662f8e8ba58d ../src/robotino_refbox/msg/_Order_Info.py
 25015689e5363e6c7d73853b82c59da5 ../src/robotino_refbox/msg/_Reported_Machines.py
 e9df39035eb7b9b7133a267d51bf4ade ../src/robotino_refbox/msg/_RobotPos.py
-7cbda97b7ced77052ed190bedb5ccc94 ../src/robotino_refbox/msg/__init__.py
+8ddb24ccadc7e9059f78d6b3dfb9732f ../src/robotino_refbox/msg/__init__.py
 6400e8ecb57979b0b51c3451b42857b4 ../src/robotino_refbox/srv/_ReportMachine.py
 b6b8e81195b8854ebb771f6342ebc0ee ../src/robotino_refbox/srv/__init__.py
 b2f6e25ddecfa0650b068b308aedf394 ../srv_gen/cpp/include/robotino_refbox/ReportMachine.h

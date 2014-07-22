@@ -31,8 +31,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements
@@ -72,15 +72,15 @@ CMakeFiles/robotino_movements.dir/src/Movements.o: /opt/ros/fuerte/stacks/geomet
 CMakeFiles/robotino_movements.dir/src/Movements.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_movements.dir/src/Movements.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_movements.dir/src/Movements.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/src/Movements.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_movements.dir/src/Movements.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/src/Movements.cpp
 
 CMakeFiles/robotino_movements.dir/src/Movements.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_movements.dir/src/Movements.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/src/Movements.cpp > CMakeFiles/robotino_movements.dir/src/Movements.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/src/Movements.cpp > CMakeFiles/robotino_movements.dir/src/Movements.i
 
 CMakeFiles/robotino_movements.dir/src/Movements.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_movements.dir/src/Movements.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/src/Movements.cpp -o CMakeFiles/robotino_movements.dir/src/Movements.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/src/Movements.cpp -o CMakeFiles/robotino_movements.dir/src/Movements.s
 
 CMakeFiles/robotino_movements.dir/src/Movements.o.requires:
 .PHONY : CMakeFiles/robotino_movements.dir/src/Movements.o.requires
@@ -114,15 +114,15 @@ CMakeFiles/robotino_movements.dir/src/robotino_movements.o: /opt/ros/fuerte/stac
 CMakeFiles/robotino_movements.dir/src/robotino_movements.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_movements.dir/src/robotino_movements.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_movements.dir/src/robotino_movements.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/src/robotino_movements.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_movements.dir/src/robotino_movements.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/src/robotino_movements.cpp
 
 CMakeFiles/robotino_movements.dir/src/robotino_movements.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_movements.dir/src/robotino_movements.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/src/robotino_movements.cpp > CMakeFiles/robotino_movements.dir/src/robotino_movements.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/src/robotino_movements.cpp > CMakeFiles/robotino_movements.dir/src/robotino_movements.i
 
 CMakeFiles/robotino_movements.dir/src/robotino_movements.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_movements.dir/src/robotino_movements.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/src/robotino_movements.cpp -o CMakeFiles/robotino_movements.dir/src/robotino_movements.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/src/robotino_movements.cpp -o CMakeFiles/robotino_movements.dir/src/robotino_movements.s
 
 CMakeFiles/robotino_movements.dir/src/robotino_movements.o.requires:
 .PHONY : CMakeFiles/robotino_movements.dir/src/robotino_movements.o.requires

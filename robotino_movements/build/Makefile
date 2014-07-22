@@ -35,8 +35,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements
@@ -49,8 +49,8 @@ CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_mov
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,6 +123,19 @@ ROSBUILD_genmsg_lisp: cmake_check_build_system
 ROSBUILD_genmsg_lisp/fast:
 	$(MAKE) -f CMakeFiles/ROSBUILD_genmsg_lisp.dir/build.make CMakeFiles/ROSBUILD_genmsg_lisp.dir/build
 .PHONY : ROSBUILD_genmsg_lisp/fast
+
+#=============================================================================
+# Target rules for targets named ROSBUILD_genmsg_py
+
+# Build rule for target.
+ROSBUILD_genmsg_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ROSBUILD_genmsg_py
+.PHONY : ROSBUILD_genmsg_py
+
+# fast build rule for target.
+ROSBUILD_genmsg_py/fast:
+	$(MAKE) -f CMakeFiles/ROSBUILD_genmsg_py.dir/build.make CMakeFiles/ROSBUILD_genmsg_py.dir/build
+.PHONY : ROSBUILD_genmsg_py/fast
 
 #=============================================================================
 # Target rules for targets named ROSBUILD_gensrv_cpp
@@ -253,6 +266,19 @@ rospack_genmsg: cmake_check_build_system
 rospack_genmsg/fast:
 	$(MAKE) -f CMakeFiles/rospack_genmsg.dir/build.make CMakeFiles/rospack_genmsg.dir/build
 .PHONY : rospack_genmsg/fast
+
+#=============================================================================
+# Target rules for targets named rospack_genmsg_all
+
+# Build rule for target.
+rospack_genmsg_all: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rospack_genmsg_all
+.PHONY : rospack_genmsg_all
+
+# fast build rule for target.
+rospack_genmsg_all/fast:
+	$(MAKE) -f CMakeFiles/rospack_genmsg_all.dir/build.make CMakeFiles/rospack_genmsg_all.dir/build
+.PHONY : rospack_genmsg_all/fast
 
 #=============================================================================
 # Target rules for targets named rospack_genmsg_libexe
@@ -426,6 +452,7 @@ help:
 	@echo "... depend"
 	@echo "... ROSBUILD_genmsg_cpp"
 	@echo "... ROSBUILD_genmsg_lisp"
+	@echo "... ROSBUILD_genmsg_py"
 	@echo "... ROSBUILD_gensrv_cpp"
 	@echo "... ROSBUILD_gensrv_lisp"
 	@echo "... ROSBUILD_gensrv_py"
@@ -438,6 +465,7 @@ help:
 	@echo "... rosbuild_precompile"
 	@echo "... rosbuild_premsgsrvgen"
 	@echo "... rospack_genmsg"
+	@echo "... rospack_genmsg_all"
 	@echo "... rospack_genmsg_libexe"
 	@echo "... rospack_gensrv"
 	@echo "... rospack_gensrv_all"

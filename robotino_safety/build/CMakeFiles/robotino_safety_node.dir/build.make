@@ -31,8 +31,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_safety
@@ -95,15 +95,15 @@ CMakeFiles/robotino_safety_node.dir/src/RobotinoSafety.o: /opt/ros/fuerte/stacks
 CMakeFiles/robotino_safety_node.dir/src/RobotinoSafety.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_safety/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_safety_node.dir/src/RobotinoSafety.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_safety_node.dir/src/RobotinoSafety.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_safety/src/RobotinoSafety.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_safety_node.dir/src/RobotinoSafety.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_safety/src/RobotinoSafety.cpp
 
 CMakeFiles/robotino_safety_node.dir/src/RobotinoSafety.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_safety_node.dir/src/RobotinoSafety.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_safety/src/RobotinoSafety.cpp > CMakeFiles/robotino_safety_node.dir/src/RobotinoSafety.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_safety/src/RobotinoSafety.cpp > CMakeFiles/robotino_safety_node.dir/src/RobotinoSafety.i
 
 CMakeFiles/robotino_safety_node.dir/src/RobotinoSafety.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_safety_node.dir/src/RobotinoSafety.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_safety/src/RobotinoSafety.cpp -o CMakeFiles/robotino_safety_node.dir/src/RobotinoSafety.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_safety/src/RobotinoSafety.cpp -o CMakeFiles/robotino_safety_node.dir/src/RobotinoSafety.s
 
 CMakeFiles/robotino_safety_node.dir/src/RobotinoSafety.o.requires:
 .PHONY : CMakeFiles/robotino_safety_node.dir/src/RobotinoSafety.o.requires
@@ -160,15 +160,15 @@ CMakeFiles/robotino_safety_node.dir/src/robotino_safety_node.o: /opt/ros/fuerte/
 CMakeFiles/robotino_safety_node.dir/src/robotino_safety_node.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_safety/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_safety_node.dir/src/robotino_safety_node.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_safety_node.dir/src/robotino_safety_node.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_safety/src/robotino_safety_node.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_safety_node.dir/src/robotino_safety_node.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_safety/src/robotino_safety_node.cpp
 
 CMakeFiles/robotino_safety_node.dir/src/robotino_safety_node.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_safety_node.dir/src/robotino_safety_node.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_safety/src/robotino_safety_node.cpp > CMakeFiles/robotino_safety_node.dir/src/robotino_safety_node.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_safety/src/robotino_safety_node.cpp > CMakeFiles/robotino_safety_node.dir/src/robotino_safety_node.i
 
 CMakeFiles/robotino_safety_node.dir/src/robotino_safety_node.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_safety_node.dir/src/robotino_safety_node.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_safety/src/robotino_safety_node.cpp -o CMakeFiles/robotino_safety_node.dir/src/robotino_safety_node.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_safety/src/robotino_safety_node.cpp -o CMakeFiles/robotino_safety_node.dir/src/robotino_safety_node.s
 
 CMakeFiles/robotino_safety_node.dir/src/robotino_safety_node.o.requires:
 .PHONY : CMakeFiles/robotino_safety_node.dir/src/robotino_safety_node.o.requires

@@ -31,8 +31,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements
@@ -48,6 +48,9 @@ include CMakeFiles/ROSBUILD_gensrv_lisp.dir/progress.make
 CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/FullPath.lisp
 CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package.lisp
 CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_FullPath.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/Prova.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_Prova.lisp
 
 ../srv_gen/lisp/FullPath.lisp: ../srv/FullPath.srv
 ../srv_gen/lisp/FullPath.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
@@ -79,10 +82,43 @@ CMakeFiles/ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_FullPath.lisp
 
 ../srv_gen/lisp/_package_FullPath.lisp: ../srv_gen/lisp/FullPath.lisp
 
+../srv_gen/lisp/Prova.lisp: ../srv/Prova.srv
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../srv_gen/lisp/Prova.lisp: ../manifest.xml
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../srv_gen/lisp/Prova.lisp: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/share/rostest/manifest.xml
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/share/roswtf/manifest.xml
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/share/message_filters/manifest.xml
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../srv_gen/lisp/Prova.lisp: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
+../srv_gen/lisp/Prova.lisp: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../srv_gen/lisp/Prova.lisp: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/lisp/Prova.lisp, ../srv_gen/lisp/_package.lisp, ../srv_gen/lisp/_package_Prova.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/srv/Prova.srv
+
+../srv_gen/lisp/_package.lisp: ../srv_gen/lisp/Prova.lisp
+
+../srv_gen/lisp/_package_Prova.lisp: ../srv_gen/lisp/Prova.lisp
+
 ROSBUILD_gensrv_lisp: CMakeFiles/ROSBUILD_gensrv_lisp
 ROSBUILD_gensrv_lisp: ../srv_gen/lisp/FullPath.lisp
 ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package.lisp
 ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_FullPath.lisp
+ROSBUILD_gensrv_lisp: ../srv_gen/lisp/Prova.lisp
+ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package.lisp
+ROSBUILD_gensrv_lisp: ../srv_gen/lisp/_package_Prova.lisp
 ROSBUILD_gensrv_lisp: CMakeFiles/ROSBUILD_gensrv_lisp.dir/build.make
 .PHONY : ROSBUILD_gensrv_lisp
 

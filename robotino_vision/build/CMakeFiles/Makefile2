@@ -43,8 +43,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision
@@ -152,13 +152,13 @@ clean: CMakeFiles/ROSBUILD_genmsg_py.dir/clean
 CMakeFiles/ROSBUILD_gensrv_cpp.dir/all: CMakeFiles/rosbuild_premsgsrvgen.dir/all
 	$(MAKE) -f CMakeFiles/ROSBUILD_gensrv_cpp.dir/build.make CMakeFiles/ROSBUILD_gensrv_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/ROSBUILD_gensrv_cpp.dir/build.make CMakeFiles/ROSBUILD_gensrv_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles  11
 	@echo "Built target ROSBUILD_gensrv_cpp"
 .PHONY : CMakeFiles/ROSBUILD_gensrv_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ROSBUILD_gensrv_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ROSBUILD_gensrv_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles 0
 .PHONY : CMakeFiles/ROSBUILD_gensrv_cpp.dir/rule
@@ -183,13 +183,13 @@ clean: CMakeFiles/ROSBUILD_gensrv_cpp.dir/clean
 CMakeFiles/ROSBUILD_gensrv_lisp.dir/all: CMakeFiles/rosbuild_premsgsrvgen.dir/all
 	$(MAKE) -f CMakeFiles/ROSBUILD_gensrv_lisp.dir/build.make CMakeFiles/ROSBUILD_gensrv_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/ROSBUILD_gensrv_lisp.dir/build.make CMakeFiles/ROSBUILD_gensrv_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles  12
 	@echo "Built target ROSBUILD_gensrv_lisp"
 .PHONY : CMakeFiles/ROSBUILD_gensrv_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ROSBUILD_gensrv_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ROSBUILD_gensrv_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles 0
 .PHONY : CMakeFiles/ROSBUILD_gensrv_lisp.dir/rule
@@ -205,6 +205,37 @@ CMakeFiles/ROSBUILD_gensrv_lisp.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/ROSBUILD_gensrv_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ROSBUILD_gensrv_py.dir
+
+# All Build rule for target.
+CMakeFiles/ROSBUILD_gensrv_py.dir/all: CMakeFiles/rosbuild_premsgsrvgen.dir/all
+	$(MAKE) -f CMakeFiles/ROSBUILD_gensrv_py.dir/build.make CMakeFiles/ROSBUILD_gensrv_py.dir/depend
+	$(MAKE) -f CMakeFiles/ROSBUILD_gensrv_py.dir/build.make CMakeFiles/ROSBUILD_gensrv_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles  13 14
+	@echo "Built target ROSBUILD_gensrv_py"
+.PHONY : CMakeFiles/ROSBUILD_gensrv_py.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ROSBUILD_gensrv_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ROSBUILD_gensrv_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles 0
+.PHONY : CMakeFiles/ROSBUILD_gensrv_py.dir/rule
+
+# Convenience name for target.
+ROSBUILD_gensrv_py: CMakeFiles/ROSBUILD_gensrv_py.dir/rule
+.PHONY : ROSBUILD_gensrv_py
+
+# clean rule for target.
+CMakeFiles/ROSBUILD_gensrv_py.dir/clean:
+	$(MAKE) -f CMakeFiles/ROSBUILD_gensrv_py.dir/build.make CMakeFiles/ROSBUILD_gensrv_py.dir/clean
+.PHONY : CMakeFiles/ROSBUILD_gensrv_py.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ROSBUILD_gensrv_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -245,7 +276,7 @@ clean: CMakeFiles/clean-test-results.dir/clean
 CMakeFiles/robotino_vision_node.dir/all: CMakeFiles/rosbuild_precompile.dir/all
 	$(MAKE) -f CMakeFiles/robotino_vision_node.dir/build.make CMakeFiles/robotino_vision_node.dir/depend
 	$(MAKE) -f CMakeFiles/robotino_vision_node.dir/build.make CMakeFiles/robotino_vision_node.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles  11 12 13 14 15
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles  15 16 17 18 19
 	@echo "Built target robotino_vision_node"
 .PHONY : CMakeFiles/robotino_vision_node.dir/all
 
@@ -440,6 +471,7 @@ clean: CMakeFiles/rospack_genmsg_libexe.dir/clean
 
 # All Build rule for target.
 CMakeFiles/rospack_gensrv.dir/all: CMakeFiles/ROSBUILD_gensrv_lisp.dir/all
+CMakeFiles/rospack_gensrv.dir/all: CMakeFiles/ROSBUILD_gensrv_py.dir/all
 CMakeFiles/rospack_gensrv.dir/all: CMakeFiles/ROSBUILD_gensrv_cpp.dir/all
 	$(MAKE) -f CMakeFiles/rospack_gensrv.dir/build.make CMakeFiles/rospack_gensrv.dir/depend
 	$(MAKE) -f CMakeFiles/rospack_gensrv.dir/build.make CMakeFiles/rospack_gensrv.dir/build
@@ -449,7 +481,7 @@ CMakeFiles/rospack_gensrv.dir/all: CMakeFiles/ROSBUILD_gensrv_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rospack_gensrv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rospack_gensrv.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles 0
 .PHONY : CMakeFiles/rospack_gensrv.dir/rule
@@ -629,7 +661,7 @@ clean: CMakeFiles/tests.dir/clean
 CMakeFiles/vision_move_to_puck.dir/all: CMakeFiles/rosbuild_precompile.dir/all
 	$(MAKE) -f CMakeFiles/vision_move_to_puck.dir/build.make CMakeFiles/vision_move_to_puck.dir/depend
 	$(MAKE) -f CMakeFiles/vision_move_to_puck.dir/build.make CMakeFiles/vision_move_to_puck.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles  16
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles  20
 	@echo "Built target vision_move_to_puck"
 .PHONY : CMakeFiles/vision_move_to_puck.dir/all
 

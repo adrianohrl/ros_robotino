@@ -1,6 +1,9 @@
 FILE(REMOVE_RECURSE
+  "../msg_gen"
   "../srv_gen"
+  "../src/robotino_movements/msg"
   "../src/robotino_movements/srv"
+  "../msg_gen"
   "../srv_gen"
   "CMakeFiles/robotino_manager.dir/src/robotino_manager.o"
   "../bin/robotino_manager.pdb"

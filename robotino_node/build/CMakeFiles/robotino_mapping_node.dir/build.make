@@ -31,8 +31,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node
@@ -92,15 +92,15 @@ CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.o: /opt/ros/fuert
 CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_mapping_node.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_mapping_node.cpp
 
 CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_mapping_node.cpp > CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_mapping_node.cpp > CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.i
 
 CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_mapping_node.cpp -o CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_mapping_node.cpp -o CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.s
 
 CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.o.requires:
 .PHONY : CMakeFiles/robotino_mapping_node.dir/src/robotino_mapping_node.o.requires
@@ -154,15 +154,15 @@ CMakeFiles/robotino_mapping_node.dir/src/MappingROS.o: /opt/ros/fuerte/stacks/dy
 CMakeFiles/robotino_mapping_node.dir/src/MappingROS.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_mapping_node.dir/src/MappingROS.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_mapping_node.dir/src/MappingROS.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/MappingROS.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_mapping_node.dir/src/MappingROS.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/MappingROS.cpp
 
 CMakeFiles/robotino_mapping_node.dir/src/MappingROS.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_mapping_node.dir/src/MappingROS.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/MappingROS.cpp > CMakeFiles/robotino_mapping_node.dir/src/MappingROS.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/MappingROS.cpp > CMakeFiles/robotino_mapping_node.dir/src/MappingROS.i
 
 CMakeFiles/robotino_mapping_node.dir/src/MappingROS.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_mapping_node.dir/src/MappingROS.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/MappingROS.cpp -o CMakeFiles/robotino_mapping_node.dir/src/MappingROS.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/MappingROS.cpp -o CMakeFiles/robotino_mapping_node.dir/src/MappingROS.s
 
 CMakeFiles/robotino_mapping_node.dir/src/MappingROS.o.requires:
 .PHONY : CMakeFiles/robotino_mapping_node.dir/src/MappingROS.o.requires
@@ -216,15 +216,15 @@ CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.o: /opt/ros/fuerte/
 CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoMappingNode.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoMappingNode.cpp
 
 CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoMappingNode.cpp > CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoMappingNode.cpp > CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.i
 
 CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoMappingNode.cpp -o CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoMappingNode.cpp -o CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.s
 
 CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.o.requires:
 .PHONY : CMakeFiles/robotino_mapping_node.dir/src/RobotinoMappingNode.o.requires
@@ -278,15 +278,15 @@ CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.o: /opt/ros/fuerte/stack
 CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/InitialPoseROS.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/InitialPoseROS.cpp
 
 CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/InitialPoseROS.cpp > CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/InitialPoseROS.cpp > CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.i
 
 CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/InitialPoseROS.cpp -o CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/InitialPoseROS.cpp -o CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.s
 
 CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.o.requires:
 .PHONY : CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.o.requires
@@ -340,15 +340,15 @@ CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.o: /opt/ros/fuerte/stacks/dy
 CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/NavGoalROS.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/NavGoalROS.cpp
 
 CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/NavGoalROS.cpp > CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/NavGoalROS.cpp > CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.i
 
 CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/NavGoalROS.cpp -o CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/NavGoalROS.cpp -o CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.s
 
 CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.o.requires:
 .PHONY : CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.o.requires
@@ -402,15 +402,15 @@ CMakeFiles/robotino_mapping_node.dir/src/ComROS.o: /opt/ros/fuerte/stacks/dynami
 CMakeFiles/robotino_mapping_node.dir/src/ComROS.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_mapping_node.dir/src/ComROS.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_mapping_node.dir/src/ComROS.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_mapping_node.dir/src/ComROS.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp
 
 CMakeFiles/robotino_mapping_node.dir/src/ComROS.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_mapping_node.dir/src/ComROS.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp > CMakeFiles/robotino_mapping_node.dir/src/ComROS.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp > CMakeFiles/robotino_mapping_node.dir/src/ComROS.i
 
 CMakeFiles/robotino_mapping_node.dir/src/ComROS.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_mapping_node.dir/src/ComROS.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp -o CMakeFiles/robotino_mapping_node.dir/src/ComROS.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp -o CMakeFiles/robotino_mapping_node.dir/src/ComROS.s
 
 CMakeFiles/robotino_mapping_node.dir/src/ComROS.o.requires:
 .PHONY : CMakeFiles/robotino_mapping_node.dir/src/ComROS.o.requires
@@ -439,8 +439,8 @@ robotino_mapping_node_EXTERNAL_OBJECTS =
 ../bin/robotino_mapping_node: CMakeFiles/robotino_mapping_node.dir/src/InitialPoseROS.o
 ../bin/robotino_mapping_node: CMakeFiles/robotino_mapping_node.dir/src/NavGoalROS.o
 ../bin/robotino_mapping_node: CMakeFiles/robotino_mapping_node.dir/src/ComROS.o
-../bin/robotino_mapping_node: CMakeFiles/robotino_mapping_node.dir/build.make
 ../bin/robotino_mapping_node: /usr/local/robotino/api2/lib/librec_robotino_api2.so
+../bin/robotino_mapping_node: CMakeFiles/robotino_mapping_node.dir/build.make
 ../bin/robotino_mapping_node: CMakeFiles/robotino_mapping_node.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../bin/robotino_mapping_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robotino_mapping_node.dir/link.txt --verbose=$(VERBOSE)

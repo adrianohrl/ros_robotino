@@ -31,8 +31,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision
@@ -47,12 +47,38 @@ include CMakeFiles/ROSBUILD_genmsg_py.dir/progress.make
 
 CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_vision/msg/__init__.py
 
+../src/robotino_vision/msg/__init__.py: ../src/robotino_vision/msg/_LampPostState.py
 ../src/robotino_vision/msg/__init__.py: ../src/robotino_vision/msg/_LampState.py
 ../src/robotino_vision/msg/__init__.py: ../src/robotino_vision/msg/_PuckState.py
-../src/robotino_vision/msg/__init__.py: ../src/robotino_vision/msg/_LampPostState.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_vision/msg/__init__.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --initpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/msg/LampState.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/msg/PuckState.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/msg/LampPostState.msg
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --initpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/msg/LampPostState.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/msg/LampState.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/msg/PuckState.msg
+
+../src/robotino_vision/msg/_LampPostState.py: ../msg/LampPostState.msg
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/robotino_vision/msg/_LampPostState.py: ../msg/LampState.msg
+../src/robotino_vision/msg/_LampPostState.py: ../manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/rospy/manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/stacks/vision_opencv/cv_bridge/manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/ros/core/rosbuild/manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/roslib/manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/stacks/pluginlib/manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/message_filters/manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/stacks/image_common/image_transport/manifest.xml
+../src/robotino_vision/msg/_LampPostState.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
+../src/robotino_vision/msg/_LampPostState.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_vision/msg/_LampPostState.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/msg/LampPostState.msg
 
 ../src/robotino_vision/msg/_LampState.py: ../msg/LampState.msg
 ../src/robotino_vision/msg/_LampState.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
@@ -75,7 +101,7 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_vision/msg/__init__.py
 ../src/robotino_vision/msg/_LampState.py: /opt/ros/fuerte/stacks/image_common/image_transport/manifest.xml
 ../src/robotino_vision/msg/_LampState.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
 ../src/robotino_vision/msg/_LampState.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_vision/msg/_LampState.py"
 	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/msg/LampState.msg
 
@@ -100,41 +126,15 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_vision/msg/__init__.py
 ../src/robotino_vision/msg/_PuckState.py: /opt/ros/fuerte/stacks/image_common/image_transport/manifest.xml
 ../src/robotino_vision/msg/_PuckState.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
 ../src/robotino_vision/msg/_PuckState.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_vision/msg/_PuckState.py"
 	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/msg/PuckState.msg
 
-../src/robotino_vision/msg/_LampPostState.py: ../msg/LampPostState.msg
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/roslib/bin/gendeps
-../src/robotino_vision/msg/_LampPostState.py: ../msg/LampState.msg
-../src/robotino_vision/msg/_LampPostState.py: ../manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/roslang/manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/rospy/manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/stacks/vision_opencv/cv_bridge/manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/ros/core/rosbuild/manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/roslib/manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/rosconsole/manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/stacks/pluginlib/manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/share/message_filters/manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /opt/ros/fuerte/stacks/image_common/image_transport/manifest.xml
-../src/robotino_vision/msg/_LampPostState.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
-../src/robotino_vision/msg/_LampPostState.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_vision/msg/_LampPostState.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/msg/LampPostState.msg
-
 ROSBUILD_genmsg_py: CMakeFiles/ROSBUILD_genmsg_py
 ROSBUILD_genmsg_py: ../src/robotino_vision/msg/__init__.py
+ROSBUILD_genmsg_py: ../src/robotino_vision/msg/_LampPostState.py
 ROSBUILD_genmsg_py: ../src/robotino_vision/msg/_LampState.py
 ROSBUILD_genmsg_py: ../src/robotino_vision/msg/_PuckState.py
-ROSBUILD_genmsg_py: ../src/robotino_vision/msg/_LampPostState.py
 ROSBUILD_genmsg_py: CMakeFiles/ROSBUILD_genmsg_py.dir/build.make
 .PHONY : ROSBUILD_genmsg_py
 

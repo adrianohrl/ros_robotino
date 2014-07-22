@@ -31,8 +31,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move
@@ -95,15 +95,15 @@ CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/stacks/dynam
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/manager_client.dir/src/manager_client.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/manager_client.dir/src/manager_client.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/manager_client.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/manager_client.dir/src/manager_client.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/manager_client.cpp
 
 CMakeFiles/manager_client.dir/src/manager_client.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/manager_client.dir/src/manager_client.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/manager_client.cpp > CMakeFiles/manager_client.dir/src/manager_client.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/manager_client.cpp > CMakeFiles/manager_client.dir/src/manager_client.i
 
 CMakeFiles/manager_client.dir/src/manager_client.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/manager_client.dir/src/manager_client.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/manager_client.cpp -o CMakeFiles/manager_client.dir/src/manager_client.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/manager_client.cpp -o CMakeFiles/manager_client.dir/src/manager_client.s
 
 CMakeFiles/manager_client.dir/src/manager_client.o.requires:
 .PHONY : CMakeFiles/manager_client.dir/src/manager_client.o.requires

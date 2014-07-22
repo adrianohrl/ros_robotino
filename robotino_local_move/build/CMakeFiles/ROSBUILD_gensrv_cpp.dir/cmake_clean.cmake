@@ -6,8 +6,8 @@ FILE(REMOVE_RECURSE
   "../msg_gen"
   "../srv_gen"
   "CMakeFiles/ROSBUILD_gensrv_cpp"
-  "../srv_gen/cpp/include/robotino_local_move/Stop.h"
   "../srv_gen/cpp/include/robotino_local_move/FullPath.h"
+  "../srv_gen/cpp/include/robotino_local_move/Stop.h"
 )
 
 # Per-language clean rules from dependency scanning.

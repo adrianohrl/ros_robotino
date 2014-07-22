@@ -10,9 +10,9 @@ FILE(REMOVE_RECURSE
   "../src/robotino_refbox/msg/_Exploration_Info.py"
   "../src/robotino_refbox/msg/_Order_Info.py"
   "../src/robotino_refbox/msg/_Reported_Machines.py"
-  "../src/robotino_refbox/msg/_Machine_Types.py"
   "../src/robotino_refbox/msg/_RobotPos.py"
   "../src/robotino_refbox/msg/_Game_Info.py"
+  "../src/robotino_refbox/msg/_Machine_Types.py"
 )
 
 # Per-language clean rules from dependency scanning.

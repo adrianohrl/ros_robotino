@@ -31,8 +31,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs
@@ -45,57 +45,57 @@ CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msg
 # Include the progress variables for this target.
 include CMakeFiles/ROSBUILD_genmsg_lisp.dir/progress.make
 
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/BHAReadings.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_BHAReadings.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/EncoderReadings.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_EncoderReadings.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/SetBHAPressures.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_SetBHAPressures.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/MotorReadings.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_MotorReadings.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/GripperState.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_GripperState.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/SetGrapplerAxes.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_SetGrapplerAxes.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/NorthStarReadings.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_NorthStarReadings.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/GrapplerReadings.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_GrapplerReadings.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/SetGrapplerAxis.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_SetGrapplerAxis.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/AnalogReadings.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_AnalogReadings.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/PowerReadings.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_PowerReadings.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/DigitalReadings.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_DigitalReadings.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/EncoderReadings.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_EncoderReadings.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/MotorReadings.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_MotorReadings.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/SetGrapplerAxes.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_SetGrapplerAxes.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/GrapplerReadings.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_GrapplerReadings.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/NorthStarReadings.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_NorthStarReadings.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/AnalogReadings.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_AnalogReadings.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/GripperState.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_GripperState.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/PowerReadings.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_PowerReadings.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/SetGrapplerAxis.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_SetGrapplerAxis.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/SetBHAPressures.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_SetBHAPressures.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/BHAReadings.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_BHAReadings.lisp
 
-../msg_gen/lisp/BHAReadings.lisp: ../msg/BHAReadings.msg
-../msg_gen/lisp/BHAReadings.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
-../msg_gen/lisp/BHAReadings.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/lisp/BHAReadings.lisp: ../manifest.xml
-../msg_gen/lisp/BHAReadings.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/lisp/BHAReadings.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/lisp/BHAReadings.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/lisp/DigitalReadings.lisp: ../msg/DigitalReadings.msg
+../msg_gen/lisp/DigitalReadings.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/DigitalReadings.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/DigitalReadings.lisp: ../manifest.xml
+../msg_gen/lisp/DigitalReadings.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/DigitalReadings.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/lisp/DigitalReadings.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/BHAReadings.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_BHAReadings.lisp"
-	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/BHAReadings.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/DigitalReadings.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_DigitalReadings.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/DigitalReadings.msg
 
-../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/BHAReadings.lisp
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/DigitalReadings.lisp
 
-../msg_gen/lisp/_package_BHAReadings.lisp: ../msg_gen/lisp/BHAReadings.lisp
+../msg_gen/lisp/_package_DigitalReadings.lisp: ../msg_gen/lisp/DigitalReadings.lisp
 
 ../msg_gen/lisp/EncoderReadings.lisp: ../msg/EncoderReadings.msg
 ../msg_gen/lisp/EncoderReadings.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
@@ -112,21 +112,6 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_DigitalReadings.lisp
 
 ../msg_gen/lisp/_package_EncoderReadings.lisp: ../msg_gen/lisp/EncoderReadings.lisp
 
-../msg_gen/lisp/SetBHAPressures.lisp: ../msg/SetBHAPressures.msg
-../msg_gen/lisp/SetBHAPressures.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
-../msg_gen/lisp/SetBHAPressures.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/lisp/SetBHAPressures.lisp: ../manifest.xml
-../msg_gen/lisp/SetBHAPressures.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/lisp/SetBHAPressures.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/lisp/SetBHAPressures.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/SetBHAPressures.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_SetBHAPressures.lisp"
-	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/SetBHAPressures.msg
-
-../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/SetBHAPressures.lisp
-
-../msg_gen/lisp/_package_SetBHAPressures.lisp: ../msg_gen/lisp/SetBHAPressures.lisp
-
 ../msg_gen/lisp/MotorReadings.lisp: ../msg/MotorReadings.msg
 ../msg_gen/lisp/MotorReadings.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
 ../msg_gen/lisp/MotorReadings.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
@@ -134,28 +119,13 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_DigitalReadings.lisp
 ../msg_gen/lisp/MotorReadings.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/lisp/MotorReadings.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/lisp/MotorReadings.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/MotorReadings.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_MotorReadings.lisp"
 	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/MotorReadings.msg
 
 ../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/MotorReadings.lisp
 
 ../msg_gen/lisp/_package_MotorReadings.lisp: ../msg_gen/lisp/MotorReadings.lisp
-
-../msg_gen/lisp/GripperState.lisp: ../msg/GripperState.msg
-../msg_gen/lisp/GripperState.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
-../msg_gen/lisp/GripperState.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/lisp/GripperState.lisp: ../manifest.xml
-../msg_gen/lisp/GripperState.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/lisp/GripperState.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/lisp/GripperState.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/GripperState.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_GripperState.lisp"
-	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/GripperState.msg
-
-../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/GripperState.lisp
-
-../msg_gen/lisp/_package_GripperState.lisp: ../msg_gen/lisp/GripperState.lisp
 
 ../msg_gen/lisp/SetGrapplerAxes.lisp: ../msg/SetGrapplerAxes.msg
 ../msg_gen/lisp/SetGrapplerAxes.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
@@ -164,13 +134,28 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_DigitalReadings.lisp
 ../msg_gen/lisp/SetGrapplerAxes.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/lisp/SetGrapplerAxes.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/lisp/SetGrapplerAxes.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/SetGrapplerAxes.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_SetGrapplerAxes.lisp"
 	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/SetGrapplerAxes.msg
 
 ../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/SetGrapplerAxes.lisp
 
 ../msg_gen/lisp/_package_SetGrapplerAxes.lisp: ../msg_gen/lisp/SetGrapplerAxes.lisp
+
+../msg_gen/lisp/GrapplerReadings.lisp: ../msg/GrapplerReadings.msg
+../msg_gen/lisp/GrapplerReadings.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/GrapplerReadings.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/GrapplerReadings.lisp: ../manifest.xml
+../msg_gen/lisp/GrapplerReadings.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/GrapplerReadings.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/lisp/GrapplerReadings.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/GrapplerReadings.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_GrapplerReadings.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/GrapplerReadings.msg
+
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/GrapplerReadings.lisp
+
+../msg_gen/lisp/_package_GrapplerReadings.lisp: ../msg_gen/lisp/GrapplerReadings.lisp
 
 ../msg_gen/lisp/NorthStarReadings.lisp: ../msg/NorthStarReadings.msg
 ../msg_gen/lisp/NorthStarReadings.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
@@ -182,43 +167,13 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_DigitalReadings.lisp
 ../msg_gen/lisp/NorthStarReadings.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/lisp/NorthStarReadings.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/lisp/NorthStarReadings.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/NorthStarReadings.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_NorthStarReadings.lisp"
 	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/NorthStarReadings.msg
 
 ../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/NorthStarReadings.lisp
 
 ../msg_gen/lisp/_package_NorthStarReadings.lisp: ../msg_gen/lisp/NorthStarReadings.lisp
-
-../msg_gen/lisp/GrapplerReadings.lisp: ../msg/GrapplerReadings.msg
-../msg_gen/lisp/GrapplerReadings.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
-../msg_gen/lisp/GrapplerReadings.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/lisp/GrapplerReadings.lisp: ../manifest.xml
-../msg_gen/lisp/GrapplerReadings.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/lisp/GrapplerReadings.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/lisp/GrapplerReadings.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/GrapplerReadings.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_GrapplerReadings.lisp"
-	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/GrapplerReadings.msg
-
-../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/GrapplerReadings.lisp
-
-../msg_gen/lisp/_package_GrapplerReadings.lisp: ../msg_gen/lisp/GrapplerReadings.lisp
-
-../msg_gen/lisp/SetGrapplerAxis.lisp: ../msg/SetGrapplerAxis.msg
-../msg_gen/lisp/SetGrapplerAxis.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
-../msg_gen/lisp/SetGrapplerAxis.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/lisp/SetGrapplerAxis.lisp: ../manifest.xml
-../msg_gen/lisp/SetGrapplerAxis.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/lisp/SetGrapplerAxis.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/lisp/SetGrapplerAxis.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/SetGrapplerAxis.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_SetGrapplerAxis.lisp"
-	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/SetGrapplerAxis.msg
-
-../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/SetGrapplerAxis.lisp
-
-../msg_gen/lisp/_package_SetGrapplerAxis.lisp: ../msg_gen/lisp/SetGrapplerAxis.lisp
 
 ../msg_gen/lisp/AnalogReadings.lisp: ../msg/AnalogReadings.msg
 ../msg_gen/lisp/AnalogReadings.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
@@ -227,13 +182,28 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_DigitalReadings.lisp
 ../msg_gen/lisp/AnalogReadings.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/lisp/AnalogReadings.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/lisp/AnalogReadings.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/AnalogReadings.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_AnalogReadings.lisp"
 	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/AnalogReadings.msg
 
 ../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/AnalogReadings.lisp
 
 ../msg_gen/lisp/_package_AnalogReadings.lisp: ../msg_gen/lisp/AnalogReadings.lisp
+
+../msg_gen/lisp/GripperState.lisp: ../msg/GripperState.msg
+../msg_gen/lisp/GripperState.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/GripperState.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/GripperState.lisp: ../manifest.xml
+../msg_gen/lisp/GripperState.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/GripperState.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/lisp/GripperState.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/GripperState.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_GripperState.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/GripperState.msg
+
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/GripperState.lisp
+
+../msg_gen/lisp/_package_GripperState.lisp: ../msg_gen/lisp/GripperState.lisp
 
 ../msg_gen/lisp/PowerReadings.lisp: ../msg/PowerReadings.msg
 ../msg_gen/lisp/PowerReadings.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
@@ -242,7 +212,7 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_DigitalReadings.lisp
 ../msg_gen/lisp/PowerReadings.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/lisp/PowerReadings.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/lisp/PowerReadings.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/PowerReadings.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_PowerReadings.lisp"
 	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/PowerReadings.msg
 
@@ -250,58 +220,88 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_DigitalReadings.lisp
 
 ../msg_gen/lisp/_package_PowerReadings.lisp: ../msg_gen/lisp/PowerReadings.lisp
 
-../msg_gen/lisp/DigitalReadings.lisp: ../msg/DigitalReadings.msg
-../msg_gen/lisp/DigitalReadings.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
-../msg_gen/lisp/DigitalReadings.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/lisp/DigitalReadings.lisp: ../manifest.xml
-../msg_gen/lisp/DigitalReadings.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/lisp/DigitalReadings.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/lisp/DigitalReadings.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/lisp/SetGrapplerAxis.lisp: ../msg/SetGrapplerAxis.msg
+../msg_gen/lisp/SetGrapplerAxis.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/SetGrapplerAxis.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/SetGrapplerAxis.lisp: ../manifest.xml
+../msg_gen/lisp/SetGrapplerAxis.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/SetGrapplerAxis.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/lisp/SetGrapplerAxis.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/SetGrapplerAxis.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_SetGrapplerAxis.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/SetGrapplerAxis.msg
+
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/SetGrapplerAxis.lisp
+
+../msg_gen/lisp/_package_SetGrapplerAxis.lisp: ../msg_gen/lisp/SetGrapplerAxis.lisp
+
+../msg_gen/lisp/SetBHAPressures.lisp: ../msg/SetBHAPressures.msg
+../msg_gen/lisp/SetBHAPressures.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/SetBHAPressures.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/SetBHAPressures.lisp: ../manifest.xml
+../msg_gen/lisp/SetBHAPressures.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/SetBHAPressures.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/lisp/SetBHAPressures.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/SetBHAPressures.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_SetBHAPressures.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/SetBHAPressures.msg
+
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/SetBHAPressures.lisp
+
+../msg_gen/lisp/_package_SetBHAPressures.lisp: ../msg_gen/lisp/SetBHAPressures.lisp
+
+../msg_gen/lisp/BHAReadings.lisp: ../msg/BHAReadings.msg
+../msg_gen/lisp/BHAReadings.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/BHAReadings.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/BHAReadings.lisp: ../manifest.xml
+../msg_gen/lisp/BHAReadings.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/BHAReadings.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/lisp/BHAReadings.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/build/CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/DigitalReadings.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_DigitalReadings.lisp"
-	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/DigitalReadings.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/BHAReadings.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_BHAReadings.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg/BHAReadings.msg
 
-../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/DigitalReadings.lisp
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/BHAReadings.lisp
 
-../msg_gen/lisp/_package_DigitalReadings.lisp: ../msg_gen/lisp/DigitalReadings.lisp
+../msg_gen/lisp/_package_BHAReadings.lisp: ../msg_gen/lisp/BHAReadings.lisp
 
 ROSBUILD_genmsg_lisp: CMakeFiles/ROSBUILD_genmsg_lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/BHAReadings.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_BHAReadings.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/EncoderReadings.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_EncoderReadings.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/SetBHAPressures.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_SetBHAPressures.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/MotorReadings.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_MotorReadings.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/GripperState.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_GripperState.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/SetGrapplerAxes.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_SetGrapplerAxes.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/NorthStarReadings.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_NorthStarReadings.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/GrapplerReadings.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_GrapplerReadings.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/SetGrapplerAxis.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_SetGrapplerAxis.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/AnalogReadings.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_AnalogReadings.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/PowerReadings.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_PowerReadings.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/DigitalReadings.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_DigitalReadings.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/EncoderReadings.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_EncoderReadings.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/MotorReadings.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_MotorReadings.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/SetGrapplerAxes.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_SetGrapplerAxes.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/GrapplerReadings.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_GrapplerReadings.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/NorthStarReadings.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_NorthStarReadings.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/AnalogReadings.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_AnalogReadings.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/GripperState.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_GripperState.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/PowerReadings.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_PowerReadings.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/SetGrapplerAxis.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_SetGrapplerAxis.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/SetBHAPressures.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_SetBHAPressures.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/BHAReadings.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_BHAReadings.lisp
 ROSBUILD_genmsg_lisp: CMakeFiles/ROSBUILD_genmsg_lisp.dir/build.make
 .PHONY : ROSBUILD_genmsg_lisp
 

@@ -31,8 +31,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox
@@ -48,9 +48,9 @@ include CMakeFiles/ROSBUILD_genmsg_cpp.dir/progress.make
 CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/Exploration_Info.h
 CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/Order_Info.h
 CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/Reported_Machines.h
-CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/Machine_Types.h
 CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/RobotPos.h
 CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/Game_Info.h
+CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/Machine_Types.h
 
 ../msg_gen/cpp/include/robotino_refbox/Exploration_Info.h: ../msg/Exploration_Info.msg
 ../msg_gen/cpp/include/robotino_refbox/Exploration_Info.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
@@ -88,18 +88,6 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/Game_Info
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_refbox/Reported_Machines.h"
 	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Reported_Machines.msg
 
-../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: ../msg/Machine_Types.msg
-../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
-../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: ../manifest.xml
-../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: /opt/ros/fuerte/share/rospy/manifest.xml
-../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: /opt/ros/fuerte/share/roscpp/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_refbox/Machine_Types.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Machine_Types.msg
-
 ../msg_gen/cpp/include/robotino_refbox/RobotPos.h: ../msg/RobotPos.msg
 ../msg_gen/cpp/include/robotino_refbox/RobotPos.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
 ../msg_gen/cpp/include/robotino_refbox/RobotPos.h: /opt/ros/fuerte/share/roslib/bin/gendeps
@@ -108,7 +96,7 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/Game_Info
 ../msg_gen/cpp/include/robotino_refbox/RobotPos.h: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/cpp/include/robotino_refbox/RobotPos.h: /opt/ros/fuerte/share/rospy/manifest.xml
 ../msg_gen/cpp/include/robotino_refbox/RobotPos.h: /opt/ros/fuerte/share/roscpp/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_refbox/RobotPos.h"
 	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/RobotPos.msg
 
@@ -120,17 +108,29 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/Game_Info
 ../msg_gen/cpp/include/robotino_refbox/Game_Info.h: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/cpp/include/robotino_refbox/Game_Info.h: /opt/ros/fuerte/share/rospy/manifest.xml
 ../msg_gen/cpp/include/robotino_refbox/Game_Info.h: /opt/ros/fuerte/share/roscpp/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_refbox/Game_Info.h"
 	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Game_Info.msg
+
+../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: ../msg/Machine_Types.msg
+../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: ../manifest.xml
+../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/cpp/include/robotino_refbox/Machine_Types.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/robotino_refbox/Machine_Types.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Machine_Types.msg
 
 ROSBUILD_genmsg_cpp: CMakeFiles/ROSBUILD_genmsg_cpp
 ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/Exploration_Info.h
 ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/Order_Info.h
 ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/Reported_Machines.h
-ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/Machine_Types.h
 ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/RobotPos.h
 ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/Game_Info.h
+ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/robotino_refbox/Machine_Types.h
 ROSBUILD_genmsg_cpp: CMakeFiles/ROSBUILD_genmsg_cpp.dir/build.make
 .PHONY : ROSBUILD_genmsg_cpp
 

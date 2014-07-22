@@ -30,10 +30,10 @@ d2998bec4d47fe823e2eba16797590f6 ../msg_gen/lisp/PathStatus.lisp
 d20fac7be9f2b1e32ab9c1266176fc12 ../src/robotino_local_move/msg/_PathDisplacements.py
 e6817bac0128ca76ed34e9c4e43a8b13 ../src/robotino_local_move/msg/_PathStatus.py
 5714a3afaea19e43c5040100917b1415 ../src/robotino_local_move/msg/_RobotPos.py
-c6fd2ebc5ec2af11c95b454390487692 ../src/robotino_local_move/msg/__init__.py
+98c1cb5d8e77cd4e26071b94d1b63c6c ../src/robotino_local_move/msg/__init__.py
 a1f635a813dc03e22e02e238d9a3f3f6 ../src/robotino_local_move/srv/_FullPath.py
 fe64f2f315a9b70258ee354cda212b2c ../src/robotino_local_move/srv/_Stop.py
-7aca7d118ce664952721aa8f7f78e8f3 ../src/robotino_local_move/srv/__init__.py
+21435f6378212f9ff65e2bc6ce034a65 ../src/robotino_local_move/srv/__init__.py
 0bfb6603106dab13399b136c609fe712 ../srv_gen/cpp/include/robotino_local_move/FullPath.h
 2270d7c25b5deb17809c134be40f08d0 ../srv_gen/cpp/include/robotino_local_move/Stop.h
 7b6bde63f3f443522be4cd4a435af808 ../srv_gen/lisp/FullPath.lisp

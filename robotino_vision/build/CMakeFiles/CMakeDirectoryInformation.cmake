@@ -8,6 +8,23 @@ SET(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/robotino/fuerte_workspace/sandbox/robo
 # Force unix paths in dependencies.
 SET(CMAKE_FORCE_UNIX_PATHS 1)
 
+# The C and CXX include file search paths:
+SET(CMAKE_C_INCLUDE_PATH
+  "../include"
+  "/opt/ros/fuerte/include"
+  "/opt/ros/fuerte/include/opencv"
+  "/opt/ros/fuerte/stacks/vision_opencv/cv_bridge/include"
+  "/home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/cpp/include"
+  "/home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/cpp/include"
+  "/opt/ros/fuerte/stacks/image_common/image_transport/include"
+  "/opt/ros/fuerte/stacks/pluginlib/include"
+  "/opt/ros/fuerte/stacks/pluginlib"
+  "../msg_gen/cpp/include"
+  "/usr/local/robotino/api2/include"
+  )
+SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
+SET(CMAKE_Fortran_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
+SET(CMAKE_ASM_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 
 # The C and CXX include file regular expressions for this directory.
 SET(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")

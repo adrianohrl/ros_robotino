@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision
+CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build
+CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build
 
 # Utility rule file for ROSBUILD_gensrv_py.
 
@@ -48,9 +48,9 @@ include CMakeFiles/ROSBUILD_gensrv_py.dir/progress.make
 CMakeFiles/ROSBUILD_gensrv_py: ../src/robotino_vision/srv/__init__.py
 
 ../src/robotino_vision/srv/__init__.py: ../src/robotino_vision/srv/_GetPucksPolarCoordinates.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_vision/srv/__init__.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/gensrv_py.py --initpy /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/srv/GetPucksPolarCoordinates.srv
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/gensrv_py.py --initpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/srv/GetPucksPolarCoordinates.srv
 
 ../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: ../srv/GetPucksPolarCoordinates.srv
 ../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/gensrv_py.py
@@ -61,9 +61,21 @@ CMakeFiles/ROSBUILD_gensrv_py: ../src/robotino_vision/srv/__init__.py
 ../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/share/rospy/manifest.xml
 ../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_2)
+../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/stacks/vision_opencv/cv_bridge/manifest.xml
+../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
+../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/share/ros/core/rosbuild/manifest.xml
+../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/share/roslib/manifest.xml
+../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/stacks/pluginlib/manifest.xml
+../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/share/message_filters/manifest.xml
+../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /opt/ros/fuerte/stacks/image_common/image_transport/manifest.xml
+../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
+../src/robotino_vision/srv/_GetPucksPolarCoordinates.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_vision/srv/_GetPucksPolarCoordinates.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/gensrv_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/srv/GetPucksPolarCoordinates.srv
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/gensrv_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/srv/GetPucksPolarCoordinates.srv
 
 ROSBUILD_gensrv_py: CMakeFiles/ROSBUILD_gensrv_py
 ROSBUILD_gensrv_py: ../src/robotino_vision/srv/__init__.py
@@ -80,6 +92,6 @@ CMakeFiles/ROSBUILD_gensrv_py.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_gensrv_py.dir/clean
 
 CMakeFiles/ROSBUILD_gensrv_py.dir/depend:
-	cd /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build /home/robotino/fuerte_workspace/sandbox/robotino-ros-pkg/robotino/robotino_vision/build/CMakeFiles/ROSBUILD_gensrv_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles/ROSBUILD_gensrv_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_gensrv_py.dir/depend
 

@@ -31,8 +31,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements
@@ -48,9 +48,10 @@ include CMakeFiles/ROSBUILD_gensrv_py.dir/progress.make
 CMakeFiles/ROSBUILD_gensrv_py: ../src/robotino_movements/srv/__init__.py
 
 ../src/robotino_movements/srv/__init__.py: ../src/robotino_movements/srv/_FullPath.py
+../src/robotino_movements/srv/__init__.py: ../src/robotino_movements/srv/_Prova.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_movements/srv/__init__.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/gensrv_py.py --initpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/srv/FullPath.srv
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/gensrv_py.py --initpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/srv/FullPath.srv /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/srv/Prova.srv
 
 ../src/robotino_movements/srv/_FullPath.py: ../srv/FullPath.srv
 ../src/robotino_movements/srv/_FullPath.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/gensrv_py.py
@@ -78,9 +79,36 @@ CMakeFiles/ROSBUILD_gensrv_py: ../src/robotino_movements/srv/__init__.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_movements/srv/_FullPath.py"
 	/opt/ros/fuerte/share/rospy/rosbuild/scripts/gensrv_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/srv/FullPath.srv
 
+../src/robotino_movements/srv/_Prova.py: ../srv/Prova.srv
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/gensrv_py.py
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/robotino_movements/srv/_Prova.py: ../manifest.xml
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../src/robotino_movements/srv/_Prova.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/share/rospy/manifest.xml
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/share/rostest/manifest.xml
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/share/roswtf/manifest.xml
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/share/message_filters/manifest.xml
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../src/robotino_movements/srv/_Prova.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
+../src/robotino_movements/srv/_Prova.py: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../src/robotino_movements/srv/_Prova.py: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_movements/srv/_Prova.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/gensrv_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/srv/Prova.srv
+
 ROSBUILD_gensrv_py: CMakeFiles/ROSBUILD_gensrv_py
 ROSBUILD_gensrv_py: ../src/robotino_movements/srv/__init__.py
 ROSBUILD_gensrv_py: ../src/robotino_movements/srv/_FullPath.py
+ROSBUILD_gensrv_py: ../src/robotino_movements/srv/_Prova.py
 ROSBUILD_gensrv_py: CMakeFiles/ROSBUILD_gensrv_py.dir/build.make
 .PHONY : ROSBUILD_gensrv_py
 

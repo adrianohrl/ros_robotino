@@ -15,15 +15,15 @@ FILE(REMOVE_RECURSE
   "../msg_gen/lisp/Reported_Machines.lisp"
   "../msg_gen/lisp/_package.lisp"
   "../msg_gen/lisp/_package_Reported_Machines.lisp"
-  "../msg_gen/lisp/Machine_Types.lisp"
-  "../msg_gen/lisp/_package.lisp"
-  "../msg_gen/lisp/_package_Machine_Types.lisp"
   "../msg_gen/lisp/RobotPos.lisp"
   "../msg_gen/lisp/_package.lisp"
   "../msg_gen/lisp/_package_RobotPos.lisp"
   "../msg_gen/lisp/Game_Info.lisp"
   "../msg_gen/lisp/_package.lisp"
   "../msg_gen/lisp/_package_Game_Info.lisp"
+  "../msg_gen/lisp/Machine_Types.lisp"
+  "../msg_gen/lisp/_package.lisp"
+  "../msg_gen/lisp/_package_Machine_Types.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -7,8 +7,8 @@ FILE(REMOVE_RECURSE
   "../srv_gen"
   "CMakeFiles/ROSBUILD_gensrv_py"
   "../src/robotino_local_move/srv/__init__.py"
-  "../src/robotino_local_move/srv/_Stop.py"
   "../src/robotino_local_move/srv/_FullPath.py"
+  "../src/robotino_local_move/srv/_Stop.py"
 )
 
 # Per-language clean rules from dependency scanning.

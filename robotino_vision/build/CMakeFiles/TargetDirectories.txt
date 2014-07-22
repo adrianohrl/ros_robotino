@@ -3,6 +3,7 @@
 /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles/ROSBUILD_genmsg_py.dir
 /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles/ROSBUILD_gensrv_cpp.dir
 /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir
+/home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles/ROSBUILD_gensrv_py.dir
 /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles/clean-test-results.dir
 /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles/robotino_vision_node.dir
 /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision/build/CMakeFiles/rosbuild_precompile.dir

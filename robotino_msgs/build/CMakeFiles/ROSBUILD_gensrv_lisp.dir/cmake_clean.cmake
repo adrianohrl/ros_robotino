@@ -6,15 +6,15 @@ FILE(REMOVE_RECURSE
   "../msg_gen"
   "../srv_gen"
   "CMakeFiles/ROSBUILD_gensrv_lisp"
-  "../srv_gen/lisp/SetGripperState.lisp"
-  "../srv_gen/lisp/_package.lisp"
-  "../srv_gen/lisp/_package_SetGripperState.lisp"
-  "../srv_gen/lisp/ResetOdometry.lisp"
-  "../srv_gen/lisp/_package.lisp"
-  "../srv_gen/lisp/_package_ResetOdometry.lisp"
   "../srv_gen/lisp/SetEncoderPosition.lisp"
   "../srv_gen/lisp/_package.lisp"
   "../srv_gen/lisp/_package_SetEncoderPosition.lisp"
+  "../srv_gen/lisp/ResetOdometry.lisp"
+  "../srv_gen/lisp/_package.lisp"
+  "../srv_gen/lisp/_package_ResetOdometry.lisp"
+  "../srv_gen/lisp/SetGripperState.lisp"
+  "../srv_gen/lisp/_package.lisp"
+  "../srv_gen/lisp/_package_SetGripperState.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -23,7 +23,10 @@
 			<param name="max_rotational_vel_distance" value="0.2" />
 	  	</node-->
 
-	  	<node name="robotino_odometry_node" pkg="robotino_node" type="robotino_odometry_node" output="screen">
+	  	<node name="robotino_movements" pkg="robotino_movements" type="robotino_movements" output="screen">
+	  	</node>
+
+		<node name="robotino_odometry_node" pkg="robotino_node" type="robotino_odometry_node" output="screen">
 	    		<param name="hostname" value="$(arg hostname)" />
 	  	</node>
 

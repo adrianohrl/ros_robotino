@@ -31,8 +31,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements
@@ -46,6 +46,7 @@ CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_mov
 include CMakeFiles/ROSBUILD_gensrv_cpp.dir/progress.make
 
 CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/robotino_movements/FullPath.h
+CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/robotino_movements/Prova.h
 
 ../srv_gen/cpp/include/robotino_movements/FullPath.h: ../srv/FullPath.srv
 ../srv_gen/cpp/include/robotino_movements/FullPath.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py
@@ -74,8 +75,36 @@ CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/robotino_movements/FullPa
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/robotino_movements/FullPath.h"
 	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/srv/FullPath.srv
 
+../srv_gen/cpp/include/robotino_movements/Prova.h: ../srv/Prova.srv
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../srv_gen/cpp/include/robotino_movements/Prova.h: ../manifest.xml
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../srv_gen/cpp/include/robotino_movements/Prova.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../srv_gen/cpp/include/robotino_movements/Prova.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
+../srv_gen/cpp/include/robotino_movements/Prova.h: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../srv_gen/cpp/include/robotino_movements/Prova.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/robotino_movements/Prova.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/robotino/fuerte_workspace/sandbox/robotino/robotino_movements/srv/Prova.srv
+
 ROSBUILD_gensrv_cpp: CMakeFiles/ROSBUILD_gensrv_cpp
 ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/robotino_movements/FullPath.h
+ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/robotino_movements/Prova.h
 ROSBUILD_gensrv_cpp: CMakeFiles/ROSBUILD_gensrv_cpp.dir/build.make
 .PHONY : ROSBUILD_gensrv_cpp
 

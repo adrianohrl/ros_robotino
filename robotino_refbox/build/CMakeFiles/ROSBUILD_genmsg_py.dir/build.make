@@ -31,8 +31,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox
@@ -50,12 +50,12 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_refbox/msg/__init__.py
 ../src/robotino_refbox/msg/__init__.py: ../src/robotino_refbox/msg/_Exploration_Info.py
 ../src/robotino_refbox/msg/__init__.py: ../src/robotino_refbox/msg/_Order_Info.py
 ../src/robotino_refbox/msg/__init__.py: ../src/robotino_refbox/msg/_Reported_Machines.py
-../src/robotino_refbox/msg/__init__.py: ../src/robotino_refbox/msg/_Machine_Types.py
 ../src/robotino_refbox/msg/__init__.py: ../src/robotino_refbox/msg/_RobotPos.py
 ../src/robotino_refbox/msg/__init__.py: ../src/robotino_refbox/msg/_Game_Info.py
+../src/robotino_refbox/msg/__init__.py: ../src/robotino_refbox/msg/_Machine_Types.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_refbox/msg/__init__.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --initpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Exploration_Info.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Order_Info.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Reported_Machines.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Machine_Types.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/RobotPos.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Game_Info.msg
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --initpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Exploration_Info.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Order_Info.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Reported_Machines.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/RobotPos.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Game_Info.msg /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Machine_Types.msg
 
 ../src/robotino_refbox/msg/_Exploration_Info.py: ../msg/Exploration_Info.msg
 ../src/robotino_refbox/msg/_Exploration_Info.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
@@ -93,18 +93,6 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_refbox/msg/__init__.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_refbox/msg/_Reported_Machines.py"
 	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Reported_Machines.msg
 
-../src/robotino_refbox/msg/_Machine_Types.py: ../msg/Machine_Types.msg
-../src/robotino_refbox/msg/_Machine_Types.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
-../src/robotino_refbox/msg/_Machine_Types.py: /opt/ros/fuerte/share/roslib/bin/gendeps
-../src/robotino_refbox/msg/_Machine_Types.py: ../manifest.xml
-../src/robotino_refbox/msg/_Machine_Types.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../src/robotino_refbox/msg/_Machine_Types.py: /opt/ros/fuerte/share/roslang/manifest.xml
-../src/robotino_refbox/msg/_Machine_Types.py: /opt/ros/fuerte/share/rospy/manifest.xml
-../src/robotino_refbox/msg/_Machine_Types.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_refbox/msg/_Machine_Types.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Machine_Types.msg
-
 ../src/robotino_refbox/msg/_RobotPos.py: ../msg/RobotPos.msg
 ../src/robotino_refbox/msg/_RobotPos.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
 ../src/robotino_refbox/msg/_RobotPos.py: /opt/ros/fuerte/share/roslib/bin/gendeps
@@ -113,7 +101,7 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_refbox/msg/__init__.py
 ../src/robotino_refbox/msg/_RobotPos.py: /opt/ros/fuerte/share/roslang/manifest.xml
 ../src/robotino_refbox/msg/_RobotPos.py: /opt/ros/fuerte/share/rospy/manifest.xml
 ../src/robotino_refbox/msg/_RobotPos.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_refbox/msg/_RobotPos.py"
 	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/RobotPos.msg
 
@@ -125,18 +113,30 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/robotino_refbox/msg/__init__.py
 ../src/robotino_refbox/msg/_Game_Info.py: /opt/ros/fuerte/share/roslang/manifest.xml
 ../src/robotino_refbox/msg/_Game_Info.py: /opt/ros/fuerte/share/rospy/manifest.xml
 ../src/robotino_refbox/msg/_Game_Info.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_refbox/msg/_Game_Info.py"
 	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Game_Info.msg
+
+../src/robotino_refbox/msg/_Machine_Types.py: ../msg/Machine_Types.msg
+../src/robotino_refbox/msg/_Machine_Types.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/robotino_refbox/msg/_Machine_Types.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/robotino_refbox/msg/_Machine_Types.py: ../manifest.xml
+../src/robotino_refbox/msg/_Machine_Types.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../src/robotino_refbox/msg/_Machine_Types.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/robotino_refbox/msg/_Machine_Types.py: /opt/ros/fuerte/share/rospy/manifest.xml
+../src/robotino_refbox/msg/_Machine_Types.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/robotino_refbox/msg/_Machine_Types.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/robotino/fuerte_workspace/sandbox/robotino/robotino_refbox/msg/Machine_Types.msg
 
 ROSBUILD_genmsg_py: CMakeFiles/ROSBUILD_genmsg_py
 ROSBUILD_genmsg_py: ../src/robotino_refbox/msg/__init__.py
 ROSBUILD_genmsg_py: ../src/robotino_refbox/msg/_Exploration_Info.py
 ROSBUILD_genmsg_py: ../src/robotino_refbox/msg/_Order_Info.py
 ROSBUILD_genmsg_py: ../src/robotino_refbox/msg/_Reported_Machines.py
-ROSBUILD_genmsg_py: ../src/robotino_refbox/msg/_Machine_Types.py
 ROSBUILD_genmsg_py: ../src/robotino_refbox/msg/_RobotPos.py
 ROSBUILD_genmsg_py: ../src/robotino_refbox/msg/_Game_Info.py
+ROSBUILD_genmsg_py: ../src/robotino_refbox/msg/_Machine_Types.py
 ROSBUILD_genmsg_py: CMakeFiles/ROSBUILD_genmsg_py.dir/build.make
 .PHONY : ROSBUILD_genmsg_py
 

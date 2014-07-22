@@ -31,8 +31,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node
@@ -92,15 +92,15 @@ CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.o: /opt/ros/fuerte/
 CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_camera_node.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_camera_node.cpp
 
 CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_camera_node.cpp > CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_camera_node.cpp > CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.i
 
 CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_camera_node.cpp -o CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_camera_node.cpp -o CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.s
 
 CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.o.requires:
 .PHONY : CMakeFiles/robotino_camera_node.dir/src/robotino_camera_node.o.requires
@@ -154,15 +154,15 @@ CMakeFiles/robotino_camera_node.dir/src/ComROS.o: /opt/ros/fuerte/stacks/dynamic
 CMakeFiles/robotino_camera_node.dir/src/ComROS.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_camera_node.dir/src/ComROS.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_camera_node.dir/src/ComROS.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_camera_node.dir/src/ComROS.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp
 
 CMakeFiles/robotino_camera_node.dir/src/ComROS.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_camera_node.dir/src/ComROS.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp > CMakeFiles/robotino_camera_node.dir/src/ComROS.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp > CMakeFiles/robotino_camera_node.dir/src/ComROS.i
 
 CMakeFiles/robotino_camera_node.dir/src/ComROS.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_camera_node.dir/src/ComROS.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp -o CMakeFiles/robotino_camera_node.dir/src/ComROS.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp -o CMakeFiles/robotino_camera_node.dir/src/ComROS.s
 
 CMakeFiles/robotino_camera_node.dir/src/ComROS.o.requires:
 .PHONY : CMakeFiles/robotino_camera_node.dir/src/ComROS.o.requires
@@ -216,15 +216,15 @@ CMakeFiles/robotino_camera_node.dir/src/CameraROS.o: /opt/ros/fuerte/stacks/dyna
 CMakeFiles/robotino_camera_node.dir/src/CameraROS.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_camera_node.dir/src/CameraROS.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_camera_node.dir/src/CameraROS.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/CameraROS.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_camera_node.dir/src/CameraROS.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/CameraROS.cpp
 
 CMakeFiles/robotino_camera_node.dir/src/CameraROS.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_camera_node.dir/src/CameraROS.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/CameraROS.cpp > CMakeFiles/robotino_camera_node.dir/src/CameraROS.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/CameraROS.cpp > CMakeFiles/robotino_camera_node.dir/src/CameraROS.i
 
 CMakeFiles/robotino_camera_node.dir/src/CameraROS.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_camera_node.dir/src/CameraROS.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/CameraROS.cpp -o CMakeFiles/robotino_camera_node.dir/src/CameraROS.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/CameraROS.cpp -o CMakeFiles/robotino_camera_node.dir/src/CameraROS.s
 
 CMakeFiles/robotino_camera_node.dir/src/CameraROS.o.requires:
 .PHONY : CMakeFiles/robotino_camera_node.dir/src/CameraROS.o.requires
@@ -278,15 +278,15 @@ CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.o: /opt/ros/fuerte/st
 CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoCameraNode.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoCameraNode.cpp
 
 CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoCameraNode.cpp > CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoCameraNode.cpp > CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.i
 
 CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoCameraNode.cpp -o CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoCameraNode.cpp -o CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.s
 
 CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.o.requires:
 .PHONY : CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.o.requires
@@ -311,8 +311,8 @@ robotino_camera_node_EXTERNAL_OBJECTS =
 ../bin/robotino_camera_node: CMakeFiles/robotino_camera_node.dir/src/ComROS.o
 ../bin/robotino_camera_node: CMakeFiles/robotino_camera_node.dir/src/CameraROS.o
 ../bin/robotino_camera_node: CMakeFiles/robotino_camera_node.dir/src/RobotinoCameraNode.o
-../bin/robotino_camera_node: CMakeFiles/robotino_camera_node.dir/build.make
 ../bin/robotino_camera_node: /usr/local/robotino/api2/lib/librec_robotino_api2.so
+../bin/robotino_camera_node: CMakeFiles/robotino_camera_node.dir/build.make
 ../bin/robotino_camera_node: CMakeFiles/robotino_camera_node.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../bin/robotino_camera_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robotino_camera_node.dir/link.txt --verbose=$(VERBOSE)

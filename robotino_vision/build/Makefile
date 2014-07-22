@@ -35,8 +35,8 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vision
@@ -49,8 +49,8 @@ CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_vis
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -162,6 +162,19 @@ ROSBUILD_gensrv_lisp: cmake_check_build_system
 ROSBUILD_gensrv_lisp/fast:
 	$(MAKE) -f CMakeFiles/ROSBUILD_gensrv_lisp.dir/build.make CMakeFiles/ROSBUILD_gensrv_lisp.dir/build
 .PHONY : ROSBUILD_gensrv_lisp/fast
+
+#=============================================================================
+# Target rules for targets named ROSBUILD_gensrv_py
+
+# Build rule for target.
+ROSBUILD_gensrv_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ROSBUILD_gensrv_py
+.PHONY : ROSBUILD_gensrv_py
+
+# fast build rule for target.
+ROSBUILD_gensrv_py/fast:
+	$(MAKE) -f CMakeFiles/ROSBUILD_gensrv_py.dir/build.make CMakeFiles/ROSBUILD_gensrv_py.dir/build
+.PHONY : ROSBUILD_gensrv_py/fast
 
 #=============================================================================
 # Target rules for targets named clean-test-results
@@ -446,6 +459,7 @@ help:
 	@echo "... ROSBUILD_genmsg_py"
 	@echo "... ROSBUILD_gensrv_cpp"
 	@echo "... ROSBUILD_gensrv_lisp"
+	@echo "... ROSBUILD_gensrv_py"
 	@echo "... clean-test-results"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"

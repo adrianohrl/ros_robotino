@@ -7,9 +7,9 @@ FILE(REMOVE_RECURSE
   "../srv_gen"
   "CMakeFiles/ROSBUILD_gensrv_py"
   "../src/robotino_msgs/srv/__init__.py"
-  "../src/robotino_msgs/srv/_SetGripperState.py"
-  "../src/robotino_msgs/srv/_ResetOdometry.py"
   "../src/robotino_msgs/srv/_SetEncoderPosition.py"
+  "../src/robotino_msgs/srv/_ResetOdometry.py"
+  "../src/robotino_msgs/srv/_SetGripperState.py"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -60,6 +60,7 @@ ros::Publisher orderInfo_pub;
 ros::Publisher explorationInfo_pub;
 ros::Publisher machineTypes_pub;
 ros::Publisher reportedMachines_pub;
+ros::ServiceServer reportMachine;
 
 void signal_handler(const boost::system::error_code& error, int signum)
 {
@@ -404,7 +405,7 @@ int main(int argc, char **argv)
 	machineTypes_pub = n.advertise<robotino_refbox::Machine_Types>("machine_types", 10);
 	reportedMachines_pub = n.advertise<robotino_refbox::Reported_Machines>("reported_machines", 10);
 	// Servers
-	ros::ServiceServer reportMachine = n.advertiseService("ReportMachine", reportMachine_Callback);
+	reportMachine = n.advertiseService("ReportMachine", reportMachine_Callback);
 
     ros::Rate loop_rate(1); // Em Hz
 

@@ -9,9 +9,9 @@ FILE(REMOVE_RECURSE
   "../msg_gen/cpp/include/robotino_refbox/Exploration_Info.h"
   "../msg_gen/cpp/include/robotino_refbox/Order_Info.h"
   "../msg_gen/cpp/include/robotino_refbox/Reported_Machines.h"
-  "../msg_gen/cpp/include/robotino_refbox/Machine_Types.h"
   "../msg_gen/cpp/include/robotino_refbox/RobotPos.h"
   "../msg_gen/cpp/include/robotino_refbox/Game_Info.h"
+  "../msg_gen/cpp/include/robotino_refbox/Machine_Types.h"
 )
 
 # Per-language clean rules from dependency scanning.
