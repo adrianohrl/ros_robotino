@@ -49,6 +49,9 @@ const int dir=4; // number of possible directions to go at any position
 // if dir==4
 static int dx[dir]={1, 0, -1, 0};
 static int dy[dir]={0, 1, 0, -1};
+// if dir==8
+//static int dx[dir]={1, 1, 0, -1, -1, -1, 0, 1};
+//static int dy[dir]={0, 1, 1, 1, 0, -1, -1, -1};
 
 class node
 {
@@ -275,7 +278,7 @@ void odomCallback(const nav_msgs::Odometry& msg)
 	transformRealPos_BlockPos(posX, posY, xA, yA);
 }
 
-bool generate_Callback(robotino_local_move::FullPath::Request &req, robotino_local_move::FullPath::Response &res)
+bool genCallback(robotino_local_move::FullPath::Request &req, robotino_local_move::FullPath::Response &res)
 {
 	srand(time(NULL));
 	// get the route
@@ -290,32 +293,10 @@ bool generate_Callback(robotino_local_move::FullPath::Request &req, robotino_loc
 		printf("An empty route generated!\n");
 		return false;
 	}
-
-	res.path_size = res.full_path.length();
-	
-	char c;
-	char prev_c;
-	for(int i=0;i<res.path_size;i++)
-        {
-		c =res.full_path.at(i); // Le cada um dos caracteres do path
-		if( i != 0 )
-		{
-			if( c != prev_c )
-				res.num_turns++;
-		}
-		prev_c = c;
-            //j=atoi(&c);     // Transforma cada caracter em um int
-            //x=x+dx[j];      // Calcula proxima posicao X
-            //y=y+dy[j];      // Calcula proxima posicao Y
-            //map[x][y]=83; //route
-        }
-
 	clock_t end = clock();
 	double time_elapsed = double(end - start);
-	printf("Time to calculate the route (ms): %f\n", time_elapsed);
+	printf("Time to calculate the route (ms): %f", time_elapsed);
 	printf("Route: %s\n", res.full_path.c_str());
-	printf("Route size: %i\n", res.path_size);
-	printf("Number of turns: %i\n", res.num_turns);
 
 	return true;
 }
@@ -329,8 +310,7 @@ int main(int argc, char **argv)
 	ros::init(argc, argv, "robotino_manager");
 	ros::NodeHandle n;
 	ros::Subscriber odom_sub = n.subscribe("odom", 10, odomCallback);
-	//ros::Subscriber odom_sub = n.subscribe("", 10, odomCallback);
-	ros::ServiceServer service = n.advertiseService("FullPath", generate_Callback);
+	ros::ServiceServer service = n.advertiseService("FullPath", genCallback);
 	ros::Rate loop_rate(1); // Em Hz
 
 	while (ros::ok())

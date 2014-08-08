@@ -32,25 +32,25 @@ LaserRangeFinderROS.h
 ros/ros.h
 -
 
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/ComROS.cpp
 ComROS.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/ComROS.h
 sstream
 -
 
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/LaserRangeFinderROS.cpp
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/LaserRangeFinderROS.cpp
 LaserRangeFinderROS.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/LaserRangeFinderROS.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/LaserRangeFinderROS.h
 
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoLaserRangeFinderNode.cpp
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/RobotinoLaserRangeFinderNode.cpp
 RobotinoLaserRangeFinderNode.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoLaserRangeFinderNode.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/RobotinoLaserRangeFinderNode.h
 sstream
 -
 
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_laserrangefinder_node.cpp
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/robotino_laserrangefinder_node.cpp
 RobotinoLaserRangeFinderNode.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoLaserRangeFinderNode.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/RobotinoLaserRangeFinderNode.h
 ros/ros.h
 -
 

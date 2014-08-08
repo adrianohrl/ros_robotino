@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/robotino_manager.cpp" "/home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles/robotino_manager.dir/src/robotino_manager.o"
+  "/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_manager.cpp" "/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles/robotino_manager.dir/src/robotino_manager.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

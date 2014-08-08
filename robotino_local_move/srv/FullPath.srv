@@ -1,5 +1,3 @@
 int32 goal
 ---
-int32 path_size
-int32 num_turns
 string full_path

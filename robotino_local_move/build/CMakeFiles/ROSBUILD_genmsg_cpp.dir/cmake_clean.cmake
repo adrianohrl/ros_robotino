@@ -1,8 +1,8 @@
 FILE(REMOVE_RECURSE
-  "../msg_gen"
-  "../srv_gen"
   "../src/robotino_local_move/msg"
   "../src/robotino_local_move/srv"
+  "../msg_gen"
+  "../srv_gen"
   "../msg_gen"
   "../srv_gen"
   "CMakeFiles/ROSBUILD_genmsg_cpp"
@@ -15,7 +15,6 @@ FILE(REMOVE_RECURSE
   "../msg_gen/cpp/include/robotino_local_move/LocalMoveActionFeedback.h"
   "../msg_gen/cpp/include/robotino_local_move/PathDisplacements.h"
   "../msg_gen/cpp/include/robotino_local_move/PathStatus.h"
-  "../msg_gen/cpp/include/robotino_local_move/RobotPos.h"
   "../msg/LocalMoveAction.msg"
   "../msg/LocalMoveGoal.msg"
   "../msg/LocalMoveActionGoal.msg"

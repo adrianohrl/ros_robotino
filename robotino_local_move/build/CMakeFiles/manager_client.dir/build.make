@@ -31,14 +31,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move
+CMAKE_SOURCE_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build
+CMAKE_BINARY_DIR = /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/manager_client.dir/depend.make
@@ -55,7 +52,7 @@ CMakeFiles/manager_client.dir/src/manager_client.o: ../manifest.xml
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/share/roslang/manifest.xml
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/share/roscpp/manifest.xml
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-CMakeFiles/manager_client.dir/src/manager_client.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/manifest.xml
+CMakeFiles/manager_client.dir/src/manager_client.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/manifest.xml
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/share/nav_msgs/manifest.xml
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/stacks/bullet/manifest.xml
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
@@ -82,28 +79,28 @@ CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/stacks/dynam
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/stacks/common_rosdeps/manifest.xml
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/stacks/perception_pcl/pcl_ros/manifest.xml
-CMakeFiles/manager_client.dir/src/manager_client.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/manifest.xml
+CMakeFiles/manager_client.dir/src/manager_client.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/manifest.xml
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/share/actionlib_msgs/manifest.xml
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/share/actionlib/manifest.xml
-CMakeFiles/manager_client.dir/src/manager_client.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/msg_gen/generated
-CMakeFiles/manager_client.dir/src/manager_client.o: /home/robotino/fuerte_workspace/sandbox/robotino/robotino_msgs/srv_gen/generated
+CMakeFiles/manager_client.dir/src/manager_client.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/msg_gen/generated
+CMakeFiles/manager_client.dir/src/manager_client.o: /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_msgs/srv_gen/generated
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/stacks/bond_core/bond/msg_gen/generated
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/stacks/nodelet_core/nodelet/srv_gen/generated
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
 CMakeFiles/manager_client.dir/src/manager_client.o: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/manager_client.dir/src/manager_client.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/manager_client.dir/src/manager_client.o -c /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/manager_client.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/manager_client.dir/src/manager_client.o -c /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/manager_client.cpp
 
 CMakeFiles/manager_client.dir/src/manager_client.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/manager_client.dir/src/manager_client.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/manager_client.cpp > CMakeFiles/manager_client.dir/src/manager_client.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/manager_client.cpp > CMakeFiles/manager_client.dir/src/manager_client.i
 
 CMakeFiles/manager_client.dir/src/manager_client.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/manager_client.dir/src/manager_client.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/manager_client.cpp -o CMakeFiles/manager_client.dir/src/manager_client.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/manager_client.cpp -o CMakeFiles/manager_client.dir/src/manager_client.s
 
 CMakeFiles/manager_client.dir/src/manager_client.o.requires:
 .PHONY : CMakeFiles/manager_client.dir/src/manager_client.o.requires
@@ -139,6 +136,6 @@ CMakeFiles/manager_client.dir/clean:
 .PHONY : CMakeFiles/manager_client.dir/clean
 
 CMakeFiles/manager_client.dir/depend:
-	cd /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/build/CMakeFiles/manager_client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/build/CMakeFiles/manager_client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/manager_client.dir/depend
 

@@ -34,27 +34,27 @@ CameraROS.h
 ros/ros.h
 -
 
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/CameraROS.cpp
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/CameraROS.cpp
 CameraROS.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/CameraROS.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/CameraROS.h
 sensor_msgs/fill_image.h
 -
 
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.cpp
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/ComROS.cpp
 ComROS.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/ComROS.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/ComROS.h
 sstream
 -
 
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoCameraNode.cpp
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/RobotinoCameraNode.cpp
 RobotinoCameraNode.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoCameraNode.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/RobotinoCameraNode.h
 sstream
 -
 
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/robotino_camera_node.cpp
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/robotino_camera_node.cpp
 RobotinoCameraNode.h
-/home/robotino/fuerte_workspace/sandbox/robotino/robotino_node/src/RobotinoCameraNode.h
+/home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_node/src/RobotinoCameraNode.h
 ros/ros.h
 -
 

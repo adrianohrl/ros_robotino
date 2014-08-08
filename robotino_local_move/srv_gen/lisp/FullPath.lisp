@@ -53,10 +53,10 @@
   "robotino_local_move/FullPathRequest")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<FullPath-request>)))
   "Returns md5sum for a message object of type '<FullPath-request>"
-  "03a4f20dd60c4c41c218f9ce72db01fd")
+  "e27a1c3698284a9b9f545d211e208fd5")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'FullPath-request)))
   "Returns md5sum for a message object of type 'FullPath-request"
-  "03a4f20dd60c4c41c218f9ce72db01fd")
+  "e27a1c3698284a9b9f545d211e208fd5")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<FullPath-request>)))
   "Returns full string definition for message of type '<FullPath-request>"
   (cl:format cl:nil "int32 goal~%~%~%"))
@@ -75,17 +75,7 @@
 ;//! \htmlinclude FullPath-response.msg.html
 
 (cl:defclass <FullPath-response> (roslisp-msg-protocol:ros-message)
-  ((path_size
-    :reader path_size
-    :initarg :path_size
-    :type cl:integer
-    :initform 0)
-   (num_turns
-    :reader num_turns
-    :initarg :num_turns
-    :type cl:integer
-    :initform 0)
-   (full_path
+  ((full_path
     :reader full_path
     :initarg :full_path
     :type cl:string
@@ -100,34 +90,12 @@
   (cl:unless (cl:typep m 'FullPath-response)
     (roslisp-msg-protocol:msg-deprecation-warning "using old message class name robotino_local_move-srv:<FullPath-response> is deprecated: use robotino_local_move-srv:FullPath-response instead.")))
 
-(cl:ensure-generic-function 'path_size-val :lambda-list '(m))
-(cl:defmethod path_size-val ((m <FullPath-response>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader robotino_local_move-srv:path_size-val is deprecated.  Use robotino_local_move-srv:path_size instead.")
-  (path_size m))
-
-(cl:ensure-generic-function 'num_turns-val :lambda-list '(m))
-(cl:defmethod num_turns-val ((m <FullPath-response>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader robotino_local_move-srv:num_turns-val is deprecated.  Use robotino_local_move-srv:num_turns instead.")
-  (num_turns m))
-
 (cl:ensure-generic-function 'full_path-val :lambda-list '(m))
 (cl:defmethod full_path-val ((m <FullPath-response>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader robotino_local_move-srv:full_path-val is deprecated.  Use robotino_local_move-srv:full_path instead.")
   (full_path m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <FullPath-response>) ostream)
   "Serializes a message object of type '<FullPath-response>"
-  (cl:let* ((signed (cl:slot-value msg 'path_size)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 4294967296) signed)))
-    (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
-    )
-  (cl:let* ((signed (cl:slot-value msg 'num_turns)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 4294967296) signed)))
-    (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
-    )
   (cl:let ((__ros_str_len (cl:length (cl:slot-value msg 'full_path))))
     (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_str_len) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_str_len) ostream)
@@ -137,18 +105,6 @@
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <FullPath-response>) istream)
   "Deserializes a message object of type '<FullPath-response>"
-    (cl:let ((unsigned 0))
-      (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:slot-value msg 'path_size) (cl:if (cl:< unsigned 2147483648) unsigned (cl:- unsigned 4294967296))))
-    (cl:let ((unsigned 0))
-      (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:slot-value msg 'num_turns) (cl:if (cl:< unsigned 2147483648) unsigned (cl:- unsigned 4294967296))))
     (cl:let ((__ros_str_len 0))
       (cl:setf (cl:ldb (cl:byte 8 0) __ros_str_len) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 8) __ros_str_len) (cl:read-byte istream))
@@ -167,27 +123,23 @@
   "robotino_local_move/FullPathResponse")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<FullPath-response>)))
   "Returns md5sum for a message object of type '<FullPath-response>"
-  "03a4f20dd60c4c41c218f9ce72db01fd")
+  "e27a1c3698284a9b9f545d211e208fd5")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'FullPath-response)))
   "Returns md5sum for a message object of type 'FullPath-response"
-  "03a4f20dd60c4c41c218f9ce72db01fd")
+  "e27a1c3698284a9b9f545d211e208fd5")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<FullPath-response>)))
   "Returns full string definition for message of type '<FullPath-response>"
-  (cl:format cl:nil "int32 path_size~%int32 num_turns~%string full_path~%~%~%~%"))
+  (cl:format cl:nil "string full_path~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'FullPath-response)))
   "Returns full string definition for message of type 'FullPath-response"
-  (cl:format cl:nil "int32 path_size~%int32 num_turns~%string full_path~%~%~%~%"))
+  (cl:format cl:nil "string full_path~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <FullPath-response>))
   (cl:+ 0
-     4
-     4
      4 (cl:length (cl:slot-value msg 'full_path))
 ))
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <FullPath-response>))
   "Converts a ROS message object to a list"
   (cl:list 'FullPath-response
-    (cl:cons ':path_size (path_size msg))
-    (cl:cons ':num_turns (num_turns msg))
     (cl:cons ':full_path (full_path msg))
 ))
 (cl:defmethod roslisp-msg-protocol:service-request-type ((msg (cl:eql 'FullPath)))

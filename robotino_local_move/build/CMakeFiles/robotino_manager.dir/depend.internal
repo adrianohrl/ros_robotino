@@ -3,7 +3,7 @@
 
 CMakeFiles/robotino_manager.dir/src/robotino_manager.o
  ../srv_gen/cpp/include/robotino_local_move/FullPath.h
- /home/robotino/fuerte_workspace/sandbox/robotino/robotino_local_move/src/robotino_manager.cpp
+ /home/viki/ros_workspace/robotino-ros-pkg/robotino/robotino_local_move/src/robotino_manager.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/geometry_msgs/Point.h
